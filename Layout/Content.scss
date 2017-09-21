@@ -1,7 +1,7 @@
 body > img{
     display: none;
 }
-.style-advisor-wrapper{ 
+.style-advisor-wrapper{
     width: 100%;
     position: relative;
     border-bottom:5px solid #b70234;
@@ -288,7 +288,7 @@ body > img{
                                                         background: #e4e4e4;
                                                         bottom: 7px;
                                                         left: 0;
-                                                        z-index:4; 
+                                                        z-index:4;
                                                     }
                                                     &:after{
                                                         content:'';
@@ -308,7 +308,7 @@ body > img{
                                                     a{
                                                         color: #929292;
                                                         font-size: 14px;
-                                                        letter-spacing: 1px;                                                            
+                                                        letter-spacing: 1px;
                                                     }
                                                     &:first-child{
                                                        &:before{
@@ -352,7 +352,7 @@ body > img{
                                             }
                                     }
                             }
-                            
+
                             @media screen and (max-width:$mobileDevice){
                                 padding: 30px 0 0 0;
                                     .styler-step-header{
@@ -565,7 +565,7 @@ body > img{
                                                                         bottom: 0;
                                                                         z-index: 2;
                                                                     }
-                                                                    
+
                                                                 }
                                                             }
                                                         }
@@ -694,7 +694,7 @@ body > img{
                                                         }
                                                 }
                                                 &.step-1{
-                                                    
+
                                                 }
                                                 &.step-2{
                                                     .step-body{
@@ -765,7 +765,7 @@ body > img{
                                                                             }
 
                                                                     }
-                                                                            
+
                                                             }
                                                             .price-slider-wrapper{
                                                                 width: 100%;
@@ -829,7 +829,7 @@ body > img{
 
                                                 }
                                                 &.step-4{
-                                                    
+
                                                 }
                                                 &.step-5{
                                                     .step-body{
@@ -847,7 +847,7 @@ body > img{
                                                                         font-weight: bold;
                                                                     }
                                                             }
-                                                            
+
                                                     }
                                                 }
                                     }
@@ -859,6 +859,32 @@ body > img{
                             }
                     }
             }
-            
+
         }
+}
+
+.cart-dsc{
+    .spanH2{
+        display: block;
+        font-size: 1.5em;
+        -webkit-margin-before: 0.83em;
+        -webkit-margin-after: 0.83em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: 700;
+    }
+}
+
+.paymentInfo{
+    .infoCredit{
+        .spanH3{
+            display: block;
+            font-size: 1.17em;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
+    }
 }

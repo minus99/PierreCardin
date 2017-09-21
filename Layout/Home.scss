@@ -35,7 +35,7 @@
                                     text-align: center;
                                 }
                             }
-                        }    
+                        }
                     }
                     ul {
                         & li.image-holder{
@@ -91,6 +91,13 @@
                                         text-decoration: underline;
                                         color :$colorRed;
                                         letter-spacing: 2px;
+                                    }
+                                    span#spanH2 {
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                        text-decoration: underline;
+                                        color :$colorRed;
+                                        letter-spacing: 2px; 
                                     }
                                 }
                         }
@@ -187,7 +194,7 @@
             }
         }
     }
-}  
+}
 
 @media screen and (max-width: 960px){
 
@@ -242,7 +249,7 @@
             }
         }
     }
-}  
+}
 
 .instagram-gallery {
     .photo {
@@ -252,7 +259,7 @@
             }
         }
     }
-}  
+}
 
 }
 

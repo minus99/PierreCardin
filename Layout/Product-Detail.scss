@@ -48,9 +48,9 @@
                     margin-right: 15px;
                     margin-left: 15px;
                 }
-            }    
+            }
     }
-    
+
 }
 
 .urunDetay {
@@ -120,7 +120,7 @@
                             font-size: 22px;
                             color: #9e9e9e;
                         }
-                    }                 
+                    }
                  }
                  .items-wrapper{
                      .item{
@@ -181,21 +181,21 @@
                         }
 
                     }
-                
+
                 }
-                
+
                  ul{
-                    column-count: 3; 
-                    -webkit-column-count: 3; 
+                    column-count: 3;
+                    -webkit-column-count: 3;
                     -moz-column-count:3;
                     @media screen and (max-width: $mobileDevice){
                         column-count: 1;
-                        -webkit-column-count: 1; 
+                        -webkit-column-count: 1;
                         -moz-column-count:1;
                     }
                         li {
                         break-inside: avoid;
-                        -webkit-column-break-inside: avoid; 
+                        -webkit-column-break-inside: avoid;
                         -moz-column-break-inside:avoid;
                         display:table;
                             &:first-child {
@@ -222,6 +222,8 @@
                                     margin: 10px 0 0 0;
                                     position: relative;
                                     color:$colorDefault;
+                                    font-size:1.17em;
+                                    font-weight: 700;
                                      @media screen and (max-width: $mobileDevice){
                                     color: #000;
                                      }
@@ -238,7 +240,7 @@
                                     display: inline-block;
                                     width: 49%;
                                     margin-bottom: 0;
-                                    
+
                             }
                             &.urnTeslimat{
                                 .urnTeslimatBilgi{
@@ -248,7 +250,7 @@
                                     }
                                 }
                             }
-                            
+
                             .urnEditorNot{
                                 p{
                                     width: 75%;
@@ -302,7 +304,7 @@
             padding-left: 105px;
             @media screen and (max-width: $mobileDevice){
                 width: 100%;
-                padding:0 20px; 
+                padding:0 20px;
             }
                 &-inner{
                     width: 100%;
@@ -408,7 +410,7 @@
                                             display: inline-block;
                                             overflow: hidden;
                                             margin-right: 5px;
-                                            max-height: 30px; 
+                                            max-height: 30px;
                                             max-width: 30px;
                                             border-radius: 50%;
                                             border:2px solid transparent;
@@ -425,7 +427,7 @@
                                             }
                                         }
                                     }
-                                    
+
                                 }
                                 }
                                  @media screen and (max-width:$mobileDevice){
@@ -454,7 +456,7 @@
                                      @media screen and (max-width:$mobileDevice){
                                          padding: 20px;
                                      }
-                                    span { 
+                                    span {
                                     }
                                 }
                                table, tbody, tr, td, th, a{display: block !important;}
@@ -543,7 +545,7 @@
                                                 font-size: 7px;
                                                 padding: 4px 0;
                                             }
-                                        }   
+                                        }
                                         .dropdown-options {
                                             font-weight: 700;
                                             position: absolute;
@@ -555,7 +557,7 @@
                                             a{
                                                 .dropdownrow{
                                                     padding: 10px 20px;
-                                                    border-bottom:1px solid #d8d8d8; 
+                                                    border-bottom:1px solid #d8d8d8;
                                                 }
                                                 &.stokYok{
                                                     .dropdownrow{
@@ -653,7 +655,7 @@
                                 font-size:20px;
                                 left: calc(50% - 10px);
                             }
-                            
+
                         }
                         width: 33%;
                         display: inline-block;
@@ -706,7 +708,7 @@
                         &.show{
                             display: inline-block;
                         }
-                        
+
                     }
                     .lnkTaksitSecenek{
                         display: inline-block;
@@ -731,7 +733,7 @@
                             .urunDetay_urunAdet{
                                 display:none;
                             }
-                            
+
                          }
                          .urunDetay_btnStokHaberci{
                              margin-top: 40px;
@@ -741,10 +743,10 @@
                                  pointer-events: none;
                                  cursor: default;
                              }
-                             table, 
-                             table tbody, 
-                             table tbody tr, 
-                             table tbody tr td, 
+                             table,
+                             table tbody,
+                             table tbody tr,
+                             table tbody tr td,
                              table tbody tr th
                                 {display:block;
                                     a{

@@ -196,7 +196,7 @@ body{
                 transform: translateY(-50%);
                 margin: 0 auto;
                 text-align: center;
-                width: 32%; 
+                width: 32%;
                 @media screen and (max-width: 960px){
                     font-size: 14px;
                     width: 90%;
@@ -251,7 +251,7 @@ body{
             }
         }
     }
-    
+
     .historyWrp{
         display: block;
         width: 100%;
@@ -299,7 +299,7 @@ body{
                 }
 
             }
-            
+
             a.plyBtn{
                 display: block;
                 width: 102px;
@@ -406,7 +406,8 @@ body{
         border-right: 1px solid #e4e4e4;
         padding: 0 20px 0 40px;
         vertical-align: middle;
-        h4{
+        .spanH4{
+            display: block;
             font-size: 13px;
             font-weight: 700;
             color: #b70234;
@@ -814,7 +815,7 @@ input#ctl00_frmMain_ascTeslimatBilgi_ascAdresEkle_hdnAdrTip[value='1'] {
                             font-size: 12px;
                         }
                     }
-                }    
+                }
             }
         }
     }
@@ -835,8 +836,8 @@ input#ctl00_frmMain_ascTeslimatBilgi_ascAdresEkle_hdnAdrTip[value='1'] {
  /*
  * Mesaj Safası
  */
-.page-top-desc, 
-.pageDescDefault, 
+.page-top-desc,
+.pageDescDefault,
 .pageUyeBasarili_mesaj{
     font-size: 13px;
     padding-bottom: 34px;
@@ -997,7 +998,7 @@ input#ctl00_frmMain_ascTeslimatBilgi_ascAdresEkle_hdnAdrTip[value='1'] {
                 text-align: center;
                 color: #fff;
                 padding: 27px 0;
-                
+
             }
         }
     }
@@ -1321,8 +1322,8 @@ input#ctl00_frmMain_ascTeslimatBilgi_ascAdresEkle_hdnAdrTip[value='1'] {
 .pageSipIade {
     div[id$="sipHeader"] {
         > table:not(.gridSipDetayListe) * {
-                max-width: 300px; 
-                width: 100%; 
+                max-width: 300px;
+                width: 100%;
                 display: block;
         }
     }

@@ -88,12 +88,14 @@
                 display: none;
             }
             .member-menu {
-               h4 {
+               .spanH4 {
                    color: #000;
                    font-size: 32px;
                    font-family: $fontSite;
                    margin: 0 0 20px 0;
-               } 
+                   display: block;
+                   font-weight: 700;
+               }
                .dropdown {
                    > span {
                        font-weight: 700;
@@ -145,13 +147,13 @@
                             display: none;
                         }
                         th {
-                            display: block; 
+                            display: block;
                             width: 60px;
                             text-align: left;
                         }
                         td {
                             display: block;
-                            select, 
+                            select,
                             input {
                                 margin: 0;
                                 width: 100% !important;
@@ -179,14 +181,14 @@
                         }
                         span[id$="_lbfUYE_KONTROLKODU"],
                         img {
-                            order: 1; 
+                            order: 1;
                         }
-                        span[id$="_lbfUYE_KONTROLKODU"] { font-weight: bold; 
+                        span[id$="_lbfUYE_KONTROLKODU"] { font-weight: bold;
                             i{
                                 color:#b70234;
                             }
                         }
-                        img { margin: 20px 0px; } 
+                        img { margin: 20px 0px; }
                     }
                 }
             }
@@ -250,7 +252,7 @@
                                         td {
                                             display: inline-block;
                                             width: 300px;
-                                            select, 
+                                            select,
                                             input {
                                                 margin: 0;
                                                 width: 100% !important;
@@ -405,9 +407,9 @@
                             &.text {
                                .ems-form-label {
                                    > span {
-                                       
+
                                    }
-                               } 
+                               }
                                .ems-form-obj {
                                    input {
                                        outline: none;
@@ -442,7 +444,7 @@
                             }
                             &.select {
                                 .ems-form-label {
-                                    top: 5px; 
+                                    top: 5px;
                                     padding-left: 0;
                                     line-height: 15px;
                                     font-size: 12px;
@@ -623,7 +625,7 @@
                                             .sStylerMainWrp {
                                                 .sStylerWrp {
                                                     display: none;
-                                                }    
+                                                }
                                                 select {
                                                     opacity: 1 !important;
                                                     margin: 0;
@@ -641,7 +643,7 @@
                                         }
                                     }
                                 }
-                                
+
                                 &.ems-grid-piece {
                                     display: none;
                                 }
@@ -719,7 +721,7 @@
                     width: 100%;
                     display: block;
                     margin-bottom:20px;
-                    
+
                     a {
                         &:after {
                             content: 'YENİ MESAJ GÖNDER';
@@ -1185,7 +1187,7 @@
                             a {
                                 font-weight: 700;
                                 color: #000;
-                            }    
+                            }
                         }
                     }
                 }
@@ -1210,7 +1212,7 @@
                     a {
                         display: block;
                         span {
-                           color: #9e9e9e; 
+                           color: #9e9e9e;
                            letter-spacing: 1px;
                         }
                         i {
@@ -1251,7 +1253,7 @@
                 .tabBtnAdimSepet {
                     a {
                         span {
-                            
+
                         }
                         i {
                             &:before {
@@ -1279,7 +1281,7 @@
                 .tabBtnAdimTeslimat {
                     a {
                         span {
-                            
+
                         }
                         i {
                             &:before {
@@ -1307,7 +1309,7 @@
                 .tabBtnAdimOdeme {
                     a {
                         span {
-                            
+
                         }
                         i {
                             &:before {
@@ -1618,7 +1620,7 @@
                         > input {
                             width: 100% !important;
                             border: 1px solid #e4e4e4;
-                            padding-left: 5px; 
+                            padding-left: 5px;
                             margin: 0;
                             padding: 5px 70px 5px 5px;
                         }
@@ -1663,7 +1665,7 @@
                        .btnSiparisTamamla {
                            @extend .red;
                            width: 100%;
-                       } 
+                       }
                     }
                 }
             }
@@ -1707,7 +1709,7 @@
                     width: 100%;
                     .ems-cart-summary {
                         padding: 30px;
-                        border: 1px solid #e4e4e4;    
+                        border: 1px solid #e4e4e4;
                     }
                     .top-step {
                         > span {
@@ -1758,7 +1760,7 @@
                             }
                         }
                     }
-                } 
+                }
             }
             max-width: 100%;
             width: 1200px;
@@ -1803,7 +1805,7 @@
                                         > span {
                                             display: none;
                                         }
-                                    }    
+                                    }
                                 }
                                 .ems-address {
                                     font-size: 12px;
@@ -1820,7 +1822,7 @@
                                     font-weight: 700;
                                     color: #000 !important;
                                     text-transform: uppercase;
-                                }   
+                                }
                                 .btnAdresListeSil {
                                     @extend .btnDefault-text;
                                     color: $colorDefault !important;
@@ -1944,7 +1946,7 @@
                             &:before {
                                 content: '+';
                                 display: inline-block;
-                                padding-right: 5px; 
+                                padding-right: 5px;
                             }
                         }
                     }
@@ -2069,8 +2071,8 @@
                                                         background-color: $colorRed;;
                                                         position: absolute;
                                                         left: 0;
-                                                        top: 0;     
-                                                    } 
+                                                        top: 0;
+                                                    }
                                                     &:after {
                                                         content: '';
                                                     }
@@ -2085,7 +2087,7 @@
                                             }
                                         }
                                         &:after {
-                                            
+
                                         }
                                     }
                                     select{
@@ -2436,7 +2438,7 @@
                                 a {
                                     span {
                                         color: #000;
-                                        font-weight: 700; 
+                                        font-weight: 700;
                                     }
                                 }
                                 a:hover{
@@ -2668,7 +2670,7 @@
                                     > * {
                                         > span {
                                             display: block;
-                                            margin: 2px 0;       
+                                            margin: 2px 0;
                                         }
                                     }
                                     th {
@@ -2713,7 +2715,7 @@
                     }
                     .ems-delivery-address-obj {
                         padding: 30px;
-                        border: 1px solid #e4e4e4;    
+                        border: 1px solid #e4e4e4;
                         span {
                             font-size: 12px;
                             color: #9e9e9e;
@@ -2768,7 +2770,7 @@
                     &.opened {
                         .onBilgilendirmeFormMetin {
                             display: block;
-                        }    
+                        }
                     }
                 }
                 .siparisOnaySozlesme {
@@ -2810,7 +2812,7 @@
                     &.opened {
                         .siparisOnaySozlesmeMetin {
                             display: block;
-                        }    
+                        }
                     }
                 }
                 .btnSiparisOnay {
@@ -2823,7 +2825,7 @@
                     font-size: 12px;
                     margin-top: 15px;
                 }
-                
+
             }
         }
     }
@@ -2888,7 +2890,7 @@
             font-family: $fontSite;
             font-size: 24px;
             letter-spacing: -1px;
-            
+
         }
         p {
             line-height: 24px;
@@ -3077,7 +3079,7 @@
                 }
             }
         }
-    }   
+    }
     .licensors-column-right {
         width: calc(100% - 200px);
         padding-left:20px;
@@ -3136,7 +3138,7 @@
                 }
             }
         }
-    }    
+    }
 
 }
 
@@ -3217,7 +3219,7 @@
                                     &:before {
                                         background-color: $colorRed;
                                         border: 3px solid #fff;
-                                    } 
+                                    }
                                 }
                             }
                             .item-img {
@@ -3251,7 +3253,7 @@
                                     &:before {
                                         background-color: $colorRed;
                                         border: 3px solid #fff;
-                                    } 
+                                    }
                                 }
                             }
                             .item-img {
@@ -3286,7 +3288,7 @@
 }
 
 .aydinli-group-holder {
-    padding: 40px 20px; 
+    padding: 40px 20px;
     .aydinli-group-column-left {
         display: inline-block;
         vertical-align: top;
@@ -3422,7 +3424,7 @@
                         }
                     }
                 }
-            }  
+            }
             .mod-service-list-body {
                 .servisIcerik {
                     .servis_bilgi {
@@ -3447,16 +3449,16 @@
                             text-transform: uppercase;
                             cursor: pointer;
                             &:hover {
-                                font-weight: 700;    
+                                font-weight: 700;
                             }
                             &:not(.divServisListe_FirmaAdi) {
                                 display: none;
                             }
                         }
-                    }    
+                    }
                 }
-            }  
-        }    
+            }
+        }
         .address-detail {
             background-color: #f8f8f8;
             padding: 60px;
@@ -3467,7 +3469,7 @@
             @at-root .address-detail-show {
                 .address-detail {
                     visibility: visible !important;
-                }    
+                }
             }
             .address-detail-inner {
                 .back-btn {
@@ -3499,7 +3501,7 @@
                         }
                         .phone {
                             span {
-                                color: #757575;    
+                                color: #757575;
                             }
                         }
                         > a {
@@ -3521,7 +3523,7 @@
                 }
             }
         }
-    }    
+    }
 }
 
 .customer-service-holder {
@@ -4130,7 +4132,7 @@ div[id$="pnlSiparisBaslik"] {
                             }
                         }
                     }
-                } 
+                }
                 .ems-page-member-password {
                     .ems-form {
                         .ems-form-inner {
@@ -4140,7 +4142,7 @@ div[id$="pnlSiparisBaslik"] {
                             }
                         }
                     }
-                } 
+                }
                 .ems-page-member-order-detail {
                     .order-detail-info {
                         padding: 0;
@@ -4159,7 +4161,7 @@ div[id$="pnlSiparisBaslik"] {
                     }
                     }
                     .inner-title {
-                    display: none; 
+                    display: none;
                     }
                     .ems-grid-order-products {
                         margin-top: 20px;
@@ -4175,7 +4177,7 @@ div[id$="pnlSiparisBaslik"] {
                         .ems-form-inner {
                             .row {
                                 max-width: 100%;
-                                .ems-field {                            
+                                .ems-field {
                                     .ems-form-obj {
                                         input {
                                             font-weight: 700;
@@ -4250,7 +4252,7 @@ div[id$="pnlSiparisBaslik"] {
                                             }
                                             &.ems-grid-name {
                                                 a {
-                                                    color: #000;    
+                                                    color: #000;
                                                 }
                                             }
                                             &.ems-grid-option1 {
@@ -4307,7 +4309,7 @@ div[id$="pnlSiparisBaslik"] {
                                         font-size: 14px;
                                         width: 100%;
                                         span {
-                                            
+
                                         }
                                     }
                                 }
@@ -4357,7 +4359,7 @@ div[id$="pnlSiparisBaslik"] {
             table {
                 td {
                     span {
-                        white-space: normal; 
+                        white-space: normal;
                     }
                 }
             }
@@ -4382,7 +4384,7 @@ div[id$="pnlSiparisBaslik"] {
                             }
                         }
                         .ems-grid-piece {
-                            
+
                         }
                         .ems-grid-price-total {
                             width: 100%;
@@ -4457,7 +4459,7 @@ div[id$="pnlSiparisBaslik"] {
                                 > a {
                                     display: block;
                                     text-align: left;
-                                }    
+                                }
                             }
                         }
                     }
@@ -4465,12 +4467,12 @@ div[id$="pnlSiparisBaslik"] {
                 .add-new-address {
                     right: 20px;
                 }
-            }    
+            }
         }
         &.step1 {
             .ems-page-order-cart {
                 width: 100%;
-            }    
+            }
         }
     }
     #validateUye {
@@ -4493,7 +4495,7 @@ div[id$="pnlSiparisBaslik"] {
                                     .ems-field {
                                         max-width: 100%;
                                     }
-                                }    
+                                }
                             }
                         }
                     }
@@ -4618,7 +4620,7 @@ div[id$="pnlSiparisBaslik"] {
                     display: none;
                 }
             }
-        } 
+        }
     }
     .corporate-holder {
         .corporate-main-image {
@@ -4748,7 +4750,7 @@ div[id$="pnlSiparisBaslik"] {
                     .sStylerWrp {
                         .sStyler {
                             display: none;
-                        }                        
+                        }
                     }
                     .sSelect {
                         display: block;
@@ -4954,7 +4956,7 @@ div[id$="pnlSiparisBaslik"] {
                 .ems-page-member-order-detail {
                     .ems-grid-order-products {
                         .ems-grid-row {
-                            .ems-grid-group { 
+                            .ems-grid-group {
                                 .ems-grid-img {
                                     width: 40%;
                                 }
@@ -4973,10 +4975,10 @@ div[id$="pnlSiparisBaslik"] {
                 }
             }
         }
-    }      
-    
+    }
+
 }
-.ems-page-member{ 
+.ems-page-member{
     .backPage {
         display: none;
         padding: 0px 0 20px 0;
