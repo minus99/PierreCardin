@@ -1,0 +1,33 @@
+// General Definations
+$baseHref: '';
+
+// Typography
+$fontIcon: "icomoon";
+$fontDefault: "roboto";
+$fontSite: "csm";
+$fontSizeDefault: 14px;
+
+// Colors
+$colorWhite: #fff;
+$colorDefault: #616161;
+$colorRed: #b70234;
+$colorBlue: #1565c0;
+$colorCyan: #00bfa5; 
+
+// Layout
+$siteContainerWidth: 1200px;
+$siteContainerWidthFull: 1200px;
+$mobileDevice: 960px;
+
+// Language
+$lang_sepetim-TR:'Sepetim';
+
+// Text Colors
+.text{
+    &-cyan{color: $colorCyan;}
+    &-red{color: $colorRed;}
+    &-blue{color: $colorBlue;}
+}
+
+// General Width
+.maxW{width: 100%; max-width: 1200px; margin: 0 auto;}

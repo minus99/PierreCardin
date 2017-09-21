@@ -1,0 +1,864 @@
+body > img{
+    display: none;
+}
+.style-advisor-wrapper{ 
+    width: 100%;
+    position: relative;
+    border-bottom:5px solid #b70234;
+        .style-advisor{
+            article{
+                position: relative;
+                width: 100%;
+                height: auto;
+                    &.home-step{
+                        .big-banner{
+                            background-attachment: fixed;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            position: relative;
+                            width: 100%;
+                            height: calc(100vh - 160px);
+                                & > a.scroll-down{
+                                    position: absolute;
+                                    left: 50%;
+                                    bottom: 30px;
+                                    width: 66px;
+                                    height: 66px;
+                                    text-align: center;
+                                    line-height: 64px;
+                                    padding: 0;
+                                    margin-left: -33px;
+                                }
+                                .text-wrapper{
+                                    position: absolute;
+                                    left: 50%;
+                                    top: 50%;
+                                    @include setTransform(translate(-50%,-50%));
+                                    text-align: center;
+                                    width: 100%;
+                                        h1{
+                                            font-size: 66px;
+                                            letter-spacing: -3.3px;
+                                            color: #fff;
+                                            font-family: $fontSite;
+                                            margin: 0;
+                                        }
+                                        .btn-group{
+                                            width: 100%;
+                                            text-align: center;
+                                            display: inline-block;
+                                            vertical-align: top;
+                                            margin-top: 90px;
+                                                a{
+                                                    display: inline-block;
+                                                    width: 100%;
+                                                    max-width: 285px;
+                                                    margin: 0 10px;
+                                                }
+                                        }
+                                }
+                                @media screen and (max-width:$mobileDevice){
+                                    background: none !important;
+                                    height: auto;
+                                        & > a.scroll-down{
+                                            display: none;
+                                        }
+                                        .text-wrapper{
+                                            @include setTransform(none);
+                                            left: inherit;
+                                            top: 0;
+                                            bottom: 30px;
+                                            left: 5px;
+                                            right: 5px;
+                                            width: auto;
+                                                h1{
+                                                    font-size: 34px;
+                                                    letter-spacing: -1px;
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    left: 50%;
+                                                    top: 50%;
+                                                    @include setTransform(translate(-50%,-50%));
+                                                }
+                                                .btn-group{
+                                                    position: absolute;
+                                                    bottom: 0;
+                                                    width: 100%;
+                                                    left: 0;
+                                                        a{
+                                                            max-width: 182px;
+                                                            font-size: 12px;
+                                                            font-weight: bold;
+                                                            padding: 11px 5px;
+                                                            margin: 0;
+                                                                &:first-child{
+                                                                    margin-right: 15px;
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+                                @media screen and (max-width:400px){
+
+                                }
+                        }
+                        .how-to-work{
+                            padding: 75px 0;
+                            text-align: center;
+                                .htw-head{
+                                    width: 100%;
+                                    max-width: 700px;
+                                    padding: 0 15px;
+                                    margin: 0 auto 75px auto;
+                                        h2{
+                                            font-family: $fontSite;
+                                            font-size: 50px;
+                                            line-height: 57px;
+                                            letter-spacing: -2px;
+                                            color: #000;
+                                            margin: 0;
+                                        }
+                                        p{
+                                            font-size: 18px;
+                                            margin: 25px 0 0 0;
+                                            display: block;
+                                            width: 100%;
+                                            line-height: 25px;
+                                            color: #4a4a4a;
+                                        }
+                                }
+                                .htw-body{
+                                    width: 100%;
+                                        & > ul{
+                                            display: inline-block;
+                                            vertical-align: top;
+                                            width: 100%;
+                                                & > li{
+                                                    display: inline-block;
+                                                    vertical-align: top;
+                                                    width: 33.33%;
+                                                    padding: 0 25px;
+                                                        .inner{
+                                                            position: relative;
+                                                            width: 100%;
+                                                                .icon-wrap{
+                                                                    display: inline-block;
+                                                                    vertical-align: top;
+                                                                    width: 100%;
+                                                                        i{
+                                                                            display: inline-block;
+                                                                            vertical-align: middle;
+                                                                            width: 75px;
+                                                                            height: 75px;
+                                                                            line-height: 71px;
+                                                                            font-size: 40px;
+                                                                            color: $colorRed;
+                                                                            border: 2px solid $colorRed;
+                                                                            border-radius: 50%;
+                                                                            overflow: hidden;
+                                                                                b{
+                                                                                    display: none;
+                                                                                }
+                                                                        }
+                                                                }
+                                                                .text-wrap{
+                                                                    display: inline-block;
+                                                                    vertical-align: top;
+                                                                    width: 100%;
+                                                                    margin-top: 20px;
+                                                                        b{
+                                                                            display: block;
+                                                                            width: 100%;
+                                                                            text-align: center;
+                                                                            font-size: 32px;
+                                                                            font-family: $fontSite;
+                                                                            letter-spacing: -0.9px;
+                                                                            color: #000;
+                                                                            margin-bottom: 10px;
+                                                                        }
+                                                                        span{
+                                                                            font-size: 14px;
+                                                                            color: #4a4a4a;
+                                                                            line-height: 25px;
+                                                                            display: block;
+                                                                        }
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+                                @media screen and (max-width:$mobileDevice){
+                                    padding: 30px 0;
+                                        .htw-head{
+                                            h2{
+                                                font-size: 28px;
+                                                line-height: 1.3;
+                                                letter-spacing: -1.1px;
+                                            }
+                                            p{
+                                                font-size: 14px;
+                                                margin-top: 10px;
+                                            }
+                                        }
+                                        .htw-body{
+                                            padding: 0 30px;
+                                                & > ul{
+                                                    & > li{
+                                                        width: 100%;
+                                                        margin-bottom: 60px;
+                                                            .inner{
+                                                                .text-wrap{
+                                                                    b{
+                                                                        font-size: 28px;
+                                                                        letter-spacing: -1.1px;
+                                                                    }
+                                                                }
+                                                            }
+                                                    }
+                                                }
+                                        }
+                                }
+                        }
+                        .lets-go{
+                            background: #f8f8f8;
+                            padding: 70px 0;
+                            text-align: center;
+                                h3{
+                                    font-family: $fontSite;
+                                    font-size: 32px;
+                                    line-height: 57px;
+                                    letter-spacing: -0.9px;
+                                    color: #000;
+                                    width: 100%;
+                                    max-width: 490px;
+                                    margin: 0 auto;
+                                }
+                                p{
+                                    display: block;
+                                    width: 100%;
+                                    max-width: 490px;
+                                    margin: 0 auto;
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                    color: #616161;
+                                }
+                                a{
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    width: 100%;
+                                    margin-top: 35px;
+                                    max-width: 285px;
+                                }
+                                @media screen and (max-width:$mobileDevice){
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+                                        h3{
+                                            font-size: 28px;
+                                            letter-spacing: -1.1px;
+                                        }
+                                }
+                        }
+                    }
+                    &.styler-step{
+                        position: relative;
+                        width: 100%;
+                        padding: 80px 0 0 0;
+                            .styler-step-header{
+                                position: relative;
+                                text-align: center;
+                                margin-bottom: 40px;
+                                    ul.list{
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        width: 100%;
+                                        max-width: 1100px;
+                                        padding: 0 15px;
+                                            & > li{
+                                                float: left;
+                                                width: calc(100% / 6);
+                                                text-align: center;
+                                                position: relative;
+                                                padding-bottom: 40px;
+                                                    &:before{
+                                                        content:'';
+                                                        position: absolute;
+                                                        width: 100%;
+                                                        height: 2px;
+                                                        background: #e4e4e4;
+                                                        bottom: 7px;
+                                                        left: 0;
+                                                        z-index:4; 
+                                                    }
+                                                    &:after{
+                                                        content:'';
+                                                        position: absolute;
+                                                        width: 12px;
+                                                        height: 12px;
+                                                        border: 2px solid #e4e4e4;
+                                                        border-radius: 50%;
+                                                        background: #fff;
+                                                        bottom: 0;
+                                                        left: 50%;
+                                                        margin-left: -6px;
+                                                        z-index: 5;
+                                                        @include transition(all 0.2s ease);
+                                                    }
+
+                                                    a{
+                                                        color: #929292;
+                                                        font-size: 14px;
+                                                        letter-spacing: 1px;                                                            
+                                                    }
+                                                    &:first-child{
+                                                       &:before{
+                                                            width: 50%;
+                                                            left: inherit;
+                                                            right: 0;
+                                                        }
+                                                    }
+                                                    &:last-child{
+                                                        &:before{
+                                                            width: 50%;
+                                                        }
+                                                    }
+                                                    &.selected{
+                                                        & > a{
+                                                            color: $colorRed;
+                                                            font-weight: 700;
+                                                        }
+                                                        &:after{
+                                                            border-color: $colorRed;
+                                                            background: $colorRed;
+                                                        }
+                                                        & + li.selected a:before {
+                                                            width:100%
+                                                        }
+                                                    }
+                                                    & > a:before {
+                                                        content: '';
+                                                        position: absolute;
+                                                        width: 0;
+                                                        height: 2px;
+                                                        background: #b70133;
+                                                        bottom: 7px;
+                                                        left: -50%;
+                                                        z-index: 4;
+                                                        @include transition(width 0.2s ease);
+                                                    }
+                                                    &:first-child a:before {
+                                                        display:none;
+                                                    }
+                                            }
+                                    }
+                            }
+                            
+                            @media screen and (max-width:$mobileDevice){
+                                padding: 30px 0 0 0;
+                                    .styler-step-header{
+                                            ul.list > li > a > span{
+                                                display: none;
+                                            }
+                                            .selected-head{
+                                                color: $colorRed;
+                                                font-size: 16px;
+                                                letter-spacing: 1.1px;
+                                                font-weight: bold;
+                                                margin-bottom: 30px;
+                                            }
+                                    }
+                            }
+                            .styler-step-body{
+                                width: 100%;
+                                height: auto;
+                                    & > section{
+                                        position: relative;
+                                        width: 100%;
+                                            &:not(.step-5) {
+                                                li.selected {
+                                                    > a {
+                                                        .img-wrap {
+                                                            &:before {
+                                                                content: '';
+                                                                display: block;
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                background: rgba(0, 0, 0, 0.2);
+                                                                position: absolute;
+                                                                top: 0;
+                                                                bottom: 0;
+                                                                z-index: 2;
+                                                            }
+                                                            &:after {
+                                                                content: $icon-tick-big;
+                                                                font-family: $fontIcon;
+                                                                font-size: 34px;
+                                                                position: absolute;
+                                                                left: 50%;
+                                                                top: 50%;
+                                                                color: #fff;
+                                                                z-index: 9;
+                                                                margin-left: -22.5px;
+                                                                margin-top: -17px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                                .step-header{
+                                                    position: relative;
+                                                    width: 100%;
+                                                    text-align: center;
+                                                        h5{
+                                                            font-size: 32px;
+                                                            color: #000;
+                                                            letter-spacing: -0.9px;
+                                                            font-family: $fontSite;
+                                                            margin: 0;
+                                                        }
+                                                        p{
+                                                            display: block;
+                                                            margin: 13px auto 0 auto;
+                                                            width: 100%;
+                                                            max-width: 550px;
+                                                            font-size: 14px;
+                                                            color: #616161;
+                                                        }
+                                                        @media screen and (max-width:$mobileDevice){
+                                                            h5{
+                                                                font-size: 28px;
+                                                                letter-spacing: -1.1px;
+                                                            }
+                                                            p{
+                                                                line-height: 1.4;
+                                                            }
+                                                        }
+                                                }
+                                                .step-body{
+                                                    display: inline-block;
+                                                    vertical-align: top;
+                                                    width: 100%;
+                                                    height: auto;
+                                                    padding: 50px 150px;
+                                                        @media screen and (max-width:$mobileDevice){
+                                                            padding: 30px 0;
+                                                        }
+                                                }
+                                                .step-footer{
+                                                    width: 100%;
+                                                    background: #f8f8f8;
+                                                    padding: 25px;
+                                                    display: inline-block;
+                                                    vertical-align: top;
+                                                    text-align: right;
+                                                        a{
+                                                            display: inline-block;
+                                                            vertical-align: top;
+                                                            width: initial;
+                                                        }
+                                                        @media screen and (max-width:$mobileDevice){
+                                                            padding: 0;
+                                                            text-align: center;
+                                                                a{
+                                                                    width: 100%;
+                                                                    padding: 19px 10px;
+                                                                }
+                                                        }
+                                                }
+                                                .step-item-list{
+                                                    display: inline-block;
+                                                    width: 100%;
+                                                    vertical-align: top;
+                                                    text-align: center;
+                                                        & > li{
+                                                            display: inline-block;
+                                                            vertical-align: top;
+                                                            width: 20%;
+                                                                a{
+                                                                    position: relative;
+                                                                    width: 100%;
+                                                                    height: auto;
+                                                                    padding: 3px;
+                                                                    display: block;
+                                                                    border:2px solid transparent;
+                                                                        .img-wrap{
+                                                                            position: relative;
+                                                                            width: 100%;
+                                                                            height: auto;
+                                                                            overflow: hidden;
+                                                                                img{
+                                                                                    width: 100%;
+                                                                                    height: auto;
+                                                                                    max-width: none;
+                                                                                    border: none;
+                                                                                    padding: 0;
+                                                                                    margin: 0;
+                                                                                    display: inline-block;
+                                                                                    vertical-align: top;
+                                                                                }
+                                                                        }
+                                                                        .text-wrap{
+                                                                            position: absolute;
+                                                                            width: 100%;
+                                                                            padding: 0 20px 15px 20px;
+                                                                            display: block;
+                                                                            bottom: 5px;
+                                                                            left: 0;
+                                                                            text-align: center;
+                                                                                span{
+                                                                                    color: #ffF;
+                                                                                    font-weight: 900;
+                                                                                    font-size: 14px;
+                                                                                    letter-spacing: 1px;
+                                                                                    line-height: 19px;
+                                                                                }
+                                                                        }
+                                                                }
+                                                                @media screen and (max-width:$mobileDevice){
+                                                                    width: 25%;
+                                                                }
+                                                                @media screen and (max-width:760px){
+                                                                    width: 33.33%;
+                                                                }
+                                                                @media screen and (max-width:600px){
+                                                                    width: 50%;
+                                                                }
+                                                        }
+                                                        &.type-2{
+                                                            & > li{
+                                                                a{
+                                                                    .text-wrap{
+                                                                        position: static;
+                                                                        bottom: inherit;
+                                                                        left: inherit;
+                                                                        padding: 15px 20px 0 20px;
+                                                                            span{
+                                                                                color: #000;
+                                                                            }
+                                                                    }
+                                                                }
+                                                                &.selected{
+                                                                    .img-wrap:after{
+                                                                        content:'';
+                                                                        width: 170%;
+                                                                        height: 10px;
+                                                                        display: block;
+                                                                        background: #fff;
+                                                                        position: absolute;
+                                                                        left: 50%;
+                                                                        top: 48%;
+                                                                        z-index: 3;
+                                                                        transform: translateX(-50%) rotate(53deg);
+                                                                        -moz-transform: translateX(-50%) rotate(53deg);
+                                                                        -ms-transform: translateX(-50%) rotate(53deg);
+                                                                        -o-transform: translateX(-50%) rotate(53deg);
+                                                                        -webkit-transform: translateX(-50%) rotate(53deg);
+                                                                    }
+                                                                    .img-wrap:before{
+                                                                        content:'';
+                                                                        display: block;
+                                                                        width: 100%;
+                                                                        height: 100%;
+                                                                        background: rgba(0, 0, 0, 0.2);
+                                                                        position: absolute;
+                                                                        top: 0;
+                                                                        bottom: 0;
+                                                                        z-index: 2;
+                                                                    }
+                                                                    
+                                                                }
+                                                            }
+                                                        }
+                                                }
+                                                .step-color-list{
+                                                    display: inline-block;
+                                                    vertical-align: top;
+                                                    width: 100%;
+                                                    max-width: 600px;
+                                                    text-align: center;
+                                                        & > li{
+                                                            display: inline-block;
+                                                            vertical-align: top;
+                                                            width: 20%;
+                                                            padding: 25px 30px;
+                                                                @media screen and (max-width:$mobileDevice){
+                                                                    width: 33.33%;
+                                                                }
+                                                                a{
+                                                                    display: block;
+                                                                    width: 100%;
+                                                                    height: auto;
+                                                                }
+                                                                .color{
+                                                                    display: inline-block;
+                                                                    width: 60px;
+                                                                    height: 60px;
+                                                                    vertical-align: top;
+                                                                    margin-bottom: 15px;
+                                                                    border-radius: 50%;
+                                                                    position: relative;
+                                                                    overflow: hidden;
+                                                                        &-siyah{background-color: #424242;}
+                                                                        &-kahverengi{background-color: #c1a480;}
+                                                                        &-beyaz{background-color: #fff;border: 1px solid #979797;}
+                                                                        &-mavi{background-color: #2196f3;}
+                                                                        &-yesil{background-color: #15c060;}
+                                                                        &-turuncu{background-color: #ff8f00;}
+                                                                        &-sari{background-color: #ffdd00;}
+                                                                        &-pembe{background-color: #ff5476;}
+                                                                        &-mor{background-color: #8a249d;}
+                                                                        &-kirmizi{background-color: #ff1744;}
+                                                                }
+                                                                .text-wrap{
+                                                                    color: #616161;
+                                                                    font-size: 14px;
+                                                                }
+                                                                &.selected{
+                                                                    .color{
+                                                                        &:after{
+                                                                            content:'';
+                                                                            width: 170%;
+                                                                            height: 5px;
+                                                                            display: block;
+                                                                            background: #fff;
+                                                                            position: absolute;
+                                                                            left: 50%;
+                                                                            top: 48%;
+                                                                            z-index: 3;
+                                                                            transform: translateX(-50%) rotate(53deg);
+                                                                            -moz-transform: translateX(-50%) rotate(53deg);
+                                                                            -ms-transform: translateX(-50%) rotate(53deg);
+                                                                            -o-transform: translateX(-50%) rotate(53deg);
+                                                                            -webkit-transform: translateX(-50%) rotate(53deg);
+                                                                        }
+                                                                    }
+                                                                }
+                                                        }
+                                                }
+                                                .ems-form{
+                                                    margin: 0 auto;
+                                                    width: 100%;
+                                                    max-width: 350px;
+                                                    .ems-form-inner{
+                                                            .row,
+                                                            .ems-field{
+                                                                max-width: none;
+                                                            }
+                                                            .row{
+                                                                margin-bottom: 35px;
+                                                                    .ems-field{
+                                                                        .ems-form-label{
+                                                                            font-size: 11px;
+                                                                            font-weight: bold;
+                                                                            color: #9e9e9e;
+                                                                            letter-spacing: 1px;
+                                                                            top: 5px;
+                                                                            padding-left: 0;
+                                                                            line-height: 15px;
+                                                                        }
+                                                                        &.select{
+                                                                            select{
+                                                                                font-size: 14px;
+                                                                                color: #616161;
+                                                                                font-weight: bold;
+                                                                            }
+                                                                        }
+                                                                        &.textarea{
+                                                                            textarea{
+                                                                                background: none;
+                                                                                border: 1px solid #9e9e9e;
+                                                                                padding: 15px;
+                                                                                font-size: 14px;
+                                                                                color: #9e9e9e;
+                                                                                height: 160px;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                            }
+                                                    }
+                                                }
+                                                &.step-0{
+                                                    text-align: center;
+                                                        .step-body{
+                                                            padding: 50px 0;
+                                                            max-width: 320px;
+                                                            margin: 0 auto;
+                                                                .seperator{
+                                                                    margin: 30px 0;
+                                                                    width: 100%;
+                                                                    text-align: center;
+                                                                    color: #616161;
+                                                                    font-size: 16px;
+                                                                    font-weight: 600;
+                                                                }
+                                                        }
+                                                }
+                                                &.step-1{
+                                                    
+                                                }
+                                                &.step-2{
+                                                    .step-body{
+                                                        max-width: 350px;
+                                                        margin: 0 auto;
+                                                        display: block;
+                                                        width: 100%;
+                                                        padding: 50px 0;
+                                                        position: relative;
+                                                            .price-slider-control{
+                                                                position: relative;
+                                                                width: 100%;
+                                                                height: 35px;
+                                                                margin-bottom: 40px;
+                                                                    &:after{
+                                                                        content:'';
+                                                                        position: absolute;
+                                                                        left: 17px;
+                                                                        right: 17px;
+                                                                        height: 3px;
+                                                                        background: #e4e4e4;
+                                                                        display: block;
+                                                                        z-index: 0;
+                                                                        top: 50%;
+                                                                        margin-top: -1.5px;
+                                                                    }
+                                                                    a{
+                                                                        display: block;
+                                                                        width: 35px;
+                                                                        height: 35px;
+                                                                        position: absolute;
+                                                                        top: 0;
+                                                                        z-index: 2;
+                                                                        border: 2px solid #e4e4e4;
+                                                                        border-radius: 50%;
+                                                                        background: #fff;
+                                                                        text-align: center;
+                                                                        line-height: 35px;
+                                                                        font-weight: 400;
+                                                                        font-size: 14px;
+                                                                        color: #9e9e9e;
+                                                                            i{
+                                                                                width: 8px;
+                                                                                height: 13px;
+                                                                                display: inline-block;
+                                                                                vertical-align: top;
+                                                                                margin: 9px auto;
+                                                                                overflow: hidden;
+                                                                                font-weight: 400;
+                                                                            }
+                                                                            &.price-first-checked{
+                                                                                left: 0;
+                                                                            }
+                                                                            &.price-second-checked{
+                                                                                left: 50%;
+                                                                                margin-left: -17.5px;
+                                                                            }
+                                                                            &.price-last-checked{
+                                                                                right: 0;
+                                                                            }
+                                                                            &:hover{
+                                                                                color: $colorRed;
+                                                                            }
+                                                                            &.selected{
+                                                                                background: $colorRed;
+                                                                                border-color: $colorRed;
+                                                                                color: #fff;
+                                                                            }
+
+                                                                    }
+                                                                            
+                                                            }
+                                                            .price-slider-wrapper{
+                                                                width: 100%;
+                                                                height: auto;
+                                                                    .price-slider{
+                                                                        position: relative;
+                                                                        width: 100%;
+                                                                        margin-bottom: 20px;
+                                                                        padding-right: 50px;
+                                                                            label{
+                                                                                display: block;
+                                                                                width: 100%;
+                                                                                margin-bottom: 20px;
+                                                                                font-size: 14px;
+                                                                                color: #616161;
+                                                                            }
+                                                                            .slider-bar{
+                                                                                width: 100%;
+                                                                                height: 14px;
+                                                                                    > span{
+                                                                                        position: absolute;
+                                                                                        right: 0;
+                                                                                        bottom: 0;
+                                                                                        height: 14px;
+                                                                                        width: 28px;
+                                                                                        font-size: 14px;
+                                                                                        color: #616161;
+                                                                                    }
+                                                                                    .slider-ui{
+                                                                                        width: 100%;
+                                                                                        height: 14px;
+                                                                                        position: relative;
+                                                                                        display: block;
+                                                                                            &:after{
+                                                                                                content:'';
+                                                                                                position: absolute;
+                                                                                                width: 100%;
+                                                                                                height: 3px;
+                                                                                                display: block;
+                                                                                                left: 0;
+                                                                                                top: 5.5px;
+                                                                                                background: #e4e4e4;
+                                                                                            }
+                                                                                            span{
+                                                                                                display: block;
+                                                                                                width: 14px;
+                                                                                                height: 14px;
+                                                                                                background: $colorRed;
+                                                                                                border-radius: 50%;
+                                                                                                position: absolute;
+                                                                                                z-index: 5;
+                                                                                            }
+                                                                                    }
+                                                                            }
+
+                                                                    }
+                                                            }
+                                                    }
+                                                }
+                                                &.step-3{
+
+                                                }
+                                                &.step-4{
+                                                    
+                                                }
+                                                &.step-5{
+                                                    .step-body{
+                                                        text-align: center;
+                                                            .btn-wrap{
+                                                                display: block;
+                                                                width: 100%;
+                                                                margin-top: 25px;
+                                                                    a.btn{
+                                                                        display: block;
+                                                                        margin: 0 auto;
+                                                                        max-width: 210px;
+                                                                        font-size: 14px;
+                                                                        letter-spacing: 0.9px;
+                                                                        font-weight: bold;
+                                                                    }
+                                                            }
+                                                            
+                                                    }
+                                                }
+                                    }
+                                    @media screen and (max-width:$mobileDevice){
+                                        .maxW{
+                                            padding: 0 40px;
+                                        }
+                                    }
+                            }
+                    }
+            }
+            
+        }
+}

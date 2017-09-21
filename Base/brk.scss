@@ -1,0 +1,4993 @@
+.ems-page-new-address {
+    .page-top-title {
+        display: none;
+    }
+    .pageErrorAdresListe {
+        text-align: center;
+        display: block;
+        margin-top: 25px;
+        > span {
+            color: $colorRed;
+            font-weight: 700;
+        }
+    }
+    .ems-form {
+        .ems-form-inner {
+            display: inline-block;
+            .ems-address-type {
+                border-bottom: 1px solid #e4e4e4;
+                padding: 15px 0;
+                .ems-form-label {
+                    display: none;
+                }
+                .ems-form-obj {
+                    a {
+                        color: $colorDefault;
+                        padding: 10px 0;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        &.emos_selected {
+                            color: $colorRed;
+                            font-weight: 700;
+                        }
+                        &:first-child {
+                            margin-right: 50px;
+                        }
+                    }
+                }
+            }
+            .row {
+                display: block;
+                .ems-field {
+                    width: 100%;
+                    margin-right: 0;
+                    display: inline-block;
+                    float: none;
+                }
+            }
+            .ems-field {
+                &.button {
+                    margin-top:40px;
+                    .btnAdresKaydet {
+                        background-color: $colorRed;
+                        width: 100%;
+                    }
+                    .btnAdresIptal {
+                        background-color: transparent;
+                        color: $colorDefault;
+                        width: 100%;
+                    }
+                }
+                .ems-form-obj {
+                    .checkbox {
+                        > span {
+                            padding: 0;
+                            &:after {
+                                background-color: $colorRed;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ems-page-member {
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 95%;
+    .main-container {
+        .left-bar {
+            display: inline-block;
+            vertical-align: top;
+            width: 200px;
+            border-right: 1px solid #e4e4e4;
+            margin: 40px 0;
+            .member-menu-selecbox {
+                display: none;
+            }
+            .member-menu {
+               h4 {
+                   color: #000;
+                   font-size: 32px;
+                   font-family: $fontSite;
+                   margin: 0 0 20px 0;
+               } 
+               .dropdown {
+                   > span {
+                       font-weight: 700;
+                       color: $colorRed;
+                       display: none;
+                   }
+                   ul {
+                       li {
+                           padding: 15px 0;
+                           &.selected {
+                               a {
+                                   color: $colorRed;
+                               }
+                           }
+                           a {
+                               font-size: 14px;
+                               font-weight: 700;
+                               letter-spacing: 1px;
+                           }
+                       }
+                   }
+               }
+            }
+        }
+        .content-bar {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100% - 200px);
+            padding: 40px 0 40px 40px;
+            .pageSifremiUnuttum {
+                .pageHeaderSifremiUnuttum {
+                    margin: 0 0 25px 0;
+                    span {
+                        font-size: 24px;
+                        font-family: $fontSite;
+                        color: #000;
+                    }
+                }
+                .pageDescDefault {
+                    margin-bottom: 20px;
+                }
+                .tableSifremiUnuttum {
+                    width: 100%;
+                    max-width: 250px;
+                    tr {
+                        margin-bottom: 50px;
+                        display: block;
+                        &[id$="dvTblUrnKod"] {
+                            display: none;
+                        }
+                        th {
+                            display: block; 
+                            width: 60px;
+                            text-align: left;
+                        }
+                        td {
+                            display: block;
+                            select, 
+                            input {
+                                margin: 0;
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                    .btnUyeSifreGonder {
+                        width: 150px;
+                        background-color: #b70234;
+                        height: 37px;
+                        line-height: 37px;
+                        padding: 0px;
+                    }
+                    span[id$="lbfUYE_KONTROLKODU"] {
+                        margin-top: 10px;
+                    }
+                    div[id$="CaptchaImage1_divCaptcha"] {
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        flex-wrap: wrap;
+                        > * {
+                            width: 100%;
+                            order: 2;
+                        }
+                        span[id$="_lbfUYE_KONTROLKODU"],
+                        img {
+                            order: 1; 
+                        }
+                        span[id$="_lbfUYE_KONTROLKODU"] { font-weight: bold; 
+                            i{
+                                color:#b70234;
+                            }
+                        }
+                        img { margin: 20px 0px; } 
+                    }
+                }
+            }
+            > div{
+                display: block;
+                vertical-align: top;
+                width:100%;
+            }
+            .contact {
+                margin-left: 50px;
+                display: inline-block;
+                @media screen and (max-width:960px){
+                    margin-left: 5px;
+                    margin-top: 20px;
+                }
+                h2 {
+                    color: #000;
+                    font-size: 24px;
+                    font-family: $fontSite;
+                    margin: 0 0 25px 0;
+                }
+                p {
+                    color: $colorDefault;
+                    line-height: 20px;
+                    b {
+                        color: $colorRed;
+                    }
+                }
+            }
+            .pageMesajGonder {
+                .pageHeaderMesaj {
+                    margin: 0 0 25px 0;
+                    span {
+                        font-size: 24px;
+                        font-family: $fontSite;
+                        color: #000;
+                    }
+                }
+                #mesajGonder {
+                    .mesajGonder {
+                        .tableTitleMesajGonder {
+                            display: none;
+                        }
+                        .tableMesajGonder {
+                            .tableMesajGonder_aciklama {
+                                display: none;
+                            }
+                            .tableMesajGonder_mesajIcerik {
+                                .tableMesajTurGiris {
+                                    tr {
+                                        margin-bottom: 20px;
+                                        display: block !important;
+                                        &[id$="dvTblUrnKod"] {
+                                            display: none;
+                                        }
+                                        th {
+                                            display: inline-block;
+                                            width: 150px;
+                                            text-align: left;
+                                        }
+                                        td {
+                                            display: inline-block;
+                                            width: 300px;
+                                            select, 
+                                            input {
+                                                margin: 0;
+                                                width: 100% !important;
+                                            }
+                                        }
+                                    }
+                                }
+                                .tableMesajUyeGiris {
+                                    tr {
+                                        margin-bottom: 20px;
+                                        display: block;
+                                        th {
+                                            display: inline-block;
+                                            width: 150px;
+                                            text-align: left;
+                                        }
+                                        td {
+                                            display: inline-block;
+                                            width: 300px;
+                                            select,
+                                            input {
+                                                margin: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                                .tableMesajMetin {
+                                    tr {
+                                        margin-bottom: 20px;
+                                        display: block;
+                                        &.tableMesaj_trlbfUYE_ACIKLAMA {
+                                            display: none;
+                                        }
+                                        th {
+                                            display: inline-block;
+                                            width: 150px;
+                                            text-align: left;
+                                        }
+                                        td {
+                                            display: inline-block;
+                                            width: 300px;
+                                            textarea {
+                                                margin: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .pageMesajGonder_CaptchaImage1 {
+                                position: relative;
+                                div[id$="divCaptcha"] {
+                                    img {
+                                        display: inline-block;
+                                        max-width: 200px;
+                                    }
+                                    br {
+                                        &:nth-child(2) {
+                                            display: none;
+                                        }
+                                    }
+                                    span {
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        font-weight: 700;
+                                        padding-left: 20px;
+                                    }
+                                    input {
+                                        display: inline-block;
+                                        margin: 0;
+                                        position: absolute;
+                                        left: 220px;
+                                        width: 230px;
+                                        bottom: 0;
+                                    }
+                                }
+                            }
+                            .pageMesajGonder_btnMesajGonder {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-page-member-refund {
+                .page-top-title {
+                    padding: 8px 0;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 24px;
+                        font-family: $fontSite;
+                        color: #000;
+                    }
+                }
+                .ems-grid-refund {
+                    .ems-grid-header {
+                        display: none;
+                        &:first-child {
+                            display: block;
+                        }
+                        > div {
+                            display: inline-block;
+                            width: 16%;
+                            margin-bottom: 10px;
+                            span {
+                                font-weight: 700;
+                                font-size: 12px;
+                                color: #9e9e9e;
+                            }
+                            &.ems-grid-status {
+                                width: 20%;
+                            }
+                        }
+                    }
+                    .ems-grid-row {
+                        > div {
+                            display: inline-block;
+                            width: 16%;
+                            margin-bottom: 25px;
+                            a {
+                                color: #000;
+                            }
+                            &.ems-grid-status {
+                                width: 20%;
+                                a {
+                                    color: $colorRed;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-page-member-info {
+                .page-top-title {
+                    padding: 8px 0;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 24px;
+                        font-family: $fontSite;
+                        color: #000;
+                    }
+                }
+                .page-top-desc {
+                    display: none;
+                }
+                .ems-form {
+                    .ems-form-inner {
+                        padding: 20px 0;
+                        .ems-field {
+                            width: 320px;
+                            margin-bottom: 20px;
+                            &.text {
+                               .ems-form-label {
+                                   > span {
+                                       
+                                   }
+                               } 
+                               .ems-form-obj {
+                                   input {
+                                       outline: none;
+                                       border: none;
+                                       border-bottom: 2px solid #9e9e9e;
+                                       font-weight: normal;
+                                       color: #000;
+                                       width: 100%;
+                                       &.cepTelNo {
+                                           width: calc(100% - 40px) !important;
+                                           margin-left: 10px;
+                                       }
+                                   }
+                                   select {
+                                       outline: none;
+                                       border: none;
+                                       border-bottom: 2px solid #9e9e9e;
+                                       font-weight: 700;
+                                       color: #000;
+                                       width: 100%;
+                                   }
+                               }
+                            }
+
+                            &.button {
+                                .ems-form-obj {
+                                    .btnUyeBilgi {
+                                        width: 100%;
+                                        background-color: $colorRed;
+                                    }
+                                }
+                            }
+                            &.select {
+                                .ems-form-label {
+                                    top: 5px; 
+                                    padding-left: 0;
+                                    line-height: 15px;
+                                    font-size: 12px;
+                                    color: #c9c9c9;
+                                }
+                                select{
+                                    font-size: 16px;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-page-member-address {
+                .page-top-title {
+                    padding: 8px 0;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 24px;
+                        font-family: $fontSite;
+                        color: #000;
+                    }
+                }
+                .page-top-desc {
+                    display: none;
+                }
+                .ems-address-form {
+                    .ems-grid-address {
+                        .ems-grid-row {
+                            border: 1px solid #e4e4e4;
+                            padding: 20px;
+                            margin-bottom: 20px;
+                            border-radius: 3px;
+                            .col-1 {
+                                width: 100%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                .ems-grid-group {
+                                    width: 70%;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    .ems-address-name {
+                                        span {
+                                            font-weight: 700;
+                                            font-size: 14px;
+                                            color: $colorDefault;
+                                            &.type {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    .ems-address {
+                                        font-size: 12px;
+                                        color: #9e9e9e;
+                                    }
+                                }
+                                .ems-address-buttons {
+                                    width: 30%;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    text-align: right;
+                                    .btnAdresListeGuncelle {
+                                        @extend .btnDefault-text;
+                                        text-align: center;
+                                        font-weight: 700;
+                                        color: $colorRed !important;
+                                        text-transform: uppercase;
+                                        width: 50%;
+                                    }
+                                    .btnAdresListeSil {
+                                        @extend .btnDefault-text;
+                                        text-align: center;
+                                        font-weight: 700;
+                                        color: $colorDefault !important;
+                                        text-transform: uppercase;
+                                        width: 50%;
+                                    }
+                                }
+                            }
+                            .col-2 {
+                                width: 30%;
+                                display: none;
+                                vertical-align: middle;
+                                text-align: right;
+                                .ems-address-buttons {
+                                    &.item-1 {
+                                        .btnAdresListeGuncelle {
+                                            background-color: transparent;
+                                            color: $colorRed;
+                                            letter-spacing: 0;
+                                        }
+                                        .btnAdresListeSil {
+                                            background-color: transparent;
+                                            color: $colorDefault;
+                                            letter-spacing: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .add-new-address {
+                        text-align: center;
+                        .btnAdresEkle {
+                            background-color: $colorRed;
+                            padding: 11px 20px;
+                            &:before {
+                                content: $icon-expand;
+                                font-family: $fontIcon;
+                                font-size: 9px;
+                                vertical-align: middle;
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-page-member-favorites {
+                .page-top-title {
+                    padding: 8px 0;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 24px;
+                        font-family: $fontSite;
+                        color: #000;
+                    }
+                }
+                .page-top-desc {
+                    > span {
+                        display: none;
+                    }
+                }
+                .favorite-report {
+                    .ems-grid-favorites {
+                        .ems-grid-header {
+                            display: none;
+                        }
+                        .ems-grid-row {
+                            border: 1px solid #e4e4e4;
+                            padding: 10px;
+                            border-radius: 3px;
+                            margin-bottom: 20px;
+                            > div {
+                                display: inline-block;
+                                vertical-align: middle;
+                                &.ems-grid-img {
+                                    width: 7%;
+                                    text-align: center;
+                                }
+                                &.ems-grid-code {
+                                    width: 15%;
+                                    text-align: center;
+                                }
+                                &.ems-grid-group {
+                                    width: 53%;
+                                    > div {
+                                        display: inline-block;
+                                        &.ems-grid-code {
+                                            width: 40%;
+                                            text-align: center;
+                                        }
+                                        &.ems-grid-name {
+                                            width: 40%;
+                                        }
+                                        &.ems-grid-price {
+                                            width: 20%;
+                                            font-weight: 700;
+                                            text-align: center;
+                                            span[id$="lbfURN_KDVDAHIL"] {
+                                                display: none;
+                                            }
+                                        }
+                                        &.ems-grid-option1 {
+                                            width: 20%;
+                                            text-align: center;
+                                            position: relative;
+                                            .sStylerMainWrp {
+                                                .sStylerWrp {
+                                                    display: none;
+                                                }    
+                                                select {
+                                                    opacity: 1 !important;
+                                                    margin: 0;
+                                                    left: 7px;
+                                                    top: 15px;
+                                                    position: absolute;
+                                                    cursor: pointer;
+                                                }
+                                            }
+                                            span[id$="lblSCM_AD1"] {
+                                                b {
+                                                    font-weight: normal;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                &.ems-grid-piece {
+                                    display: none;
+                                }
+                                &.ems-grid-option2 {
+                                    display: none;
+                                }
+                                &.ems-grid-group-buttons {
+                                    width: 40%;
+                                    text-align: center;
+                                    .ems-grid-report {
+                                        width: 50%;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        white-space: nowrap;
+                                        .btnStokHaberciFavori {
+                                            background-color: transparent;
+                                            color: $colorRed;
+                                            letter-spacing: 0;
+                                            display: inline;
+                                            padding: 15px 5px;
+                                            span {
+                                                font-weight: 700;
+                                            }
+                                        }
+                                        .btnSepeteAtFavori {
+                                            background-color: transparent;
+                                            color: $colorRed;
+                                            letter-spacing: 0;
+                                            padding: 15px 5px;
+                                            display: inline;
+                                            span {
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    }
+                                    .ems-grid-remove {
+                                        width: 50%;
+                                        display: inline-block;
+                                        .btnFavoriListeSil {
+                                            background-color: transparent;
+                                            color: $colorDefault;
+                                            padding: 15px 5px;
+                                            display: inline;
+                                            span {
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-page-member-message {
+                .page-top-title {
+                    padding: 8px 0;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 24px;
+                        color: #000;
+                        font-family: $fontSite;
+                    }
+                }
+                .page-top-desc {
+                    width: 100%;
+                    display: block;
+                    span {
+                        font-weight: 700;
+                        color: $colorRed;
+                        letter-spacing: 1px;
+                    }
+                }
+                .page-new-message {
+                    width: 100%;
+                    display: block;
+                    margin-bottom:20px;
+                    
+                    a {
+                        &:after {
+                            content: 'YENİ MESAJ GÖNDER';
+                            color: #fff;
+                            background-color: $colorRed;
+                            padding: 10px;
+                            border-radius: 3px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .page-top-new-message {
+                    a {
+                        i {
+                            &:before {
+                                content: '';
+                            }
+                        }
+                    }
+                }
+                .ems-message-form {
+                    .ems-grid-message {
+                        .ems-grid-header {
+                            display: none;
+                        }
+                        .ems-grid-row {
+                            padding: 30px;
+                            border: 1px solid #e4e4e4;
+                            border-radius: 3px;
+                            margin-bottom: 10px;
+                            > div {
+                                display: inline-block;
+                                &.ems-grid-title {
+                                    a {
+                                    }
+                                }
+                                &.ems-grid-order-id {
+                                    color: $colorDefault;
+                                }
+                                &.ems-grid-date {
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-page-member-message-detail {
+                .page-top-title {
+                    margin: 0 0 25px 0;
+                    span {
+                        font-size: 24px;
+                        font-family: $fontSite;
+                        color: #000;
+                    }
+                }
+            }
+            .ems-page-member-follow-list {
+                .page-top-title {
+                    padding: 8px 0;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 24px;
+                        font-family: $fontSite;
+                        color: #000;
+                    }
+                }
+                .page-top-desc {
+                    display: none;
+                }
+                .price-report {
+                    display: none;
+                }
+                .stock-report {
+                    .inner-title {
+                        display: none;
+                    }
+                    .ems-message-error {
+                        display: none;
+                    }
+                    .remove-list {
+                        margin-bottom: 10px;
+                        text-align: right;
+                        .btnTakipListeStokTumSil {
+                            background-color: $colorRed;
+                        }
+                    }
+                    .ems-grid-follow-stock {
+                        .ems-grid-header {
+                            display: none;
+                        }
+                        .ems-grid-row {
+                            padding: 20px;
+                            border: 1px solid #e4e4e4;
+                            border-radius: 3px;
+                            margin-bottom: 10px;
+                            > div {
+                                display: inline-block;
+                                vertical-align: middle;
+                                &.ems-grid-img {
+                                    width: 11%;
+                                    text-align: center;
+                                }
+                                &.ems-grid-group {
+                                    width: 70%;
+                                    > div {
+                                        display: inline-block;
+                                        &.ems-grid-code {
+                                            width: 30%;
+                                            a {
+                                                color: #000;
+                                                letter-spacing: 1px;
+                                            }
+                                        }
+                                        &.ems-grid-name {
+                                            width: 50%;
+                                            a {
+                                                color: #000;
+                                            }
+                                        }
+                                        &.ems-grid-price {
+                                            width: 20%;
+                                            text-align: center;
+                                            font-weight: 700;
+                                            color: #000;
+                                            span[id$="lbfURN_KDVDAHIL"] {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.ems-grid-remove {
+                                    width: 19%;
+                                    text-align: center;
+                                    .btnTakipListeStokSil {
+                                        background-color: transparent;
+                                        color: $colorDefault;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-page-member-password {
+                .page-top-title {
+                    padding: 8px 0;
+                    margin-bottom: 15px;
+                    span {
+                        color: #000;
+                        font-size: 24px;
+                        font-family: $fontSite;
+                    }
+                }
+                .page-top-desc {
+                    margin-bottom: 20px;
+                    .pageDescUyeSifre {
+                        display: none;
+                    }
+                }
+                .ems-form {
+                    .ems-form-inner {
+                        .ems-field {
+                            &.button {
+                                .ems-form-obj {
+                                    .btnSifreGuncelle {
+                                        width: 100%;
+                                        background-color: $colorRed;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-page-member-order {
+                .page-top-title {
+                    padding: 8px 0;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 24px;
+                        font-family: $fontSite;
+                        color: #000;
+                    }
+                }
+                .page-top-desc {
+                    display: none;
+                }
+                .ems-order-form {
+                    .ems-grid-order {
+                        > div {
+                            &.ems-grid-header {
+                                display: none;
+                                > div {
+                                    width: 20%;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    &.ems-grid-cargo-no {
+                                        width: 25%;
+                                    }
+                                        span {
+                                            font-weight: 700;
+                                            font-size: 12px;
+                                            color: #9e9e9e;
+                                        }
+                                }
+                            }
+                            &:first-child {
+                                display: block;
+                            }
+                            &.ems-grid-row {
+                                > div {
+                                    width: 20%;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    padding: 10px 0;
+                                        span,
+                                        a {
+                                            font-weight: 700;
+                                            color: #000;
+                                        }
+                                    &.ems-grid-cargo-no {
+                                        width: 25%;
+                                    }
+                                    &.ems-grid-status {
+                                        a {
+                                            color: $colorRed;
+                                            font-weight: 700;
+                                            text-transform: uppercase;
+                                        }
+                                    }
+                                    &.ems-grid-total {
+                                        color: #000;
+                                        font-weight: 700;
+                                    }
+                                    &.ems-grid-date-end {
+                                        a {
+                                            span {
+                                                font-weight: normal;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-page-member-order-detail {
+                .page-top-title {
+                    padding: 8px 0;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 24px;
+                        font-family: $fontSite;
+                        color: #000;
+                    }
+                }
+                .order-detail-info {
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid #e4e4e4;
+                    margin-bottom: 15px;
+                    > div {
+                        width: 50%;
+                        display: inline-block;
+                        vertical-align: top;
+                        > div {
+                            display: inline-block;
+                            vertical-align: top;
+                            width: 50%;
+                            padding: 5px 0;
+                            &.text {
+                                span {
+                                    font-size: 15px;
+                                    color: #000;
+                                }
+                            }
+                            &.value {
+                                span {
+                                    font-size: 15px;
+                                    color: #9e9e9e;
+                                }
+                            }
+                        }
+                    }
+                }
+                .order-address {
+                    width: 49%;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-bottom: 30px;
+                    .text {
+                        span {
+                            color: #000;
+                            font-weight: 700;
+                        }
+                    }
+                    .value {
+                        border: 1px solid #e4e4e4;
+                        padding: 20px;
+                        span {
+                            font-size: 12px;
+                            color: #9e9e9e;
+                        }
+                    }
+                    &.order-address-billing {
+                        margin-left: 2%;
+                    }
+                }
+                .inner-title {
+                    margin-bottom: 20px;
+                    span {
+                        font-weight: 700;
+                        color: #000;
+                        letter-spacing: 2px;
+                    }
+                }
+                .ems-grid-order-products {
+                    .ems-grid-header {
+                        display: none;
+                        .ems-grid-group {
+                            width: 60%;
+                            display: inline-block;
+                            > div {
+                                display: inline-block;
+                                    span {
+                                        color: #9e9e9e;
+                                        font-weight: 700;
+                                        font-size: 12px;
+                                    }
+                                &.ems-grid-name {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .ems-grid-pieces {
+                            width: 25%;
+                            display: inline-block;
+                            span {
+                                color: #9e9e9e;
+                                font-weight: 700;
+                                font-size: 12px;
+                            }
+                        }
+                        .ems-grid-price-total {
+                            width: 15%;
+                            display: inline-block;
+                            span {
+                                color: #9e9e9e;
+                                font-weight: 700;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .ems-grid-row {
+                        padding: 20px;
+                        border: 1px solid #e4e4e4;
+                        .ems-grid-group {
+                            width: 60%;
+                            display: inline-block;
+                            vertical-align: middle;
+                            > div {
+                                display: inline-block;
+                                vertical-align: middle;
+                                &.ems-grid-name {
+                                    a {
+                                        color: #000;
+                                        &:last-child,
+                                        strong,
+                                        br {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .ems-grid-pieces {
+                            width: 25%;
+                            display: inline-block;
+                            color: #9e9e9e;
+                            font-size: 16px;
+                        }
+                        .ems-grid-price-total {
+                            width: 15%;
+                            display: inline-block;
+                            vertical-align: middle;
+                            span {
+                                color: #000;
+                                font-size: 14px;
+                                font-weight: 700;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                    > div {
+                        &:first-child {
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .order-detail-info-payment {
+                    background-color: #f8f8f8;
+                    text-align: right;
+                    padding: 20px;
+                    margin-top: 20px;
+                    > div {
+                        > div {
+                            display: inline-block;
+                            padding: 3px 0;
+                            &.value {
+                                width: 100px;
+                                span {
+                                    padding-left: 10px;
+                                    font-size: 12px;
+                                    color: $colorDefault;
+                                }
+                            }
+                            &.text {
+                                width: 115px;
+                                text-align: left;
+                                span {
+                                    font-size: 12px;
+                                    color: $colorDefault;
+                                }
+                            }
+                            &:empty {
+                                display: none;
+                            }
+                        }
+                        &.total {
+                            padding-top: 15px;
+                            .text,
+                            .value {
+                                span {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: #000;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-page-member-message {
+                .ems-message-form {
+                    .ems-grid-row {
+                        position: relative;
+                        .ems-grid-icon {
+                            position: absolute;
+                        }
+                        .ems-grid-title {
+                            padding-left: 60px;
+                        }
+                        .ems-grid-date {
+                            display: none !important;
+                        }
+                    }
+                    .newMessage {
+                        .ems-grid-title {
+                            a {
+                                font-weight: 700;
+                                color: #000;
+                            }    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ems-page-cart {
+    margin-top: 30px;
+    div[id$="pnlSiparisBaslik"] {
+        table {
+            td {
+                width: 800px;
+                max-width: 95%;
+                span {
+                    width: 33.33%;
+                    display: inline-block;
+                    vertical-align: top;
+                    position: relative;
+                    white-space: nowrap;
+                    a {
+                        display: block;
+                        span {
+                           color: #9e9e9e; 
+                           letter-spacing: 1px;
+                        }
+                        i {
+                            display: block;
+                            margin-bottom: 10px;
+                            &:before {
+                                font-family: $fontIcon;
+                                display: inline-block;
+                                width: 46px;
+                                height: 46px;
+                                line-height: 46px;
+                                border-radius: 100%;
+                                font-size: 19px;
+                                border: 2px solid #9e9e9e;
+                                background-color: #fff;
+                                position: relative;
+                                z-index: 9;
+                            }
+                        }
+                        &:after {
+                            content: '';
+                            height: 2px;
+                            width: 100%;
+                            position: absolute;
+                            background: #9e9e9e;
+                            top: 24px;
+                            left: -50%;
+                        }
+                    }
+                    &:first-child {
+                        a {
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .tabBtnAdimSepet {
+                    a {
+                        span {
+                            
+                        }
+                        i {
+                            &:before {
+                                content: $icon-bag-2;
+                            }
+                        }
+                    }
+                }
+                .tabBtnSelectedSepet {
+                    a {
+                        span {
+                            color: $colorRed;
+                            font-weight: 700;
+                        }
+                        i {
+                            &:before {
+                                content: $icon-bag-2;
+                                color: #fff;
+                                background-color: $colorRed;
+                                border-color: transparent;
+                            }
+                        }
+                    }
+                }
+                .tabBtnAdimTeslimat {
+                    a {
+                        span {
+                            
+                        }
+                        i {
+                            &:before {
+                                content: $icon-shipping-2;
+                            }
+                        }
+                    }
+                }
+                .tabBtnSelectedTeslimat {
+                    a {
+                        span {
+                            color: $colorRed;
+                            font-weight: 700;
+                        }
+                        i {
+                            &:before {
+                                content: $icon-shipping-2;
+                                color: #fff;
+                                background-color: $colorRed;
+                                border-color: transparent;
+                            }
+                        }
+                    }
+                }
+                .tabBtnAdimOdeme {
+                    a {
+                        span {
+                            
+                        }
+                        i {
+                            &:before {
+                                content: $icon-odeme-2;
+                            }
+                        }
+                    }
+                }
+                .tabBtnSelectedOdeme {
+                    a {
+                        span {
+                            color: $colorRed;
+                            font-weight: 700;
+                        }
+                        i {
+                            &:before {
+                                content: $icon-odeme-2;
+                                color: #fff;
+                                background-color: $colorRed;
+                                border-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ems-page-order-cart {
+        padding: 0 20px;
+        .pageErrorStokKontrol {
+            display: block;
+            margin: 20px 0;
+            span {
+                color: $colorRed;
+                font-weight: 700;
+            }
+        }
+        .gridSepetStok {
+            display: block;
+            border: 1px solid $colorRed;
+            padding: 20px;
+            margin-bottom: 20px;
+            tbody {
+                display: block;
+                tr {
+                    display: block;
+                    th {
+                        width: 20%;
+                        display: inline-block;
+                    }
+                    td {
+                        width: 20% !important;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        margin-top: 20px;
+        > span {
+            color: $colorRed;
+            font-size: 21px;
+            display: block;
+            font-weight: 700;
+            padding: 20px;
+            text-align:center;
+        }
+        .cart-section-left {
+            width: calc(100% - 325px);
+            display: inline-block;
+            vertical-align: top;
+            > div {
+                display: table;
+                width: 100%;
+                table-layout: fixed;
+            }
+            .ucretsizKrgUyari {
+                display: none;
+            }
+            .pageSepetBtn{
+                float:right;
+                padding: 0 0 30px 0;
+                display: block;
+                text-align: right;
+                a{
+                    background: none;
+                    padding: 0;
+                    display: inline;
+                    &:last-child{
+                        span{
+                            border-right: none;
+                        }
+                    }
+                    span{
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        color: #b4b4b4;
+                        padding: 6px 15px;
+                        border-right: 1px solid #ddd;
+                    }
+                }
+            }
+            .ems-grid-cart {
+                .ems-grid-header {
+                    padding: 0 50px 5px 115px;
+                    > div {
+                        display: inline-block;
+                        span {
+                            font-weight: 700;
+                            font-size: 12px;
+                            color: #9e9e9e;
+                        }
+                    }
+                    .ems-grid-name {
+                        width: 60%;
+                    }
+                    .ems-grid-piece {
+                        width: 25%;
+                    }
+                    .ems-grid-price-total {
+                        width: 15%;
+                    }
+                }
+                .ems-grid-row {
+                    border: 1px solid #e4e4e4;
+                    padding: 20px 50px 20px 115px;
+                    position: relative;
+                    > div {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .ems-grid-img {
+                        position: absolute;
+                        left: 30px;
+                        top: 10px;
+                        max-width: 80px;
+                        img {
+                            max-height: 100px;
+                        }
+                    }
+                    .ems-grid-name {
+                        width: 60%;
+                        a {
+                            span {
+                                color: #000;
+                                letter-spacing: 1px;
+                            }
+                        }
+                        span{
+                            .prom_indtutar{
+                                display:none;
+                            }
+                        }
+                        span[id$="lblSCD_AD1"],
+                        span[id$="lblSCD_AD2"] {
+                            color: #000;
+                            letter-spacing: 1px;
+                            display: block;
+                            padding-top: 3px;
+                        }
+                        .ems-grid-gift-box {
+                            margin-top: 25px;
+                            a {
+                                span {
+                                    color: $colorRed;
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    letter-spacing: 1px;
+                                }
+                            }
+                        }
+                    }
+                    .ems-grid-piece {
+                        width: 25%;
+                        .ems-grid-piece-add-remove {
+                            input {
+                                border: 1px solid #e4e4e4;
+                                margin: 0;
+                                padding: 0;
+                                text-align: center;
+                                font-size: 16px;
+                                color: #9e9e9e;
+                                width: 48px !important;
+                                height: 38px;
+                            }
+                        }
+                    }
+                    .ems-grid-price-total {
+                        width: 15%;
+                        span {
+                            span {
+                                color: #000;
+                                letter-spacing: 1px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .ems-grid-delete {
+                        position: absolute;
+                        top: 50%;
+                        @include setTransform(translateY(-50%));
+                        right: 30px;
+                        span {
+                            a {
+                                span {
+                                    &:before {
+                                        content: $icon-close;
+                                        font-family: $fontIcon;
+                                        font-size: 10px;
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-cart-btn {
+                &.prev {
+                    display:inline-block;
+                    width:calc(100% - 280px);
+                    text-align: left;
+                    @media screen and (max-width:960px){
+                        display: block;
+                        width: 100%;
+                        margin:0 0 20px 0;
+                    }
+                    .btnAlisverisDevam {
+                        @extend .btnDefault-text;
+                        span {
+                            font-weight: 700;
+                            color: #9e9e9e;
+                            font-size: 12px;
+                            letter-spacing: 1px;
+                            padding:6px 0;
+                            &:before {
+                                content: $icon-left;
+                                font-family: $fontIcon;
+                                color: #9e9e9e;
+                                font-size: 10px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cart-section-right {
+            width: 305px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            .ems-cart-summary {
+                border: 1px solid #e4e4e4;
+                padding: 25px;
+                .top-step {
+                    > span {
+                        display: block;
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: #000;
+                        margin-bottom: 25px;
+                    }
+                    table {
+                        padding-bottom: 25px;
+                        border-bottom: 1px solid #e4e4e4;
+                        tr {
+                            > * {
+                                > span {
+                                    font-size: 12px;
+                                    color: $colorDefault;
+                                    font-weight: normal;
+                                    margin: 2px 0;
+                                    display: block;
+                                }
+                            }
+                            th {
+                                text-align: left;
+                            }
+                            td {
+                                text-align: right;
+                            }
+                        }
+                        .pnlDipToplam_sipToplam {
+                            > * {
+                                > span {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    color: #000;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ems-cart-coupon {
+                    > span {
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                        color: #9e9e9e;
+                        padding: 20px 0;
+                        cursor: pointer;
+                    }
+                    .ems-cart-coupon-body {
+                        position: relative;
+                        display: none;
+                        > input {
+                            width: 100% !important;
+                            border: 1px solid #e4e4e4;
+                            padding-left: 5px; 
+                            margin: 0;
+                            padding: 5px 70px 5px 5px;
+                        }
+                        table {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            .btnHediyeCekiKullan {
+                                @extend .btnDefault-text;
+                                font-size: 14px;
+                                span {
+                                    color: $colorRed;
+                                    line-height: 42px;
+                                    padding-right: 5px;
+                                }
+                            }
+                        }
+                        > span {
+                            padding: 5px 0;
+                            color: $colorRed;
+                            display: block;
+                            font-weight: 700;
+                        }
+                        .btnHediyeCekiIptal{
+                            width: 100%;
+                            background: none;
+                            color: #000;
+                            font-size:14px;
+                            border:1px solid #000;
+                            margin-top:20px;
+                        }
+                    }
+                    &.opened {
+                        .ems-cart-coupon-body {
+                            display: block;
+                        }
+                    }
+                }
+                .bottom-step {
+                    .next {
+                        margin-top: 15px;
+                       .btnSiparisTamamla {
+                           @extend .red;
+                           width: 100%;
+                       } 
+                    }
+                }
+            }
+        }
+    }
+    &.step1 {
+        .ems-page-order-cart {
+            width: 30%;
+            float: right;
+            .cart-section-left {
+                display: none;
+            }
+            .cart-section-right {
+                float: right;
+                width: 100%;
+                .ems-cart-summary {
+                    .top-step {
+                        table {
+                            border: none;
+                            padding: 0;
+                        }
+                    }
+                    .ems-cart-coupon {
+                        display: none;
+                    }
+                }
+            }
+        }
+        @at-root .ems-page-order-delivery {
+            position: relative;
+            padding: 20px;
+            .ems-page-order-cart {
+                position: absolute;
+                right: 20px;
+                top: 0;
+                width: 305px;
+                .cart-section-left {
+                    display: none;
+                }
+                .cart-section-right {
+                    width: 100%;
+                    .ems-cart-summary {
+                        padding: 30px;
+                        border: 1px solid #e4e4e4;    
+                    }
+                    .top-step {
+                        > span {
+                            color: #000;
+                            font-weight: 700;
+                            font-size: 18px;
+                            display: block;
+                            text-align: center;
+                            margin-bottom: 15px;
+                        }
+                        table {
+                            tr {
+                                th {
+                                    text-align: left;
+                                    font-size: 12px;
+                                    font-weight: normal;
+                                }
+                                td {
+                                    text-align: right;
+                                    font-size: 12px;
+                                }
+                                > * {
+                                    > span {
+                                        margin: 2px 0;
+                                        display: block;
+                                    }
+                                }
+                                &.pnlDipToplam_sipToplam {
+                                    > * {
+                                        > span {
+                                            font-weight: 700;
+                                            font-size: 16px;
+                                            color: #000;
+                                            display: block;
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .bottom-step {
+                            .next {
+                                .btnOdemeBilgi {
+                                    width: 100%;
+                                    background-color: $colorRed;
+                                    margin-top: 20px;
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+            max-width: 100%;
+            width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            .ems-address-wrapper {
+                width: calc(100% - 325px);
+                position: relative;
+                margin-top: 20px;
+                .page-top-title {
+                    margin-bottom: 15px;
+                    span {
+                        color: $colorDefault;
+                        letter-spacing: 1px;
+                        font-weight: 700;
+                        font-size: 18px;
+                    }
+                }
+                .ems-grid-address {
+                    .ems-grid-row {
+                        margin-bottom: 20px;
+                        border: 1px solid #e4e4e4;
+                        > div {
+                            display: inline-block;
+                            vertical-align: top;
+                            padding: 30px;
+                        }
+                        .col-1 {
+                            width: 75%;
+                            vertical-align: middle;
+                            border-right: 1px solid #e4e4e4;
+                            .ems-grid-group {
+                                width: 60%;
+                                display: inline-block;
+                                vertical-align: middle;;
+                                .ems-address-name {
+                                    padding-bottom: 3px;
+                                    span {
+                                        font-weight: 700;
+                                        color: $colorDefault;
+                                        font-size: 14px;
+                                        > span {
+                                            display: none;
+                                        }
+                                    }    
+                                }
+                                .ems-address {
+                                    font-size: 12px;
+                                    color: #9e9e9e;
+                                }
+                            }
+                            .ems-address-buttons {
+                                width: 40%;
+                                display: inline-block;
+                                vertical-align: middle;
+                                text-align: right;
+                                .btnAdresListeGuncelle {
+                                    @extend .btnDefault-text;
+                                    font-weight: 700;
+                                    color: #000 !important;
+                                    text-transform: uppercase;
+                                }   
+                                .btnAdresListeSil {
+                                    @extend .btnDefault-text;
+                                    color: $colorDefault !important;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                        .col-2 {
+                            width: 25%;
+                            vertical-align: middle;
+                            min-height: 118px;
+                            .ems-adrress-buttons {
+                                > a {
+                                    span {
+                                        font-size: 12px;
+                                        color: $colorDefault;
+                                        letter-spacing: 0;
+                                        white-space: nowrap;
+                                        &:before {
+                                            content: '';
+                                            width: 14px;
+                                            height: 14px;
+                                            border: 1px solid $colorDefault;
+                                            border-radius: 100%;
+                                            margin-right: 10px;
+                                            display: inline-block;
+                                            vertical-align: bottom;
+                                        }
+                                    }
+                                    &.emos_selected {
+                                        span {
+                                            font-weight: 700;
+                                            color: $colorRed;
+                                            &:before {
+                                                box-shadow: inset 0px 0px 0px 2px #fff;
+                                                background-color: $colorRed;
+                                                border: 1px solid $colorRed;
+                                            }
+                                        }
+                                    }
+                                }
+                                .btnTesAdrSec {
+                                    @extend .btnDefault-text;
+                                }
+                                .btnFatAdrSec {
+                                    @extend .btnDefault-text;
+                                    margin-top: 20px;
+                                    @media screen and (max-width:960px){
+                                        margin-top:0;
+                                        margin-left: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .same-address {
+                    .dvFarkliFatAdrSec {
+                        position: relative;
+                        input {
+                            position: relative;
+                            z-index: 9;
+                            width: 40px;
+                            height: 17px;
+                            opacity: 0;
+                            cursor: pointer;
+                            &:checked {
+                                + span {
+                                    &:before {
+                                        background-color: $colorRed;
+                                    }
+                                    &:after {
+                                        left: 18px;
+                                    }
+                                }
+                            }
+                        }
+                        span {
+                            font-size: 12px;
+                            color: #9e9e9e;
+                            position: absolute;
+                            left: 0;
+                            top: 3px;
+                            padding-left: 45px;
+                            line-height: 19px;
+                            &:before {
+                                content: '';
+                                width: 33px;
+                                height: 16px;
+                                display: inline-block;
+                                position: absolute;
+                                left: 0;
+                                background-color: $colorDefault;
+                                border-radius: 33px;
+                            }
+                            &:after {
+                                content: '';
+                                background-color: #fff;
+                                border-radius: 100%;
+                                width: 12px;
+                                height: 12px;
+                                left: 2px;
+                                top: 2px;
+                                position: absolute;
+                                @include transition(all ease-in-out .2s);
+                            }
+                        }
+                    }
+                }
+                .add-new-address {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    .btnAdresEkle {
+                        @extend .btnDefault-text;
+                        span {
+                            color: $colorRed;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                            font-size: 14px;
+                            &:before {
+                                content: '+';
+                                display: inline-block;
+                                padding-right: 5px; 
+                            }
+                        }
+                    }
+                }
+                .ems-cart-archive {
+                    display: none;
+                }
+                .ems-delivery-tabs {
+                    .ems-cargo-tab {
+                        .cargo {
+                            .divTeslimatKargo {
+                                ul {
+                                    .kargoRow {
+                                        display: inline-block;
+                                        border: 1px solid #e4e4e4;
+                                        padding: 10px;
+                                        .kargoAdi {
+                                            display: none;
+                                        }
+                                        .fiyat {
+                                            display: block;
+                                            text-align: center;
+                                            font-weight: 700;
+                                            font-size: 12px;
+                                            color: $colorDefault;
+                                            margin-bottom: 5px;
+                                        }
+                                        input {
+                                            margin: 0 auto;
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .ems-delivery-info-tab {
+                        display: none;
+                    }
+                    .ems-gift-tab {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#validateUyeGiris, #validateYeniUyelik{
+    max-width: 380px;
+    margin:0 auto;
+}
+#validateUye {
+    .ems-page-member-login {
+        width: 100%;
+        padding: 0 20px;
+        display:flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        flex-wrap:wrap;
+        .ems-col-left-bar {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            order:1;
+            -webkit-order:1;
+            -moz-order:1;
+            .ems-signup {
+                .ems-signup-inner {
+                    .ems-signup-header {
+                        margin: 25px 0;
+                        span {
+                            font-family: $fontSite;
+                            font-size: 32px;
+                            color: #000;
+                            letter-spacing: -1px;
+                        }
+                    }
+                    .ems-signup-body {
+                        .ems-form {
+                            .ems-form-inner {
+                                width: 100%;
+                                max-width: 380px;
+                                > div {
+                                    display: block;
+                                    width: 100%;
+                                }
+                                div {
+                                    .ems-form-label *,
+                                    .ems-form-obj *{
+                                        color: #ccc;
+                                        font-weight: 700;
+                                    }
+                                }
+                                .is-active,
+                                .is-completed {
+                                    .ems-form-obj * {
+                                        font-size: 16px;
+                                        font-weight: normal;
+                                        color: #000;
+                                    }
+                                }
+                                .is-active,
+                                .select {
+                                    .ems-form-label * {
+                                        color: inherit !important;
+                                        font-size: 11px !important;
+                                    }
+                                }
+                                .ems-form-obj {
+                                    input {
+                                        border-bottom: 2px solid #9e9e9e;
+                                    }
+                                    .checkbox {
+                                        position: relative;
+                                        padding-left: 20px;
+                                        input {
+                                            cursor: pointer;
+                                            &:checked {
+                                                & + span {
+                                                    &:before {
+                                                        background-color: $colorRed;;
+                                                        position: absolute;
+                                                        left: 0;
+                                                        top: 0;     
+                                                    } 
+                                                    &:after {
+                                                        content: '';
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        span {
+                                            padding-left: 5px;
+                                            &:before {
+                                                width: 14px;
+                                                height: 14px;
+                                            }
+                                        }
+                                        &:after {
+                                            
+                                        }
+                                    }
+                                    select{
+                                        option{
+                                            color:#616161 !important;
+                                        }
+                                    }
+                                }
+                                .row {
+                                    max-width: 380px;
+                                    .ems-field {
+                                        width: 48%;
+                                        display: inline-block;
+                                    }
+                                    .ems-field + .ems-field {
+                                        margin-left: 4%;
+                                    }
+                                    .col {
+                                        margin: 0;
+                                    }
+                                }
+                                .ems-field {
+                                    max-width: 380px;
+                                    &.select {
+                                        .ems-form-label {
+                                            top:11px;
+                                            padding-left: 0;
+                                            line-height: 15px;
+                                            font-size: 12px;
+                                            color: #c9c9c9;
+                                        }
+                                    }
+                                    &.phone {
+                                        .ems-form-obj {
+                                            input {
+                                                &:first-child {
+                                                    width: 70px !important;
+                                                    display: inline-block;
+                                                    margin-right: 5px;
+                                                    text-align: center;
+                                                }
+                                                &:last-child {
+                                                    width: calc(100% - 75px) !important;
+                                                    display: inline-block;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.captcha {
+                                        .ems-form-obj {
+                                            div[id$="divCaptcha"] {
+                                                position: relative;
+                                                img {
+                                                    width: 48%;
+                                                    margin-right: 4%;
+                                                }
+                                                span {
+                                                    position: absolute;
+                                                    left: 50%;
+                                                    top: 25px;
+                                                }
+                                                input {
+                                                    width: 48%;
+                                                }
+                                            }
+                                        }
+                                        &.is-active {
+                                            .ems-form-obj {
+                                                div[id$="divCaptcha"] {
+                                                    span {
+                                                        top: 5px !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.ems-text {
+                                        .ems-form-obj {
+                                            span {
+                                                font-size: 12px;
+                                                font-weight: normal;
+                                                a {
+                                                    font-size: 12px;
+                                                    font-weight: normal;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.submit {
+                                        .ems-form-obj {
+                                            .btnYeniUyeKaydet {
+                                                width: 180px;
+                                                span {
+                                                    color: #fff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ems-col-right-bar {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            .ems-login {
+                .ems-login-inner {
+                    .ems-login-header {
+                        margin: 25px 0;
+                        span {
+                            font-family: "csm";
+                            font-size: 32px;
+                            color: #000;
+                            letter-spacing: -1px;
+                        }
+                    }
+                    .ems-login-body {
+                        .ems-form {
+                            .ems-form-inner {
+                                width: 100%;
+                                max-width: 320px;
+                                .is-active,
+                                .is-completed {
+                                    .ems-form-obj {
+                                        font-weight: 700;
+                                        color: $colorDefault;
+                                    }
+                                }
+                                .ems-field {
+                                    max-width: 320px;
+                                    width: 100%;
+                                    .ems-form-label {
+                                        color: #000;
+                                    }
+                                    span{
+                                        color: #ccc;
+                                    }
+                                    .btnDefault{
+                                        span{
+                                            color:#fff;
+                                            text-transform:uppercase;
+                                        }
+                                    }
+                                }
+                                .password {
+                                    position: relative;
+                                    #lnkSifremiUnuttum {
+                                        position: absolute;
+                                        right: 0;
+                                        bottom: 5px;
+                                        span {
+                                            font-size: 12px;
+                                            color: $colorDefault;
+                                        }
+                                    }
+                                }
+                                .remember {
+                                    .ems-form-obj {
+                                        input {
+                                            &:checked {
+                                                + span {
+                                                    &:before {
+                                                        background-color: $colorRed;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        span {
+                                            padding-left: 25px;
+                                            &:before {
+                                                width: 14px;
+                                                height: 14px;
+                                            }
+                                            color: $colorDefault;
+                                        }
+                                    }
+                                }
+                                .fb-login-wrapper {
+                                    .ems-field {
+                                        table {
+                                            display: inline-block;
+                                            width: 100%;
+                                            tbody {
+                                                display: inline-block;
+                                                width: 100%;
+                                                tr {
+                                                    display: inline-block;
+                                                    width: 100%;
+                                                    th {
+                                                        display: inline-block;
+                                                        width: 100%;
+                                                        .btnFacebookLogin {
+                                                            background-color: #1565c0;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ems-message-wrapper {
+            margin: 20px 0;
+            padding-right: 20px;
+            div {
+                span {
+                    line-height: 20px;
+                    color: #B70234;
+                }
+            }
+        }
+        .loginCmp{
+            margin-top:10px;
+            display:block;
+            p{
+                padding:15px 0;
+                background: #f8f8f8;
+                text-align: center;
+                color:#000;
+                border: 1px solid #222;
+            }
+        }
+    }
+}
+
+.ems-page-order-payment {
+    width: 1200px;
+    margin: 25px auto;
+    max-width: 100%;
+    padding: 0 20px;
+    .ems-cart-pay-inner {
+        position: relative;
+        .ems-cart-body {
+            .ems-cart-pay-tab {
+                ul {
+                    li {
+                        display: inline-block;
+                        a {
+                            span {
+                                font-weight: 700;
+                                color: #9e9e9e;
+                                padding: 10px 20px;
+                                display: inline-block;
+                            }
+                            &.emos_selected {
+                                span {
+                                    color: $colorRed;
+                                    border-bottom: 3px solid $colorRed;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-cart-pay-type {
+                border: 1px solid #e4e4e4;
+                display: block;
+                width: calc(100% - 365px);
+                padding: 0 20px;
+                .ems-pay-point {
+                    display: block;
+                    padding-bottom:20px;
+                    .pageOdemeBilgi_chkKrediKartiBonusPara{
+                        .checkbox {
+                            input:checked+span:after{
+                                background:#b70234;
+                            }
+                        }
+                    }
+                }
+                .ems-pay-other {
+                    padding: 0;
+                    .OdemeBilgiPesinDigerOdemeNotu {
+                        margin-top: 10px;
+                        textarea {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                .tableTitleOdemeBilgiKrediKarti {
+                    display: none;
+                }
+                .tableOdemeBilgiKrediKarti {
+                    width: 50%;
+                    display: inline-block;
+                    vertical-align: top;
+                    border-right: 1px solid #e4e4e4;
+                    padding: 30px 0 0 0;
+                    tr {
+                        display: inline-block;
+                        margin-bottom: 35px;
+                        display: block;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                        th {
+                            text-align: left;
+                            display: block;
+                            position: relative;
+                        }
+                        td {
+                            text-align: left;
+                            display: block;
+                            width: 100%;
+                            max-width: 290px;
+                            .div-cc-carttype {
+                                right: 0;
+                            }
+                            > div {
+                                input {
+                                    margin: 0;
+                                    width: 100% !important;
+                                    max-width: 290px;
+                                }
+                            }
+                            select {
+                                margin: 0;
+                            }
+                            #cvcnedir {
+                                .icon-question-circle {
+                                    &:after {
+                                        content: '?';
+                                        border: 1px solid $colorDefault;
+                                        width: 22px;
+                                        height: 22px;
+                                        border-radius: 100%;
+                                        line-height: 22px;
+                                        text-align: center;
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                            &.tableOdemeBilgiKrediKarti_tdtxtKKARTISIM {
+                                input {
+                                    width: 100% !important;
+                                }
+                            }
+                            &.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit {
+                                a {
+                                    span {
+                                        color: #000;
+                                        font-weight: 700; 
+                                    }
+                                }
+                                a:hover{
+                                    span{
+                                        color: #b70234;
+                                    }
+                                }
+                            }
+                            &.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit {
+                                position: absolute;
+                                left: 37%;
+                                top: 75px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            display: inline-block;
+                            position: relative;
+                            margin-right: 7px;
+                            &:before {
+                                content: $icon-rectangle-4;
+                                font-family: $fontIcon;
+                                position: absolute;
+                                font-size: 10px;
+                                color: #000;
+                                top: 30px;
+                                left: 70px;
+                            }
+                            &:after {
+                                content: $icon-rectangle-4;
+                                font-family: $fontIcon;
+                                position: absolute;
+                                font-size: 10px;
+                                color: #000;
+                                top: 30px;
+                                left: 170px;
+                            }
+                            td {
+                                select {
+                                    width: 80px !important;
+                                    margin-right: 20px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        &:nth-child(3) {
+                            display: inline-block;
+                            input {
+                                margin: 0;
+                                width: 50px !important;
+                            }
+                        }
+                    }
+                }
+                .pageOdemeBilgi_odemeTaksit {
+                    width: 50%;
+                    display: inline-block;
+                    vertical-align: top;
+                    padding: 30px 0 30px 30px;
+                    position: relative;
+                    .tableOdemeTaksit {
+                        width: 100%;
+                        padding-top: 25px;
+                        .tableTitleOdemeTaksit {
+                            td {
+                                span {
+                                    font-weight: 700;
+                                    font-size: 12px;
+                                    color: #9e9e9e;
+                                    margin-bottom: 20px;
+                                    display: block;
+                                }
+                                &:first-child {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                        .taksit_pesin {
+                            td {
+                                position: relative;
+                                color: #000;
+                                margin:5px 0;
+                                input {
+                                    width: 20px;
+                                    height: 20px;
+                                    /*opacity: 0;*/
+                                    top: 0;
+                                    position: absolute;
+                                }
+                                &:first-child {
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 20px;
+                                    &:before {
+                                        /*content: '';
+                                        width: 20px;
+                                        height: 20px;
+                                        border: 1px solid $colorDefault;
+                                        display: inline-block;
+                                        border-radius: 100%;
+                                        */
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    #imgBANKALOGO{
+                        display: block;
+                        margin: 35px auto 0;
+                    }
+                }
+            }
+            .ems-pay-type-desc {
+                width: calc(100% - 365px);
+                background-color: #f8f8f8;
+                margin: 30px 0;
+                .block {
+                    padding: 30px;
+                    .ems-col-left {
+                        width: 70%;
+                        .title {
+                            font-weight: 700;
+                            color: $colorDefault;
+                            font-size: 14px;
+                        }
+                        .text {
+                            p {
+                                font-size: 12px;
+                                color: #9e9e9e;
+                            }
+                        }
+                    }
+                    .ems-col-right {
+                        width: 30%;
+                        text-align: right;
+                    }
+                }
+            }
+            .ems-page-order-cart {
+                width: calc(100% - 365px);
+                .cart-section-left {
+                    .ems-grid-cart {
+                        .ems-grid-header {
+                            padding-right: 70px;
+                            margin-bottom: 5px;
+                            > div {
+                                display: inline-block;
+                                span {
+                                    font-weight: 700;
+                                    color: #9e9e9e;
+                                    font-size: 12px;
+                                }
+                            }
+                            .ems-grid-name {
+                                width: 65%;
+                            }
+                            .ems-grid-piece {
+                                width: 20%;
+                            }
+                            .ems-grid-price-total {
+                                width: 15%;
+                            }
+                        }
+                        .ems-grid-row {
+                            border: 1px solid #e4e4e4;
+                            padding: 20px;
+                            > div {
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                            .ems-grid-img {
+                                width: 10%;
+                            }
+                            .ems-grid-name {
+                                width: 50%;
+                                span {
+                                    > a {
+                                        color: #000;
+                                        & + span {
+                                            display: block;
+                                            color: #9e9e9e;
+                                        }
+                                    }
+                                    .ems-grid-gift-box {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            .ems-grid-piece {
+                                width: 20%;
+                                .ems-grid-piece-add-remove {
+                                    span {
+                                        font-size: 16px;
+                                        color: #9e9e9e;
+                                    }
+                                }
+                            }
+                            .ems-grid-price-total {
+                                width: 15%;
+                                span {
+                                    color: #000;
+                                    font-weight: 700;
+                                    letter-spacing: 1.8px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .cart-section-right {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 345px;
+                    .ems-cart-summary {
+                        padding: 30px;
+                        border: 1px solid #e4e4e4;
+                        max-width: 345px;
+                        .top-step {
+                            > span {
+                                display: block;
+                                text-align: center;
+                                color: #000;
+                                font-weight: 700;
+                                font-size: 18px;
+                                letter-spacing: 2px;
+                                margin-bottom: 10px;
+                            }
+                            table {
+                                tr {
+                                    > * {
+                                        > span {
+                                            display: block;
+                                            margin: 2px 0;       
+                                        }
+                                    }
+                                    th {
+                                        text-align: left;
+                                        font-size: 12px;
+                                        font-weight: normal;
+                                    }
+                                    td {
+                                        text-align: right;
+                                        font-size: 12px;
+                                    }
+                                    &:last-child {
+                                        > * {
+                                            color: #000;
+                                            font-size: 16px;
+                                            font-weight: 700;
+                                            letter-spacing: 1.8px;
+                                            > span {
+                                                display: block;
+                                                margin-top: 15px;
+                                            }
+                                        }
+                                    }
+                                    &[class$="bankaKomisyon"] {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-cart-pay-adress {
+                width: calc(100% - 365px);
+                margin: 20px 0;
+                > div {
+                    .ems-delivery-address-lbl {
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        color: #000;
+                        margin-bottom: 5px;
+                    }
+                    .ems-delivery-address-obj {
+                        padding: 30px;
+                        border: 1px solid #e4e4e4;    
+                        span {
+                            font-size: 12px;
+                            color: #9e9e9e;
+                        }
+                    }
+                    width: 49%;
+                    display: inline-block;
+                    &.right {
+                        margin-left: 2%;
+                    }
+                }
+            }
+        }
+        .bottom-step {
+            margin-top: 10px;
+            .next {
+                .onBilgilendirmeForm {
+                    .tableTitleSiparisOnBilgilendirmeForm {
+                        display: none;
+                    }
+                    .onBilgilendirmeFormMetin {
+                        display: none;
+                    }
+                    .pageSiparisOnay_lbfOnBilgilendirmeForm {
+                        position: relative;
+                        > div {
+                            display: inline-block;
+                            span {
+                                font-size: 10px;
+                                img {
+                                    display: none;
+                                }
+                            }
+                            &.pageSiparisOnay_btnOnBilgilendirmeFormOnizle {
+                                position: absolute;
+                                left: 100px;
+                                top: 20px;
+                                width: 20px;
+                            }
+                        }
+                        .checkbox {
+                            > span {
+                                &:after {
+                                    background-color: $colorRed;
+                                }
+                            }
+                        }
+                        .btnOnBilgilendirmeFormOnizle {
+                            @extend .btnDefault-text;
+                        }
+                    }
+                    &.opened {
+                        .onBilgilendirmeFormMetin {
+                            display: block;
+                        }    
+                    }
+                }
+                .siparisOnaySozlesme {
+                    margin: 20px 0;
+                    .tableTitleSiparisOnaySatisSozlesme {
+                        display: none;
+                    }
+                    .siparisOnaySozlesmeMetin {
+                        display: none;
+                    }
+                    .pageSiparisOnay_lbfSatisSozlesme {
+                        position: relative;
+                        > div {
+                            display: inline-block;
+                            span {
+                                font-size: 10px;
+                                img {
+                                    display: none;
+                                }
+                            }
+                            &.pageSiparisOnay_btnSatisSozlesmeOnizle {
+                                position: absolute;
+                                left: 70px;
+                                top: 20px;
+                                width: 20px;
+                            }
+                        }
+                        .checkbox {
+                            > span {
+                                &:after {
+                                    background-color: $colorRed;
+                                }
+                            }
+                        }
+                        .btnSatisSozlesmeOnizle {
+                            @extend .btnDefault-text;
+                        }
+                    }
+                    &.opened {
+                        .siparisOnaySozlesmeMetin {
+                            display: block;
+                        }    
+                    }
+                }
+                .btnSiparisOnay {
+                    width: 100%;
+                    background-color: $colorRed;
+                    margin-top: 10px;
+                }
+                span[id$="lbfSIP_ONAYLA_DEC"] {
+                    color: #000;
+                    font-size: 12px;
+                    margin-top: 15px;
+                }
+                
+            }
+        }
+    }
+}
+
+.corporate-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 9;
+    ul {
+        padding: 0 20px;
+        li {
+            display: inline-block;
+            margin-right: 75px;
+            padding: 35px 0;
+            a {
+                color: #fff;
+                font-weight: 700;
+                @include transition(all ease-in-out .2s);
+                &:hover {
+                    color: $colorRed;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.corporate-menu-selecbox {
+    display: none;
+}
+
+.corporate-holder {
+    .image {
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        img {
+            visibility: hidden;
+            display: block;
+        }
+    }
+    .text {
+        h2 {
+            font-size: 66px;
+            font-family: $fontSite;
+            letter-spacing: -2px;
+        }
+        h3 {
+            margin: 0 0 30px 0;
+            font-family: $fontSite;
+            font-size: 50px;
+            letter-spacing: -2px;
+        }
+        h4 {
+            margin: 0 0 20px 0;
+            font-family: $fontSite;
+            font-size: 24px;
+            letter-spacing: -1px;
+            
+        }
+        p {
+            line-height: 24px;
+            margin: 0 0 25px 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+    .corporate-main-image {
+        position: relative;
+        .text {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            @include setTransform(translateY(-50%));
+            h2 {
+                color: #fff;
+            }
+        }
+    }
+    .corporate-redirect-bar {
+        border-bottom: 1px solid #e4e4e4;
+        ul {
+            text-align: center;
+            li {
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover,
+                &.selected {
+                    a {
+                        border-bottom: 4px solid $colorRed;
+                        padding-bottom: 32px;
+                    }
+                }
+                display: inline-block;
+                margin-right: 100px;
+                padding: 35px 0;
+                a {
+                    font-size: 16px;
+                    font-weight: 700;
+                    @include transition(all ease-in-out .2s);
+                }
+            }
+        }
+    }
+    .corporate-main-text {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        .text {
+            margin: 80px 0;
+            h3 {
+                color: #000;
+            }
+        }
+    }
+    .corporate-image {
+        position: relative;
+        .text {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            text-align: center;
+            @include setTransform(translate(-50%, -50%));
+            h4 {
+                color: #fff;
+            }
+            p {
+                color: #fff;
+            }
+        }
+    }
+    .corporate-text {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        .text {
+            margin: 130px 0;
+            h4 {
+                color: #000;
+            }
+        }
+    }
+    .corporate-group {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        .image {
+            width: 45%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .text {
+            width: 55%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 60px;
+            h4 {
+                color: #000;
+            }
+        }
+    }
+}
+
+.licensors-holder {
+    padding: 0 20px;
+    .licensors-column-left {
+        width: 200px;
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 10px;
+        .kutuSolMenuTree {
+            .kutu-body-sol-menu-selecbox {
+                display: none;
+            }
+            .kutuBodySolMenuTree {
+                > ul {
+                    > li {
+                        > a {
+                            display: none;
+                        }
+                        > ul {
+                            > li {
+                                > a {
+                                    font-size: 18px;
+                                    color: #000;
+                                    line-height: 50px;
+                                    display: block;
+                                    position: relative;
+                                }
+                                &.opened {
+                                    > a {
+                                        font-weight: 700;
+                                        color: $colorRed;
+                                        &:after {
+                                            content: $icon-triangle-down;
+                                            font-family: $fontIcon;
+                                            font-size: 8px;
+                                            position: absolute;
+                                            right: 0;
+                                            color: #9e9e9e;
+                                        }
+                                    }
+                                    > ul {
+                                        display: block;
+                                    }
+                                }
+                                &:hover {
+                                    > a {
+                                        font-weight: 700;
+                                        color: $colorRed;
+                                    }
+                                }
+                                > ul {
+                                    display: none;
+                                    padding-left: 20px;
+                                    > li {
+                                        > a {
+                                            line-height: 36px;
+                                        }
+                                        &.opened {
+                                            > a {
+                                                font-weight: 700;
+                                                color: $colorRed;
+                                            }
+                                        }
+                                        &:hover {
+                                            > a {
+                                                font-weight: 700;
+                                                color: $colorRed;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+    .licensors-column-right {
+        width: calc(100% - 200px);
+        padding-left:20px;
+        margin-top:10px;
+        display: inline-block;
+        vertical-align: top;
+        /*margin-left: 20px;*/
+        .licensors-tabs {
+            ul {
+                background-color: #f8f8f8;
+                height: 70px;
+                line-height: 70px;
+                padding-left: 40px;
+                li {
+                    display: inline-block;
+                    width: 25%;
+                    line-height: 70px;
+                    @media screen and (max-width:960px){
+                        width: 50%;
+                    }
+                    a {
+                        @include transition(all ease-in-out .2s);
+                        &:hover {
+                            color: $colorRed;
+                            font-weight: 700;
+                        }
+                        &.selected {
+                            color: $colorRed;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+        .content {
+            padding-left: 40px;
+            h1 {
+                font-size: 24px;
+                font-family: $fontSite;
+                letter-spacing: -1px;
+                color: #000;
+                margin: 30px 0;
+            }
+            b {
+                font-weight: 700;
+                color: #000;
+                font-size: 18px;
+                margin: 0 0 25px 0;
+                display: block;
+            }
+            p {
+                line-height: 32px;
+                margin-bottom: 40px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }    
+
+}
+
+.history-gallery {
+    .nav-wrp {
+        .nav-inner {
+            line-height: 50px;
+            .history-dropdown {
+                display: none;
+            }
+            .history-slider {
+                    margin-bottom: 60px;
+                    height: 50px;
+                    background-color: #f8f8f8;
+                .swiper-inner {
+                    width: 100%;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            &.selected {
+                                span {
+                                    color: $colorRed;
+                                    font-weight: 700;
+                                }
+                            }
+                            display: inline-block;
+                            width: auto;
+                            padding-right: 20px;
+                            span {
+                                color: #9e9e9e;
+                                @include transition(all ease-in-out .2s);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content-wrp {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        .content-inner {
+            ul {
+                li {
+                    .item-inner {
+                        display: flex;
+                        position: relative;
+                        > div {
+                            width: 45%;
+                            display: inline-block;
+                            vertical-align: top;
+                            position: relative;
+                            padding-bottom: 60px;
+                        }
+                        .item-img {
+                        }
+                        .item-text {
+                            h2 {
+                                margin: 0;
+                                font-size: 30px;
+                                font-family: $fontSite;
+                                color: #000;
+                                letter-spacing: -1px;
+                            }
+                            p {
+                                font-size: 16px;
+                                margin: 0;
+                                line-height: 32px;
+                            }
+                        }
+                        &.left-item {
+                            &.active {
+                               .item-img {
+                                   border-right: 1px solid $colorRed;
+                                    &:before {
+                                        background-color: $colorRed;
+                                        border: 3px solid #fff;
+                                    } 
+                                }
+                            }
+                            .item-img {
+                                order: 1;
+                                text-align: right;
+                                padding-right: 5%;
+                                border-right: 1px solid #e4e4e4;
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    right: 0;
+                                    width: 16px;
+                                    height: 16px;
+                                    border-radius: 100%;
+                                    border: 3px solid #e4e4e4;
+                                    background-color: #fff;
+                                    z-index: 9;
+                                    @include setTransform(translateX(50%));
+                                }
+                            }
+                            .item-text {
+                                order: 2;
+                                padding-left: 5%;
+                                border-left: 1px solid #e4e4e4;
+                            }
+                        }
+                        &.right-item {
+                            &.active {
+                               .item-text {
+                                   border-right: 1px solid $colorRed;
+                                    &:before {
+                                        background-color: $colorRed;
+                                        border: 3px solid #fff;
+                                    } 
+                                }
+                            }
+                            .item-img {
+                                order: 2;
+                                padding-left: 5%;
+                                border-left: 1px solid #e4e4e4;
+                            }
+                            .item-text {
+                                order: 1;
+                                text-align: right;
+                                padding-right: 5%;
+                                border-right: 1px solid #e4e4e4;
+                                &:before {
+                                    content: '';
+                                    position: absolute;
+                                    right: 0%;
+                                    width: 16px;
+                                    height: 16px;
+                                    border-radius: 100%;
+                                    border: 3px solid #e4e4e4;
+                                    background-color: #fff;
+                                    z-index: 9;
+                                    @include setTransform(translateX(50%));
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.aydinli-group-holder {
+    padding: 40px 20px; 
+    .aydinli-group-column-left {
+        display: inline-block;
+        vertical-align: top;
+        width: 200px;
+    }
+    .aydinli-group-column-right {
+        width: calc(100% - 200px);
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 40px;
+        border-left: 1px solid #e4e4e4;
+        .content {
+            > *:last-child {
+                margin-bottom: 0;
+            }
+            h1 {
+                margin: 0 0 25px 0;
+                color: #000;
+                font-size: 24px;
+                font-family: $fontSite;
+            }
+            p {
+                line-height: 32px;
+                margin: 0 0 25px 0;
+                b {
+                    color: #000;
+                }
+            }
+            ul {
+                li {
+                    margin: 0 0 25px 0;
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+}
+
+.kutuSolMenuTree {
+    .kutuHeaderSolMenuTree {
+        display: none;
+    }
+    .kutu-body-sol-menu-selecbox {
+        display: none;
+    }
+    .kutuBodySolMenuTree {
+        > ul {
+            > li {
+                > a {
+                    font-size: 32px;
+                    font-family: $fontSite;
+                    color: #000;
+                    letter-spacing: -1px;
+                }
+                > ul {
+                    > li {
+                        &.act {
+                            a {
+                                font-weight: 700;
+                                color: $colorRed;
+                            }
+                        }
+                        > a {
+                            line-height: 50px;
+                            text-transform:uppercase;
+                            &:hover {
+                                font-weight: 700;
+                                color: $colorRed;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pageservis {
+    .pageHeaderservis {
+        display: none;
+    }
+    .servisArama {
+        th[class="thlbfSCT_SPR_AD"] {
+            display: none;
+        }
+    }
+}
+
+.mod-service-list {
+    padding: 0 20px;
+    .mod-service-list-inner {
+        display: table;
+        width: 100%;
+        .mod-service-list-inner-wrp {
+            padding-top: 60px;
+            width: 30%;
+            display: table-cell;
+            vertical-align: top;
+            div[id$="plhSehirBilgi1"] {
+                &:after {
+                    color: #000;
+                    font-size: 8px;
+                }
+                #dvSehirBilgi {
+                    margin: 30px 0;
+                    &:first-child{
+                        margin-top:0;
+                    }
+                    select {
+                        margin: 0;
+                        color: #000;
+                        font-size: 24px;
+                        font-family: "csm";
+                        letter-spacing: -1.6px;
+                        border-bottom: none;
+                    }
+                }
+            }
+            .mod-service-list-header {
+                > span {
+                    display: none;
+                }
+                .ems-form {
+                    .ems-form-inner {
+                        .country {
+                            display: none;
+                        }
+                        .district {
+                            display: none;
+                        }
+                        .search {
+                            display: none;
+                        }
+                    }
+                }
+            }  
+            .mod-service-list-body {
+                .servisIcerik {
+                    .servis_bilgi {
+                        display: none;
+                        span {
+                            color: #000;
+                            font-size: 40px;
+                            font-family: $fontSite;
+                            letter-spacing: -1.6px;
+                        }
+                    }
+                    .pServisListe {
+                        &.selected {
+                            > div{
+                                font-weight: 700;
+                            }
+                        }
+                        > div {
+                            color: #000;
+                            font-size: 16px;
+                            margin-bottom: 40px;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                            &:hover {
+                                font-weight: 700;    
+                            }
+                            &:not(.divServisListe_FirmaAdi) {
+                                display: none;
+                            }
+                        }
+                    }    
+                }
+            }  
+        }    
+        .address-detail {
+            background-color: #f8f8f8;
+            padding: 60px;
+            visibility: hidden;
+            width: 70%;
+            display: table-cell;
+            vertical-align: top;
+            @at-root .address-detail-show {
+                .address-detail {
+                    visibility: visible !important;
+                }    
+            }
+            .address-detail-inner {
+                .back-btn {
+                    display: none;
+                    h2 {
+
+                    }
+                    a {
+                        font-weight: 700;
+                        color: #000;
+                    }
+                }
+                .left-column {
+                    > .title {
+                        font-family: $fontSite;
+                        color: #000;
+                        font-size: 24px;
+                        letter-spacing: -1px;
+                        margin: 0px 0 25px 0;
+                    }
+                    .detail {
+                        margin-bottom: 30px;
+                        .title {
+                            color: #424242;
+                            font-size: 14px;
+                        }
+                        .address {
+                            color: #757575;
+                        }
+                        .phone {
+                            span {
+                                color: #757575;    
+                            }
+                        }
+                        > a {
+                            font-weight: 700;
+                            color: $colorRed;
+                            text-transform: uppercase;
+                            margin-top: 40px;
+                            display: inline-block;
+                        }
+                    }
+                }
+                .right-column {
+                    .map {
+                        border: 5px solid #fff;
+                        width:100%;
+                        height:100vw;
+                        max-height:300px;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+.customer-service-holder {
+    padding: 25px 0;
+    .customer-service-left {
+        width: 200px;
+        display: inline-block;
+        vertical-align: top;
+        border-right: 1px solid #e4e4e4;
+    }
+    .customer-service-right {
+        width: calc(100% - 200px);
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 60px;
+        .tableTitleIcerik {
+            margin: 0 0 25px 0;
+            span {
+                font-size: 24px;
+                font-family: $fontSite;
+                color: #000;
+            }
+        }
+        .tableIcerik{
+            span{
+                p{
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+.kutuSepet_icerik {
+    .kutuSepet_Urun{
+        position: relative;
+        display: flex;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        vertical-align: top;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px 0;
+        border-bottom: 1px solid #e4e4e4;
+            &:last-child{
+                border-bottom:0;
+            }
+            .kutuSepet_Resim{
+                display: block;
+                float: left;
+                width: 85px;
+                position: absolute;
+            }
+            .kutuSepet_Text{
+                display: none;
+            }
+            .kutuSepet_Sil{
+                position: absolute;
+                right: 0;
+                top: 20px;
+                display: block !important;
+                    a{
+                        text-indent: -100px;
+                        overflow: hidden;
+                        width: 17px;
+                        height: 17px;
+                        color: #000;
+                        display: block;
+                            &:after{
+                                content:'';
+                                font-family: 'icomoon' !important;
+                                speak: none;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-variant: normal;
+                                text-transform: none;
+                                line-height: 1;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                                margin-left: 86px;
+                            }
+                    }
+            }
+            .kutuSepet_Text1{
+                display: block !important;
+                padding-left: 85px;
+                width: 100%;
+                order: 1;
+                    .urnkisaAd,
+                    .kutuSepet_urnAdet{
+                        display: none;
+                    }
+                    .urnAd{
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        margin-bottom: 5px;
+                        display: block;
+                        width: 100%;
+                        color: #000;
+                    }
+                    .urnSec1{
+                        font-size: 12px;
+                        color: #9e9e9e;
+                    }
+            }
+            .kutuSepet_netFiyatVrg {
+                display: block !important;
+                font-size: 14px;
+                letter-spacing: 1px;
+                font-weight: 700;
+                color: #000;
+                order: 2;
+                padding: 20px 0 0 85px;
+            }
+    }
+}
+
+.ems-login {
+    .cart-append {
+        display: none;
+    }
+}
+
+.ems-logoff {
+    .cart-dsc {
+        background-color: #f8f8f8;
+        padding: 20px 0 !important;
+        @at-root .mod-mini-login-body {
+            .cart-dsc {
+                display: block !important;
+            }
+        }
+        span.h2 {
+            margin:0 0 15px 0;
+            font-size: 24px;
+            color: #000;
+            font-family: $fontSite;
+            letter-spacing: -.7px;
+            display:block;
+        }
+        p {
+            margin: 0;
+            color: $colorDefault;
+        }
+    }
+    .cart-append {
+        background-color: #f8f8f8;
+        .col2 {
+            display: none;
+        }
+        .kutuSepet_icerik {
+            .kutuSepet_Urun {
+                .kutuSepet_Text1 {
+                    text-align: left;
+                    > a {
+                        line-height: initial !important;
+                    }
+                }
+                .kutuSepet_netFiyatVrg {
+                    padding-top: 0;
+                    > a {
+                        color: #000 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.minPpWrp {
+    .minPp.popup_satissozlesmesi {
+        iframe.minPpIframe {
+        }
+    }
+}
+
+.ems-desktop-quickview{
+    table{
+        span{
+        }
+    }
+}
+
+.ems-mobile-quickview{
+    table{
+        td{
+            .popupOtomasyon{
+                width: 100vw;
+                span{
+                    width: 90% !important;
+                }
+            }
+        }
+    }
+}
+
+.zorunluFont {
+    &:before {
+        content: '*';
+        color: $colorRed;
+        margin-right: 3px;
+    }
+}
+.searchPage {
+    .pageArama {
+        display: none;
+    }
+    .tableTitleArama {
+        display: none;
+    }
+    .bodyHolder {
+        > div:not(.urnList) {
+            display: none;
+        }
+        .urnList {
+            max-width: 1200px;
+            padding: 0 20px;
+            width: 100%;
+            margin: 0 auto;
+            .ems-prd-list {
+                .ems-prd-list-count {
+                    display: none;
+                }
+                .ems-prd-order {
+                    display: none;
+                }
+                .ems-prd-list-paging {
+                    .urunPaging {
+                        table {
+                            tr {
+                                td {
+                                    &:first-child {
+                                        display: none;
+                                    }
+                                    &:last-child {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .urunPaging_pageNavigation {
+                        .paging {
+                            margin-left: 10px;
+                        }
+                        > span {
+                            .paging {
+                                margin-left: 10px;
+                            }
+                            span.paging {
+                                border-bottom: 2px solid $colorRed;
+                            }
+                            > * {
+                                font-size: 14px;
+                                font-weight: 700;
+                                margin-left: 10px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    .urunPaging_paging {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    :not(.divServisListe_FirmaAdi)
+    .search-not-found {
+        padding: 0 20px;
+        width: 100%;
+        max-width: 700px;
+        margin: 80px auto;
+        h2 {
+            font-size: 48px;
+            color: #000;
+            font-family: $fontSite;
+            margin: 0 0 20px 0;
+            text-align: center;
+            letter-spacing: -2.4px;
+        }
+        p {
+            font-size: 24px;
+            color: #4e4e4e;
+            margin: 0;
+            padding: 0 0 30px 0;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #000;
+            text-align: center;
+            letter-spacing: 2px;
+            margin: 30px 0;;
+        }
+        .categories {
+            ul {
+                li {
+                    width: 31%;
+                    display: inline-block;
+                    vertical-align: top;
+                    background-color: #a11e31;
+                    border-radius: 3px;
+                    margin-right: 3.5%;
+                    margin-bottom: 20px;
+                    &:nth-child(3n) {
+                        margin-right: 0;
+                    }
+                    a {
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 16px;
+                        text-align: center;
+                        display: block;
+                        padding: 15px 0;
+                    }
+                    @media (max-width: 700px) {
+                        width: 48%;
+                        margin-right: 4%;
+                        &:nth-child(2n) {
+                            margin-right: 0;
+                        }
+                        &:nth-child(2n+1) {
+                            margin-right: 4%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.special-product {
+    width: calc(100% - 325px);
+    margin-top: 50px;
+    .swiper-title {
+        h2 {
+            font-size: 24px;
+            color: #000;
+            text-align: left;
+        }
+    }
+    .swiper-inner {
+        .swiper-slide {
+            .ems-prd-inner {
+                .ems-prd-name-holder {
+                    .ems-prd-name {
+                        a {
+                            font-size: 13px;
+                            font-family: $fontSite;
+                        }
+                    }
+                }
+                .ems-prd-price {
+                    .ems-prd-price-first {
+                        div {
+                            color: #000 !important;
+                            font-size: 16px !important;
+                            text-decoration: line-through;
+                        }
+                    }
+                    .ems-prd-price-selling {
+                        div {
+                            color: #000 !important;
+                            font-size: 16px !important;
+                        }
+                    }
+                }
+                .ems-prd-add-button {
+                    text-align: center;
+                    a {
+                        border: 1px solid #9e9e9e;
+                        font-size: 13px;
+                        color: #9e9e9e;
+                        font-family: $fontSite;
+                        padding: 10px 35px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .system-widget {
+        display: block !important;
+    }
+}
+
+.product-detail-widget {
+    .system-widget {
+        .swiper-title {
+            text-align: center;
+        }
+        .swiper-wrapper {
+            .swiper-slide {
+                .ems-prd-inner {
+                    .ems-prd-name-holder {
+                        .ems-prd-name {
+                            a {
+                                font-size: 14px;
+                                color: #000;
+                                font-weight: 700;
+                                letter-spacing: 2px;
+                            }
+                        }
+                    }
+                    .ems-prd-price {
+                        .ems-prd-price-first {
+                            div {
+                                color: #000 !important;
+                                text-decoration: line-through;
+                            }
+                        }
+                        .ems-prd-price-selling {
+                            div {
+                                color: #000 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-button-prev {
+            left:0;
+            i {
+                &:before {
+                    font-family: $fontIcon;
+                    content: $icon-left;
+                }
+            }
+        }
+        .swiper-button-next {
+            right:0;
+            i {
+                &:before {
+                    font-family: $fontIcon;
+                    content: $icon-right;
+                }
+            }
+        }
+    }
+}
+
+.btnSozlesmeYazdir {
+    @extend .btnDefault-text;
+}
+
+div[id$="pnlSiparisBaslik"] {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .corporate-menu {
+        ul {
+            text-align: center;
+            li {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .ems-page-member {
+        max-width: 100%;
+        .main-container {
+            .left-bar {
+                width: 100%;
+                border: none;
+                padding: 10px 0 0 0;
+                border-top: 1px solid #e4e4e4;
+                border-bottom: 1px solid #e4e4e4;
+                .member-menu {
+                    h4 {
+                        font-weight: 700;
+                        color: #9e9e9e;
+                        font-size: 16px;
+                        margin: 0;
+                        padding: 0 20px;
+                    }
+                    .dropdown {
+                        > span {
+                            display: block;
+                            padding: 0;
+                            border: none;
+                            font-size: 28px;
+                            color: #000;
+                            font-family: $fontSite;
+                            padding: 15px 20px;
+                            cursor: pointer;
+                            &:after {
+                                content: $icon-rectangle-4;
+                                font-family: $fontIcon;
+                                font-size: 11px;
+                                color: #9e9e9e;
+                                float: right;
+                                padding: 12px 0;
+                            }
+                        }
+                        > ul {
+                            display: none;
+                            li {
+                                padding: 0;
+                                background-color: #f8f8f8;
+                                border-top: 1px solid #e4e4e4;
+                                a {
+                                    padding: 15px 20px;
+                                    display: block;
+                                }
+                            }
+                        }
+                        &.opened {
+                            > ul {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            .content-bar {
+                width: 100%;
+                padding: 20px;
+                .page-top-title {
+
+                }
+                .pageMesajGonder {
+                    #mesajGonder {
+                        .mesajGonder {
+                            .tableMesajGonder {
+                                .pageMesajGonder_CaptchaImage1 {
+                                    div[id$="divCaptcha"] {
+                                        br {
+                                            &:nth-child(2) {
+                                                display: block;
+                                            }
+                                        }
+                                        span {
+                                            padding-top: 20px;
+                                        }
+                                        input {
+                                            position: static;
+                                            width: 200px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .ems-page-member-refund {
+                    .ems-grid-refund {
+                        .ems-grid-header {
+                            display: inline-block;
+                            width: 50%;
+                            border: 1px solid #e4e4e4;
+                            border-right: none;
+                            margin-bottom: 20px;
+                            padding: 20px 0 20px 30px;
+                            vertical-align: top;
+                            &:first-child {
+                                display: inline-block;
+                            }
+                            > div {
+                                display: inline-block;
+                                width: 100%;
+                                vertical-align: top;
+                                margin-bottom: 20px;
+                                    span {
+                                        font-size: 14px;
+                                    }
+                                &.ems-grid-status {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .ems-grid-row {
+                            width: 50%;
+                            display: inline-block;
+                            border: 1px solid #e4e4e4;
+                            border-left: none;
+                            margin-bottom: 20px;
+                            padding: 20px 30px 20px 0;
+                            vertical-align: top;
+                            > div {
+                                display: inline-block;
+                                width: 100%;
+                                vertical-align: top;
+                                min-height: 17px;
+                                margin-bottom: 20px;
+                                &.ems-grid-status {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ems-page-member-info {
+                    .ems-form {
+                        .ems-form-inner {
+                            .ems-field {
+                                width: 100%;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                } 
+                .ems-page-member-password {
+                    .ems-form {
+                        .ems-form-inner {
+                            .ems-field {
+                                width: 100%;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                } 
+                .ems-page-member-order-detail {
+                    .order-detail-info {
+                        padding: 0;
+                        > div {
+                            width: 100%;
+                        }
+                    }
+                    .order-address {
+                        width: 100%;
+                        margin-top: 20px;
+                        .text {
+                            margin-bottom: 10px;
+                        }
+                    &.order-address-billing {
+                        margin: 0;
+                    }
+                    }
+                    .inner-title {
+                    display: none; 
+                    }
+                    .ems-grid-order-products {
+                        margin-top: 20px;
+                        > div {
+                            &:first-child {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .ems-page-new-address {
+                    .ems-form {
+                        .ems-form-inner {
+                            .row {
+                                max-width: 100%;
+                                .ems-field {                            
+                                    .ems-form-obj {
+                                        input {
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                            }
+                            .ems-field {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+                .ems-page-member-order {
+                    .ems-order-form {
+                        .ems-grid-order {
+                            > div {
+                                &.ems-grid-header {
+                                    border-top: 1px solid #e4e4e4;
+                                }
+                                &.ems-grid-row {
+                                    border-top: 1px solid #e4e4e4;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ems-page-member-follow-list {
+                    .stock-report {
+                        .ems-grid-follow-stock {
+                            .ems-grid-header {
+                                display: none;
+                            }
+                            .ems-grid-row {
+                                > div {
+                                    &.ems-grid-img {
+                                        width: 22%;
+                                    }
+                                    &.ems-grid-group {
+                                        width: 58%;
+                                        > div {
+                                            width: 100% !important;
+                                            &.ems-grid-price {
+                                                text-align: left;
+                                            }
+                                            &.ems-grid-name {
+                                                padding: 5px 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .ems-page-member-favorites {
+                    .favorite-report {
+                        .ems-grid-favorites {
+                            .ems-grid-row {
+                                > div {
+                                    &.ems-grid-img {
+                                        width: 20%;
+                                    }
+                                    &.ems-grid-group {
+                                        width: 35%;
+                                        > div {
+                                            display: block;
+                                            width: 100% !important;
+                                            &.ems-grid-code {
+                                                text-align: left;
+                                                margin-bottom: 10px;
+                                            }
+                                            &.ems-grid-name {
+                                                a {
+                                                    color: #000;    
+                                                }
+                                            }
+                                            &.ems-grid-option1 {
+                                                text-align: left;
+                                            }
+                                            &.ems-grid-price {
+                                                text-align: left;
+                                                color: #000;
+                                                padding-top: 10px;
+                                            }
+                                        }
+                                    }
+                                    &.ems-grid-group-buttons {
+                                        width: 45%;
+                                        .ems-grid-report {
+                                            display: block;
+                                            width: 100%;
+                                            text-align: right;
+                                            padding: 10px 0;
+                                        }
+                                        .ems-grid-remove {
+                                            display: block;
+                                            width: 100%;
+                                            text-align: right;
+                                            padding: 10px 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .ems-page-member-order {
+                    .ems-order-form {
+                        .ems-grid-order {
+                            > div {
+                                &.ems-grid-header {
+                                    width: 50%;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    > div {
+                                        width: 100%;
+                                        padding: 10px 0;
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                                &.ems-grid-row {
+                                    width: 50%;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    > div {
+                                        font-size: 14px;
+                                        width: 100%;
+                                        span {
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .ems-page-member-address {
+                    .ems-address-form {
+                        .ems-grid-address {
+                            .ems-grid-row {
+                                .col-1 {
+                                    width: 100%;
+                                    .ems-grid-group {
+                                        width: 40%;
+                                    }
+                                    .ems-address-buttons {
+                                        width: 60%;
+                                    }
+                                }
+                                .col-2 {
+                                    width: 50%;
+                                    display: none;
+                                    .ems-address-buttons {
+                                        &.item-1 {
+                                            .btnAdresListeGuncelle {
+                                                padding: 15px 5px;
+                                            }
+                                            .btnAdresListeSil {
+                                                padding: 15px 5px;
+                                            }
+                                        }
+                                        &.item-2 {
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ems-page-cart {
+        div[id$="pnlSiparisBaslik"] {
+            table {
+                td {
+                    span {
+                        white-space: normal; 
+                    }
+                }
+            }
+        }
+        .ems-page-order-cart {
+            .cart-section-left {
+                width: 100%;
+                .ems-grid-cart {
+                    .ems-grid-header {
+                        display: none;
+                    }
+                    .ems-grid-row {
+                        padding: 30px 50px 30px 95px;
+                        border: none;
+                        border-top: 1px solid #e4e4e4;
+                        .ems-grid-img {
+                            left: 20px;
+                        }
+                        .ems-grid-name {
+                            .ems-grid-gift-box {
+                                display: none;
+                            }
+                        }
+                        .ems-grid-piece {
+                            
+                        }
+                        .ems-grid-price-total {
+                            width: 100%;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                .ems-cart-button {
+                    margin: 20px 0;
+                }
+            }
+            .cart-section-right {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                .ems-cart-summary {
+                    display: flex;
+                    flex-wrap: wrap;
+                    > div {
+                        width: 100%;
+                    }
+                    .top-step {
+                        order: 2;
+                        background-color: #f8f8f8;
+                        padding: 30px;
+                        > span {
+                            display: none;
+                        }
+                        table {
+
+                        }
+                    }
+                    .ems-cart-coupon {
+                        order: 1;
+                    }
+                    .bottom-step {
+                        order: 3;
+                        .next {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .ems-page-order-delivery {
+            .ems-address-wrapper {
+                width: 100%;
+                padding: 0 20px;
+                .ems-grid-address {
+                    .ems-grid-row {
+                        .col-1 {
+                            width: 100%;
+                            .ems-grid-group {
+                                width: 50%;
+                            }
+                            .ems-address-buttons {
+                                width: 50%;
+                                .btnAdresListeGuncelle {
+                                    color: $colorRed !important;
+                                }
+                                .btnAdresListeSil {
+                                    span {
+                                        color: #9e9e9e !important;
+                                    }
+                                }
+                            }
+                        }
+                        .col-2 {
+                            width: 100%;
+                            background-color: #f8f8f8;
+                            .ems-adrress-buttons {
+                                > a {
+                                    display: block;
+                                    text-align: left;
+                                }    
+                            }
+                        }
+                    }
+                }
+                .add-new-address {
+                    right: 20px;
+                }
+            }    
+        }
+        &.step1 {
+            .ems-page-order-cart {
+                width: 100%;
+            }    
+        }
+    }
+    #validateUye {
+        .ems-page-member-login {
+            .ems-col-left-bar {
+                width: 100%;
+                padding: 0 20px;
+                .ems-signup {
+                    .ems-signup-inner {
+                        .ems-signup-body {
+                            .ems-form {
+                                .ems-form-inner {
+                                    max-width: 100%;
+                                    .row {
+                                        max-width: 100%;
+                                        .ems-field {
+                                            max-width: 100%;
+                                        }
+                                    }
+                                    .ems-field {
+                                        max-width: 100%;
+                                    }
+                                }    
+                            }
+                        }
+                    }
+                }
+            }
+            .ems-col-right-bar {
+                width: 100%;
+                padding: 0 20px;
+                .ems-login {
+                    .ems-login-inner {
+                        .ems-login-body {
+                            .ems-form {
+                                .ems-form-inner {
+                                    max-width: 100%;
+                                    .ems-field {
+                                        max-width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ems-page-order-delivery {
+        .ems-address-wrapper {
+            width: 100%;
+            .ems-grid-address {
+                .ems-grid-row {
+                    > div {
+                        padding: 20px;
+                    }
+                    .col-1 {
+                        width: 100%;
+                        border-bottom: 1px solid #f8f8f8;
+                        .ems-grid-group {
+                            width: 40%;
+                        }
+                        .ems-address-buttons {
+                            width: 55%;
+                            margin-left: 5%;
+                            > * {
+                                display: inline-block;
+                                width: 50%;
+                            }
+                            > a {
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+                            .btnAdresListeGuncelle {
+                                color: $colorRed !important;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .col-2 {
+                        width: 100%;
+                        background-color: #f8f8f8;
+                    }
+                }
+            }
+        }
+        .ems-page-order-cart {
+            position: static;
+            width: 100%;
+            margin: 20px 0;
+        }
+    }
+    .ems-page-order-payment {
+        .ems-cart-pay-inner {
+            .ems-cart-body {
+                .ems-cart-pay-type {
+                    width: 100%;
+                    padding: 20px;
+                    .tableOdemeBilgiKrediKarti {
+                        width: 100%;
+                        border-right: none;
+                        padding-bottom: 0;
+                        tr {
+                            td {
+                                &.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit {
+                                    position: static;
+                                }
+                            }
+                        }
+                    }
+                    .pageOdemeBilgi_odemeTaksit {
+                        width: 100%;
+                        padding-top: 0;
+                        .tableOdemeTaksit {
+                            padding-top: 0;
+                        }
+                    }
+                }
+                .ems-pay-type-desc {
+                    width: 100%;
+                    padding-left: 0;
+                    .block {
+                        padding: 20px;
+                        .ems-col-left {
+                            width: 100%;
+                        }
+                        .ems-col-right {
+                            width: 100%;
+                            text-align: left;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .ems-page-order-cart {
+                    width: 100%;
+                    .cart-section-right {
+                        position: static;
+                        margin: 20px 0;
+                        width: 100%;
+                    }
+                }
+                .ems-cart-pay-adress {
+                    width: 100%;
+                    display: none;
+                }
+            }
+        } 
+    }
+    .corporate-holder {
+        .corporate-main-image {
+            .image {
+                min-height: 210px;
+            }
+            .text {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+        .corporate-main-text {
+            padding: 0 20px;
+            .text {
+                margin: 35px 0;
+                h3 {
+                    font-size: 30px;
+                }
+            }
+        }
+        .corporate-image {
+            .image {
+                min-height: 270px;
+            }
+            .text {
+                position: static;
+                transform: none;
+                margin: 25px 0;
+                padding: 0 20px;
+                h4 {
+                    color: #000;
+                    font-size: 30px;
+                }
+                p {
+                    color: #000;
+                }
+            }
+        }
+        .corporate-text {
+            .text {
+                padding: 0 20px;
+                margin: 40px 0;
+                h4 {
+                    font-size: 30px;
+                }
+            }
+        }
+        .corporate-group {
+            .image {
+                width: 100%;
+            }
+            .text {
+                text-align: center;
+                width: 100%;
+                padding: 0 20px;
+                margin: 20px 0;
+                h4 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .history-gallery {
+        .nav-wrp {
+            .nav-inner {
+
+            }
+        }
+        .content-wrp {
+            .content-inner {
+                ul {
+                    li {
+                        .item-inner {
+                            display: block;
+                            > div {
+                                width: 100%;
+                                &:before {
+                                    display: none;
+                                }
+                            }
+                            .item-text {
+                                padding: 20px !important;
+                                text-align: left !important;
+                                border-right: none !important;
+                            }
+                            .item-img {
+                                padding: 0 20px 20px 20px !important;
+                                text-align: left !important;
+                                border-bottom: 1px solid #e4e4e4;
+                                border-right: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .aydinli-group-holder {
+        .aydinli-group-column-left {
+            width: 100%;
+        }
+        .aydinli-group-column-right {
+            width: 100%;
+            padding: 0;
+            border-left: 0;
+        }
+    }
+    .licensors-holder {
+        padding: 0;
+        .licensors-column-left {
+            width: 100%;
+            .kutuSolMenuTree {
+                padding: 0 10px;
+                .kutu-body-sol-menu-selecbox {
+                    position: relative;
+                    display: block;
+                    &:after {
+                        content: $icon-triangle-down;
+                        font-family: $fontIcon;
+                        font-size: 11px;
+                        color: #9e9e9e;
+                        position: absolute;
+                        right: 20px;
+                        top: 23px;
+                    }
+                    .sStylerWrp {
+                        .sStyler {
+                            display: none;
+                        }                        
+                    }
+                    .sSelect {
+                        display: block;
+                        border-bottom: 1px solid #e4e4e4;
+                        opacity: 1 !important;
+                        margin: 0;
+                        font-size: 18px;
+                        color: #000;
+                        letter-spacing: 1px;
+                        padding: 13px 0 13px 20px;
+                    }
+                }
+                .kutuBodySolMenuTree {
+                    display: none;
+                }
+            }
+        }
+        .licensors-column-right {
+            width: 100%;
+            margin-left: 0;
+            .content {
+                padding: 0 20px;
+            }
+        }
+    }
+    .corporate-menu {
+        display: none;
+    }
+    .corporate-menu-selecbox {
+        display: block;
+        position: relative;
+        &:after {
+            content: $icon-triangle-down;
+            font-family: $fontIcon;
+            position: absolute;
+            right: 20px;
+            top: 16px;
+            color: #fff;
+            z-index: 9;
+            font-size: 11px;
+        }
+        .sStylerWrp {
+            .sStyler {
+                display: none;
+            }
+        }
+        .sSelect {
+            opacity: 1 !important;
+            margin: 0;
+            font-weight: 700;
+            color: #fff;
+            font-size: 16px;
+            position: absolute;
+            z-index: 9;
+            border-bottom: 1px solid #fff;
+            padding: 6px 0 6px 20px;
+            z-index: 19;
+            option {
+                color: #000;
+            }
+        }
+    }
+    .mod-service-list {
+        .mod-service-list-inner {
+            .mod-service-list-inner-wrp {
+                width: 100%;
+            }
+            .address-detail {
+                width: 100%;
+                padding: 0px !important;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100% !important;
+                z-index: 99;
+                background-color: #fff;
+                .address-detail-inner {
+                    .back-btn {
+                        display: block;
+                        background-color: #f8f8f8;
+                        position: relative;
+                        h2 {
+                            color: #000;
+                            font-weight: 700;
+                            font-size: 16px;
+                            letter-spacing: 1.8px;
+                            margin: 0;
+                            padding: 20px 0;
+                            text-align: center;
+                        }
+                        a {
+                            position: absolute;
+                            top: 50%;
+                            right: 20px;
+                            margin-top: -7.5px;
+                            font-size: 0px;
+                            &:before {
+                                content: $icon-close-big;
+                                font-family: $fontIcon;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    .left-column {
+                        padding: 20px;
+                    }
+                    .right-column {
+                        padding: 20px;
+                    }
+                }
+            }
+            @at-root .address-detail-show {
+                overflow: hidden;
+            }
+        }
+    }
+    .customer-service-holder {
+        padding: 25px 20px;
+        .customer-service-left {
+            border-right: none;
+            width: 100%;
+            .kutuSolMenuTree {
+                .kutuBodySolMenuTree {
+                    display: none;
+                }
+                .kutu-body-sol-menu-selecbox {
+                    display: block;
+                    border: 1px solid #e4e4e4;
+                    margin-bottom: 20px;
+                    position: relative;
+                    &:after {
+                        position: absolute;
+                        right: 20px;
+                        content: $icon-triangle-down;
+                        font-family: $fontIcon;
+                        font-size: 10px;
+                        top: 16px;
+                    }
+                    .sStylerWrp {
+                        display: none;
+                    }
+                    .minusSelectBox {
+                        display: block;
+                        width: 100%;
+                        opacity: 1 !important;
+                        padding: 5px;
+                    }
+                    select {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .customer-service-right {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+    .kutuSolMenuTree {
+        .kutuBodySolMenuTree {
+            display: none;
+        }
+        .kutu-body-sol-menu-selecbox {
+            display: block;
+            border: 1px solid #e4e4e4;
+            margin-bottom: 20px;
+            position: relative;
+            &:after {
+                position: absolute;
+                right: 20px;
+                content: $icon-triangle-down;
+                font-family: $fontIcon;
+                font-size: 10px;
+                top: 16px;
+            }
+            .sStylerWrp {
+                display: none;
+            }
+            .minusSelectBox {
+                display: block;
+                width: 100%;
+                opacity: 1 !important;
+                padding: 5px;
+            }
+            select {
+                margin: 0;
+            }
+        }
+    }
+    .ems-cart-summary {
+        max-width: 100% !important;
+    }
+    .special-product {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .ems-page-member {
+        .main-container {
+            .content-bar {
+                .ems-page-member-order-detail {
+                    .ems-grid-order-products {
+                        .ems-grid-row {
+                            .ems-grid-group { 
+                                .ems-grid-img {
+                                    width: 40%;
+                                }
+                                .ems-grid-name {
+                                    width: 60%;
+                                }
+                            }
+                            .ems-grid-pieces {
+                                width: 10%;
+                            }
+                            .ems-grid-price-total {
+                                width: 20%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }      
+    
+}
+.ems-page-member{ 
+    .backPage {
+        display: none;
+        padding: 0px 0 20px 0;
+        @media screen and (max-width:960px){
+            display: block;
+        }
+        a{
+        color: #b70234;
+        font-size: 18px;
+        font-weight: 700;
+        display: inline-block;
+        }
+    }
+}

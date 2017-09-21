@@ -1,0 +1,1493 @@
+.mini-cart-ready, .mini-login-ready, .search-ready{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    &:before{
+        content: '';
+        z-index: 10;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: .3;
+        background: #000;
+    }
+    
+}
+@media screen and (max-width:960px){
+    .search-ready{
+        .mod-mini-search{
+            &:before{
+                content: '';
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 1000;
+            }
+            .mod-mini-search-header{
+                .btn-search{
+                    position: absolute !important;
+                    right: 0;
+                    z-index: 100 !important;
+                    top: 0 !important;
+                }
+            }
+        }
+        .mod-mini-search-inner, .h-desktop{
+            position: relative;
+            z-index: 1001;
+        }
+    }
+}
+.cat-menu-ready{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+
+}
+.ems-logoff{
+    .krg-blg{
+        display: none;
+    }
+}
+.site-header-inner { 
+    background: #fff;
+    @media screen and (min-width:961px){
+        .h-desktop {
+            padding: 0 25px;
+            border-bottom: 1px solid #ededed;
+            .h-top {
+                width: 100%;
+                margin: 0 auto;
+                height: 100px;
+                padding:  0 235px 0 0;
+                background: $colorWhite;
+                position: relative;
+                    @media screen and (max-width:1200px){
+                        padding: 0 170px 0 0;
+                    }
+                    .h-left {
+                        display: inline-block;
+                        vertical-align: top;
+                        padding-left: 265px;
+                        width: 100%;
+                            @media screen and (max-width:1200px){
+                                padding-left: 25%;
+                                    .logo{
+                                        width: calc(22% - 15px);
+                                    }
+                            }
+                            
+                            .logo {
+                                position: absolute;
+                                left: 0;
+                                top: 15px;
+                                @include transition(all 0.2s ease-in-out);
+                                    img{
+                                        @include transition(all 0.2s ease-in-out);
+                                    }
+                            }
+                            @media screen and (min-width:961px){
+                                .nav-main {
+                                    margin-top: 0px;
+                                    @include transition(all 0.2s ease-in-out);
+                                    .lvl1 {
+                                        width: 100%;
+                                        max-width: 930px;
+                                        margin: 0 auto;
+                                        -ms-box-orient: horizontal;
+                                        display: -webkit-box;
+                                        display: -moz-box;
+                                        display: -ms-flexbox;
+                                        display: -moz-flex;
+                                        display: -webkit-flex;
+                                        display: flex;
+                                        -webkit-justify-content: space-around; 
+                                        justify-content: space-around;                                         
+                                        > li {
+                                            text-align: center;
+                                            vertical-align: middle;
+                                            &.text-red{
+                                              >  a{
+                                                    &.text-red{
+                                                        span{
+                                                            &:before{
+                                                                content: '\e923';
+                                                                font-family: $fontIcon;
+                                                                color: #b70234;
+                                                                margin-right: 3px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            > a {
+                                                font-weight: 700;
+                                                font-size: 13px;
+                                                line-height: 20px;
+                                                padding: 0 12px 0 12px;
+                                                display: table-cell;
+                                                position: relative;
+                                                height: 100px;
+                                                vertical-align: middle;
+                                                letter-spacing: 0.6px;
+                                                @include transition(all 0.2s ease-in-out);
+                                                    &:hover {
+                                                        &:after {
+                                                            opacity: 1;
+                                                            bottom: -3px;
+                                                        }
+                                                    }
+                                                    &:after{
+                                                        content:'';
+                                                        width: 100%;
+                                                        height: 3px;
+                                                        background: $colorRed;
+                                                        bottom: 20%;
+                                                        opacity: 0;
+                                                        position: absolute;
+                                                        left: 0;
+                                                        display: block;
+                                                        @include transition(all 0.1s cubic-bezier(1.000, 0.010, 0.000, 1.020));
+                                                    }
+                                                    @media screen and (max-width:1250px){
+                                                        padding: 0 6px;
+                                                    }
+                                                    span{
+                                                        margin-left:5px;
+                                                    }
+                                            }
+                                            &:last-child{
+                                                margin-right: 0;
+                                            }
+                                            .nav-main-sub-nav {
+                                                display: block;
+                                                position: absolute;
+                                                top: 100px;
+                                                left: 50%;
+                                                width: 100%;
+                                                max-width: 1200px;
+                                                background-color: #fff;
+                                                padding: 45px 60px;
+                                                @include setTransform(translate(-50%,-160%));
+                                                @include transition(0.44s transform cubic-bezier(0.19, 1, 0.22, 1));
+                                                z-index: -1;
+                                                opacity: 0;
+                                                .lvl2 {
+                                                    width: 20%;
+                                                    text-align: left;
+                                                    float: left;
+                                                    > li {
+                                                        &.sub-menu{
+                                                            display: block;
+                                                            width: 100%;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                        > a {
+                                                            font-weight: 700;
+                                                            font-size: 16px;
+                                                            color: #000;
+                                                        }
+                                                        .lvl3 {
+                                                            margin-top: 13px;
+                                                            > li {
+                                                                > a {
+                                                                    font-size: 14px;
+                                                                    color: $colorDefault;
+                                                                    padding: 5px 0;
+                                                                    display: inline-block;
+                                                                    margin-bottom: 13px;
+                                                                        &:hover{
+                                                                            color: $colorRed;
+                                                                        }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.selected {
+                                                & > a {
+                                                    &:after{
+                                                        opacity: 1;
+                                                        bottom: -3px;
+                                                    }
+                                                }
+                                                .nav-main-sub-nav {
+                                                    @include setTransform(translate(-50%,0));
+                                                    pointer-events: inherit;
+                                                    opacity: 1;
+                                                    border: 1px solid #ededed;
+                                                    .nav-main-sub-nav-items {
+                                                        width: 100%;
+                                                        display: block;
+                                                        &:before{
+                                                            display: table;
+                                                            content: '';
+                                                            clear: both;
+                                                        }
+                                                        &:after{
+                                                            display: table;
+                                                            content: '';
+                                                            clear: both;
+                                                        }
+                                                        .specialProducts {
+                                                            position: absolute;
+                                                            right: 60px;
+                                                            width: 150px;
+                                                            text-align: left;
+                                                            span {
+                                                                font-weight: 700;
+                                                                font-size: 16px;
+                                                                color: #000;
+                                                                margin-bottom: 13px;
+                                                                display: block;
+                                                            }
+                                                            ul {
+                                                                li {
+                                                                    a {
+                                                                        font-size: 14px;
+                                                                        color: #616161;
+                                                                        padding: 5px 0;
+                                                                        display: inline-block;
+                                                                        margin-bottom: 13px;
+                                                                        &:hover{
+                                                                            color:#b70234;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.specialProducts {
+                                                .nav-main-sub-nav {
+                                                    .nav-main-sub-nav-items {
+                                                        width: calc(100% - 150px);
+                                                        .lvl2 {
+                                                            width: 20%;
+                                                        }
+                                                        .specialProducts{
+                                                            ul{
+                                                                li{
+                                                                    &.bigSize{
+                                                                        display: none;
+                                                                        a{
+                                                                            color: #b70234 !important;
+                                                                            font-weight: 600;
+
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }    
+                                                }
+                                                &.male{
+                                                        .nav-main-sub-nav {
+                                                        .nav-main-sub-nav-items {
+                                                            width: calc(100% - 150px);
+                                                            .lvl2 {
+                                                                width: 20%;
+                                                            }
+                                                            .specialProducts{
+                                                                ul{
+                                                                    li{
+                                                                        &.bigSize{
+                                                                            display: block;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }    
+                                                    }
+                                                }
+                                            }
+                                            
+                                        }
+                                    }
+                                }
+                            }
+                            @media screen and (max-width:960px){
+                                .nav-main{
+
+                                }
+                            }
+                        
+                    }
+                    .h-right {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        @include transition(all 0.2s ease-in-out);
+                        > div {
+                            display: inline-block;
+                            padding-left: 10px;
+                                @media screen and (max-width:1200px){
+                                    padding-left: 0;
+                                }
+                        }
+                    }
+            }
+            /* INFORMATION TOP */
+            .h-bottom {
+                clear: both;
+            }
+        }
+    }
+    @media screen and (max-width:$mobileDevice){
+        z-index: 16;
+    }
+    .h-mobile {
+        display: none;
+    }
+}
+.h-left{
+    @media screen and (max-width:$mobileDevice){
+    @include transition(all 0.2s cubic-bezier(1.000, 0.010, 0.000, 1.020));
+        @at-root .cat-menu-ready &{
+        display: block !important;
+        overflow: auto !important;
+        }
+        @at-root .cat-menu-animate &{
+        right: 0px !important;
+        }
+    }
+}
+
+@media screen and (min-width:961px){
+    .site-header{
+        height: 100px;
+            &-inner{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 99;
+                    .h-top{
+                        @include transition(all 0.2s ease-in-out);
+                        @at-root .fixed-header-animate &{
+                            height: 80px;
+                                .h-left{
+                                    .logo{
+                                        top: 12px;
+                                        width: 150px;
+                                    }
+                                    .nav-main {
+                                        margin-top: 0;
+                                            .lvl1{
+                                                & > li{
+                                                    & > a{
+                                                        height: 80px;
+                                                    }
+                                                    & > .nav-main-sub-nav {
+                                                        top: 80px;
+                                                    }
+                                                }
+                                            }
+                                    }
+                                }
+                                .h-right{
+                                    top: -13px;
+                                        .mod-mini-cart{
+                                            .mod-mini-cart-inner{
+                                                .mod-mini-cart-body{
+                                                    top: 93px;
+                                                    height: calc(100vh - 60px);
+                                                }
+                                            }
+                                        }
+                                        .mod-mini-login{
+                                            .mod-mini-login-inner{
+                                                .mod-mini-login-body{
+                                                    top: 93px !important;
+                                                    height: calc(100vh - 60px) !important;
+                                                }
+                                            }
+                                        }
+                                }
+                        }
+                    }
+            }
+    }
+}
+// Information Banner
+.information-top {
+    background-color: #f8f8f8;
+    text-align: center;
+    .information-top-holder {
+        ul {
+            padding: 11px 0;
+            li {
+                display: inline-block;
+                padding-right: 24px;
+                &:last-child {
+                    padding: 0;
+                }
+                &:before {
+                    font-family: $fontIcon;
+                    content: $icon-tick;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+/* LANGUAGE */
+.mod-lang {
+    .mod-lang-header{
+        margin-right: 10px;
+            > a{
+                display: none;
+            }
+            span{
+                display: block;
+            }
+    }
+    .sub{
+        display: none;
+    }
+
+}
+/* SEARCH */
+
+.search-animate{
+    .mod-mini-search{
+        .mod-mini-search-header{
+            a.btn-search{
+                top:50px;
+                position:fixed;
+                padding:0 5px;
+                span{
+                    display: none;
+                }
+                i:before{
+                    content: $icon-close-big;
+                    color: #979797;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+.mod-mini-search {
+    .mod-mini-search-header {
+        a.btn-search{
+             z-index: 20;
+            display: block;
+            color: #000;
+            padding: 30px 5px 30px 5px;
+            margin-top: 10px;
+            text-align: center;
+                i:before{
+                    font-size: 17px;
+                    color: #000;
+                }
+                span{
+                    display: block;
+                    font-size: 11px;
+                    letter-spacing: 0.8px;
+                    font-family: "roboto";
+                    margin-top: 5px;
+                    text-transform: uppercase;
+                }
+        }
+    }
+    .mod-mini-search-body {
+        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top:0;
+        height: 120px;
+        text-align: center;
+        z-index: 15;
+        background-color: #fff;
+        .ems-form {
+            .ems-form-inner {
+                position: relative;
+                background-color: #fff;
+                max-width: 1200px;
+                margin: 0 auto;
+                    .ems-field{
+                        max-width: none;
+                        width: 100%;
+                        margin: 0;
+                        position: static;
+                        padding-left: 47px;
+                            input{
+                                margin: 0;
+                            }
+                    }
+                
+                    > .searchSuggestDiv {
+                        width: 1200px !important;
+                        background-color: #fff;
+                        margin: 0 auto;
+                        left: 0;
+                        right: 0;
+                        padding: 25px;
+                        height: 450px;
+                        overflow: auto;
+                        .searchSuggestDivHolder {
+                            > div {
+                                float: left;
+                                &.prd {
+                                    h3 {
+                                        display: none;
+                                    }
+                                    .sHolder {
+                                        div {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                                &.cat {
+                                    h3 {
+                                        display: none;
+                                    }
+                                    .sHolder {
+                                        a {
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+               
+                    .ems-field.text {
+                        input {
+                            outline: 0;
+                            width: 1200px;
+                            height: 115px;
+                            padding: 0 5px;
+                            font-size: 36px;
+                            color: #9e9e9e;
+                            border: none;
+                        }
+                    }
+                    .ems-field.submit {
+                        .btnArama {
+                            position: absolute;
+                            left: 0;
+                            top: 42px;
+                            width: 30px;
+                            height: 30px;
+                            padding: 0;
+                            background: none;
+                            color: #9e9e9e;
+                            font-size: 30px;
+                                &:before{
+                                    content:$icon-ico-search;
+                                    font-family: 'icomoon' !important;
+                                    speak: none;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-variant: normal;
+                                    text-transform: none;
+                                    line-height: 1;
+                                    -webkit-font-smoothing: antialiased;
+                                    -moz-osx-font-smoothing: grayscale;
+                                }
+                                span {
+                                    display: none;
+                                }
+                        }
+                    }
+            }
+        }
+    }
+}
+/* SEARCH SUGGESTION */
+ 
+.search-animate {
+    .mod-mini-search-body {
+        display: block;
+    }
+}
+/* LOGIN */
+#validateLogin {
+    .mod-mini-login {
+        .mod-mini-login-inner {
+            .mod-mini-login-header {
+                .btn-signin {
+                    display: block;
+                    color: #000;
+                    padding: 30px 5px 30px 5px;
+                    margin-top: 10px;
+                    text-align: center;
+                        i:before{
+                            font-size: 17px;
+                            color: #000;
+                        }
+                        span{
+                            display: block;
+                            font-size: 11px;
+                            letter-spacing: 0.8px;
+                            font-family: "roboto";
+                            margin-top: 5px;
+                            text-transform: uppercase;
+                            opacity: 0;
+                            &.show{
+                                opacity: 1;
+                            }
+                        }
+                }
+            }
+            .mod-mini-login-body {
+                position: absolute;
+                z-index: 9;
+                display: none;
+                width: 414px;
+                height: calc(100vh - 100px);
+                background-color: #fff;
+                right: -25px;
+                top: 100px;
+                padding: 20px 0px;
+                @include setTransform(translateX(100%));
+                @include transition(all 0.25s cubic-bezier(1.000, 0.010, 0.000, 1.020));
+                overflow: auto;
+                    @at-root .mini-login-ready &{
+                        display: block;
+                    } 
+                    @at-root .mini-login-animate &{
+                        @include setTransform(translateX(0));
+                    }
+                    &:after{
+                        content:'';
+                        position: absolute;
+                        right: 40px;
+                        top: -3px;
+                        background: $colorRed;
+                        width: 100px;
+                        height: 3px;
+                    }
+                    .logoff {
+                        padding: 0 47px;
+                        > span {
+                            font-family: $fontSite;
+                            font-size: 32px;
+                            color: #000;
+                            display: block;
+                            text-align: center;
+                            margin-bottom: 15px;
+                            &[id$="lbfUYE_HATALIGIRIS"] {
+                                font-size: 16px;
+                                color: $colorRed;
+                            }
+                        }
+                        .ems-form {
+                            .ems-form-inner {
+                                .ems-field {
+                                    .ems-form-obj {
+                                        input {
+                                            border-bottom: 2px solid #9e9e9e;
+                                            border-top: none;
+                                            border-right: none;
+                                            border-left: none;
+                                            background-color: none;
+                                            outline: none;
+                                            width: 100%;
+                                            height: 30px;
+                                        }
+                                        .ems-form-err-msg{
+                                            font-size: 11px;
+                                            color: #b70234;
+                                            font-weight: 600;
+                                            margin-top: 5px;
+                                        }
+                                    }
+                                    &.submit {
+                                        .btnKutuLogin {
+                                            margin-bottom: 20px;
+                                        }
+                                        .uyeGirisFacebookConnectKutu {
+                                            margin-bottom: 40px;
+                                        }
+                                        span[id$="lbflnkUyeOlmak"] {
+                                            a {
+                                                display: block;
+                                                text-align: center;
+                                                font-size: 16px;
+                                                font-weight: 700;
+                                                color: #fff;
+                                                margin-bottom: 25px;
+                                                padding:14px 0;
+                                                border-radius: 2px;
+                                                background: #000;
+                                                span {
+                                                    text-decoration: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.text {
+                                        margin-bottom: 35px;
+                                        &:first-child{
+                                            margin-bottom:20px;
+                                        }
+                                        
+                                    }
+                                    #lnkSifremiUnuttum {
+                                        display: block;
+                                        text-align: center;
+                                        font-size: 13px;
+                                        font-weight: 700;
+                                        color: $colorRed;
+                                        span {
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                &:last-child {
+                                    margin-bottom: 20px;
+                                }
+                                .LogOffsipInf{
+                                    display: block !important;
+                                    text-align: center;
+                                    p{
+                                        background: #f8f8f8;
+                                        padding: 16px;
+                                        font-size:13px;
+                                        color: #000;
+                                        border: 1px solid #222;
+                                    }
+                                }
+                            }
+                    }
+                }
+                .login {
+                    text-align: center;
+                    > span {
+                        font-family: $fontSite;
+                        font-size: 32px;
+                        color: #000;
+                        display: block;
+                        margin-bottom: 15px;
+                        }
+                        > div {
+                            padding: 10px 0;
+                            &.krg-blg{
+                                a{
+                                    font-weight: 700;
+                                }
+                            }
+                            a {
+                                display: inline-block;
+                                vertical-align: top;
+                                margin: 0 auto;
+                                font-size: 16px;
+                                padding: 0 15px;
+                                line-height: 35px;
+                                color: $colorDefault;
+                            }
+                            & .btnKutuLogout {
+                                span {
+                                    background-color: transparent;
+                                    color: $colorRed;
+                                }
+                            }
+                            &:last-child {
+                                border-top: 1px solid #e4e4e4; 
+                            }
+                            &.login-cart{
+                                >div{
+                                    span{
+                                        p{
+                                        display:none;
+                                    }
+                                    .empty-basket-icon{
+                                        span{
+                                            display:block;
+                                            position:relative;
+                                            &:before {
+                                                content: '';
+                                                width: 113px;
+                                                height: 113px;
+                                                border: 3px solid #9e9e9e;
+                                                display: block;
+                                                border-radius: 100%;
+                                                margin:0 auto 20px auto;
+                                            }
+                                            &:after {
+                                                content: $icon-cart;
+                                                font-family: $fontIcon;
+                                                position: absolute;
+                                                left: calc(50% - 30px);
+                                                top: 30px;
+                                                font-size: 60px;
+                                                color: #9e9e9e;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.ems-user-info{
+                            padding:0 0 10px 0;
+                            display: block !important;
+                            span{
+                                font-size: 16px;
+                                color: #b70234
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.ems-logoff{
+    #validateLogin{
+        .mod-mini-login{
+            .mod-mini-login-inner{
+                .mod-mini-login-header{
+                    .btn-signin{
+                        span{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+.ems-login{
+    #validateLogin{
+        .mod-mini-login{
+            .mod-mini-login-inner{
+                .mod-mini-login-header{
+                    .btn-signin{
+                        i{
+                            &:before{
+                                content:'\e902';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* CART */
+.mod-mini-cart {
+    .mod-mini-cart-inner {
+        .mod-mini-cart-header {
+            .ems-cart-info {
+                position: relative;
+                #lblUrunAdet {
+                    position: absolute;
+                    font-size: 10px;
+                    background-color: $colorRed;
+                    border-radius: 100%;
+                    color: #fff;
+                    right: 13px;
+                    top: 20px;
+                    width: 13px;
+                    height: 13px;
+                    text-align: center;
+                    line-height: 13px;
+                }
+                span[id$="lbfKUTU_URUN"] {
+                    display: none;
+                }
+                a{
+                    display: block;
+                    color: #000;
+                    padding: 30px 5px 30px 5px;
+                    margin-top: 10px;
+                    text-align: center;
+                        span{
+                            display: block;
+                            font-size: 11px;
+                            letter-spacing: 0.8px;
+                            font-family: "roboto";
+                            margin-top: 5px;
+                        }
+                        i{
+                            font-size: 20px;
+                        }
+                }
+            }
+        }
+        .mod-mini-cart-body {
+            display: none;
+            position: absolute;
+            width: 414px;
+            height: calc(100vh - 100px);
+            background-color: #fff;
+            z-index: 9;
+            right: -25px;
+            top: 100px;
+            padding-bottom: 128px;
+            padding-top: 90px;
+            @include setTransform(translateX(100%));
+            @include transition(all 0.25s cubic-bezier(1.000, 0.010, 0.000, 1.020));
+                @at-root .basket-empty &{
+                    padding: 0; 
+                    text-align: center;
+                        .kutuSepet_urunYok {
+                            margin: 64px 0;
+                            display: block;
+                            font-size: 18px;
+                            span[id$="lbfSPT_SEPETDEURUNYOK"] {
+                                position: relative;
+                                p {
+                                    font-size: 32px;
+                                    font-family: $fontSite;
+                                    letter-spacing: -1px;
+                                    color: #000;
+                                    margin: 0;
+                                }
+                                .empty-basket-icon {
+                                    margin-top: 20px;
+                                    i {
+                                        display: block;
+                                        position: relative;
+                                        &:before {
+                                            content: '';
+                                            width: 113px;
+                                            height: 113px;
+                                            border: 3px solid #9e9e9e;
+                                            display: inline-block;
+                                            border-radius: 100%;
+                                        }
+                                        &:after {
+                                            content: $icon-cart;
+                                            font-family: $fontIcon;
+                                            position: absolute;
+                                            left: 50%;
+                                            top: 50%;
+                                            font-size: 60px;
+                                            margin-top: -30px;
+                                            margin-left: -33px;
+                                            color: #9e9e9e;
+                                        }
+                                    }
+                                    span {
+                                        font-weight: 700;
+                                        font-size: 18px;
+                                        color: #9e9e9e;
+                                        margin-top: 20px;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                }
+                @at-root .mini-cart-ready &{
+                    display: block;
+                }
+                @at-root .mini-cart-animate &{
+                    @include setTransform(translateX(0));
+                }
+                &:after{
+                    content:'';
+                    position: absolute;
+                    right: 0;
+                    top: -3px;
+                    background: $colorRed;
+                    width: 100px;
+                    height: 3px;
+                }
+                &:before{
+                    content:$lang_sepetim-TR;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    font-family: $fontSite;
+                    font-size: 32px;
+                    line-height: 57px;
+                    letter-spacing: -1px;
+                    color: #000;
+                    position: absolute;
+                    top: 20px;
+                    left: 0;    
+                    @at-root .basket-empty &{
+                        display: none;
+                    }
+                }
+                .swiper-container-vertical{
+                    padding: 0 20px;
+                    height: 100%;
+                    overflow: auto;
+                }
+                
+                .col2{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background: #f8f8f8;
+                        @at-root .basket-empty &{
+                            display: none;
+                        }
+                        .mini-cart-total {
+                            padding: 30px 40px;
+                            color: #000;
+                            font-size: 16px;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                                #lblUrunTutari{
+                                    float: right;
+                                }
+                        }
+                }
+            
+        }    
+    }
+}
+
+@media screen and (max-width: 960px){
+
+    .site-header-inner { 
+        .h-desktop {
+            .h-top{
+                .h-left{
+                    position: fixed;
+                    right: -100%;
+                    width: 100%;
+                    overflow: hidden;
+                    height: calc(100vh - 125px);
+                    z-index: 99;
+                    border-top: 1px solid #e4e4e4;
+                    background: #fff;
+                    /*display: none;*/
+                        .logo{
+                            display: none;
+                        }
+                        .nav-main{
+                            &.mLvl1{
+                                > .lvl1{
+                                    > li{
+                                        display: none;
+                                        &.selected{
+                                            border-bottom: none;
+                                            display: block;
+                                            > a{
+                                                text-align: center;
+                                                background: #f8f8f8;
+                                                padding: 16px 0;
+                                                margin-bottom: 10px;
+                                                border-bottom: 1px solid #ddd;
+                                                &:after{
+                                                    content:$icon-left;
+                                                    height: 50px;
+                                                    line-height: 50px;
+                                                    left: 0;
+                                                    border-right: 1px solid #ddd;
+                                                    background: #f8f8f8;
+                                                }
+                                            }
+                                            .nav-main-sub-nav{
+                                                .nav-main-sub-nav-items{
+                                                    .lvl2{
+                                                      >  .sub-menu{
+                                                          >  a{
+                                                                padding: 25px;
+                                                                display: block;
+                                                                position: relative;
+                                                                color: #000;
+                                                                font-weight: 700;
+                                                                &:after{
+                                                                    font-family: $fontIcon;
+                                                                    content:$icon-expand;
+                                                                    position: absolute;
+                                                                    width: 13px;
+                                                                    line-height: 16px;
+                                                                    right: 35px;
+
+                                                                }
+                                                            }
+                                                            &.selected{
+                                                                > a{
+                                                                    &:after{
+                                                                        content: $icon-collapse;
+                                                                    }
+                                                                }
+                                                                .lvl3{
+                                                                    padding-left:40px;
+                                                                    .sub-menu{
+                                                                        border-bottom: 1px solid #ddd;
+                                                                        &.ems-none{
+                                                                            display: block !important;
+                                                                        }
+                                                                        &:last-child{
+                                                                            border-bottom: 0;
+                                                                        }
+                                                                        & > a{
+                                                                            padding: 20px 0;
+                                                                            display: block;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .specialProducts{
+                                                        display: block;
+                                                        span{
+                                                            padding: 25px 25px 10px 25px;
+                                                            font-weight: bold;
+                                                            color: #000;
+                                                            display: block;
+                                                        }
+                                                        ul{
+                                                            li{
+                                                                display: block;
+                                                                padding: 5px 35px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                            > .lvl1{
+                                > li{
+                                    display: block;
+                                }
+                                > .selected{
+                                        > .nav-main-sub-nav{
+                                            display: block;
+                                            .lvl2{
+                                                li{
+                                                    .lvl3{
+                                                        display: none;
+                                                    }
+                                                    &.selected{
+                                                        .lvl3{
+                                                            display: block;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                }
+                            }
+                            position: relative;
+                            overflow: auto;
+                            width: 100%;
+                            height: 100%;
+                                &.mLvl1 > ul.lvl1{
+                                    padding-left: 0 !important;
+                                }
+                                & > ul.lvl1{
+                                    padding-left: 30px;
+                                        & > li{
+                                            border-bottom: 1px solid #e4e4e4;
+                                            & > a{
+                                                display: block;
+                                                position: relative;
+                                                width: 100%;
+                                                padding: 25.5px 0;
+                                                font-size: 16px;
+                                                letter-spacing: 1px;
+                                                color: #000;
+                                                    &.text-red{
+                                                        color: $colorRed;
+                                                    }
+                                                    & > i{
+                                                        margin-right: 5px;
+                                                    }
+                                            }
+                                            &.sub-menu{
+                                                & > a{
+                                                    &:after{
+                                                        content:$icon-right;
+                                                        font-family: 'icomoon' !important;
+                                                        speak: none;
+                                                        font-style: normal;
+                                                        font-weight: normal;
+                                                        font-variant: normal;
+                                                        text-transform: none;
+                                                        line-height: 1;
+                                                        -webkit-font-smoothing: antialiased;
+                                                        -moz-osx-font-smoothing: grayscale;
+                                                        position: absolute;
+                                                        right: 0;
+                                                        top: 0;
+                                                        width: 70px;
+                                                        text-align: center;
+                                                        height: 70px;
+                                                        line-height: 70px;
+                                                    }
+                                                }
+                                            }
+                                            & > .nav-main-sub-nav{
+                                                display: none;
+                                            }
+                                        }
+                                }
+                        }
+                }
+                .h-right{
+                    & > div:not(.h-search){
+                        display: none;
+                    }
+                }
+            }
+        }
+        .h-mobile {
+            display: block;
+            height: 64px;
+            .mbHeader {
+                display: inline-block;
+                width: 100%;
+                position: fixed;
+                z-index: 99;
+                background-color: #fff;
+                height: 64px;
+                border-bottom: 1px solid #e4e4e4;
+                > div {
+                    display: inline-block;
+                    vertical-align: middle;
+                    text-align: center;
+                    position: relative;
+                    &.mSearchBtn {
+                        position: absolute;
+                        left: 6px;
+                        top: 7px;
+                        z-index: 2;
+                        overflow: hidden;
+                        height: 56px;
+                            a{
+                                display: block;
+                                width: 50px;
+                                height: 50px;
+                                line-height: 50px;
+                                text-align: center;
+                                font-size: 18px;
+                                margin-top: 70px;
+                                @include transition(all 0.25s cubic-bezier(1.000, 0.010, 0.000, 1.020));
+                                    &:before{
+                                        position: relative;
+                                        right: -4px;
+                                    }
+                                    @at-root .search-fixed &{
+                                        margin-top: 0;
+                                    }
+                                    @at-root .search-fixed-ready &{
+                                        margin-top: 70px;
+                                    }
+                            }
+                    }
+                    &.mLogo {
+                        padding: 6px 0 0 0;
+                        text-align: center;
+                        display: block;
+                        height: 64px;
+                        a {
+                            img {
+                                height: 50px;
+                                width: auto;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    &.mbCart {
+                        position: absolute;
+                        right: 60px;
+                        top: 7px;
+                            a{
+                                display: block;
+                                width: 50px;
+                                height: 50px;
+                                line-height: 50px;
+                                text-align: center;
+                                font-size: 18px;
+                                    &:before{
+                                        position: relative;
+                                        right: -4px;
+                                    }
+                                    b{
+                                        position: absolute;
+                                        font-size: 10px;
+                                        background-color: #b70234;
+                                        border-radius: 100%;
+                                        color: #fff;
+                                        right: 12px;
+                                        top: 2px;
+                                        width: 13px;
+                                        height: 13px;
+                                        text-align: center;
+                                        line-height: 13px;
+                                    }
+                            }
+                    }
+                    &.mBurger {
+                        position: absolute;
+                        right: 6px;
+                        top: 7px;
+                            a{
+                                display: block;
+                                width: 50px;
+                                height: 50px;
+                                line-height: 50px;
+                                text-align: center;
+                                font-size: 18px;
+                                    &:before{
+                                        position: relative;
+                                        right: -4px;
+                                    }
+                            }
+                    }
+                }
+            }
+        }  
+        .h-search{
+            position: relative;
+            width: 100%;
+            background: #f8f8f8;
+            height: 43px;
+                .mod-mini-search{
+                    width: 100%;
+                    z-index: 98;
+                    background: #f8f8f8;
+                    border-bottom: 1px solid #e4e4e4;
+                    @include transition(all 0.2s ease-in);
+                    @at-root .search-fixed &{
+                        position: fixed;
+                        top: 0;
+                    }
+                    @at-root .search-fixed-ready &{
+                        top: 64px;
+                    }
+                    .mod-mini-search-header{
+                        .btn-search{
+                            display: block;
+                            width: 100%;
+                            padding: 8px 5px 8px 5px;
+                            margin-top:0;
+                            @include transition(all 0.2s ease-in);
+                                & > i{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                                & > span{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    margin-left: 6px;
+                                    font-size: 16px;
+                                    color: #616161;
+                                    @include transition(all 0.2s ease-in);
+                                }
+                                @at-root .search-animate &{
+                                    width: 50px;
+                                        & > span {
+                                            opacity: 0;
+                                        }
+                                }
+                        }
+                    }
+                }
+        } 
+    }
+    /* MOBILE SEARCH */
+    &.mod-mini-search {
+        .mod-mini-search-body {
+            position: absolute;
+            z-index: 20;
+            top: 0;
+            height: 41px;
+            width: 100%;
+            left: 0;
+            .ems-form {
+                .ems-form-inner {
+                    background: #f8f8f8 !important;
+                    input{
+                        height: 45px !important;
+                        line-height: 43px;
+                        max-width: 100%;
+                        font-size: 16px !important;
+                    }
+                    .ems-field.submit{
+                        .btnArama{
+                            top: 10px;
+                            left: 10px;
+                            font-size: 20px;
+                        }   
+                    }
+                }
+            }
+        }
+    }
+    .search-animate {
+        overflow: hidden !important;
+    }
+
+}
+
+/*
+ * pcd menu 
+ */
+
+ .lvl-pcd {
+    text-align: left;
+    li {
+        width: 25%;
+        display: inline-block;
+        text-align: left;
+        @media screen and (max-width:960px){
+            width: 100%;
+        }
+        a {
+            font-size: 14px;
+            color: $colorDefault;
+            padding: 5px 0;
+            display: inline-block;
+            margin-bottom: 13px;
+            @media screen and (max-width:960px){
+                padding: 25px;
+                display: block;
+                position: relative;
+                color: #000;
+                font-weight: 700;
+            }
+        }
+    }
+ }
+ @media screen and (max-width:960px){
+    .site-header-inner{
+        .h-mobile {
+            .mbHeader{
+                >div.mSearchBtn{
+                    display: none !important;
+                }
+            }
+        }
+    }
+    .search-fixed.search-fixed-ready{
+        .site-header-inner{
+            .h-mobile {
+                .mbHeader{
+                    >div.mSearchBtn{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+    .search-fixed{
+        .site-header-inner{
+            .h-mobile {
+                .mbHeader{
+                    >div.mSearchBtn{
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
+}
+

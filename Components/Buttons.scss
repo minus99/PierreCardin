@@ -1,0 +1,91 @@
+@at-root .mini-basket-link > a,
+.button-default,
+a.btn,
+a.btnDefault {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    color: #fff;
+    padding: 14px 5px;
+    background-color: #b70234;
+    font-weight: 700;
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+    width: inherit;
+    letter-spacing: 2px;
+    border: 2px solid transparent;
+        &-text {
+            color: inherit;
+            background-color: inherit;
+            padding: inherit;
+            border: inherit;
+            &:hover {
+                color: inherit;
+                background-color: inherit;
+                padding: inherit;
+                border: inherit;
+            }
+        }
+        &:hover {
+            
+        }
+        &.white,
+        &-white{
+            color: #000;
+            background-color: #fff;
+        }
+        &.grey,
+        &-grey{
+            color: #757575;
+            background-color: #f8f8f8;
+        }
+        @at-root .mini-basket-link > a,
+        &.red,
+        &-red {
+            background-color: $colorRed;
+        }
+        &.btnFacebookLoginKutu,
+        &.blue {
+            background-color: $colorBlue;
+        }
+        @at-root .mini-basket-link > a,
+        &.btnKutuLogin,
+        &.btnFacebookLoginKutu,
+        &-full{
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+        }
+        &.btnKutuLogout,
+        &-text-red{
+            background: transparent;
+            color: $colorRed;
+            font-weight: normal;
+        }
+        &-circle{
+            border-radius:50%;
+            padding: 15px;
+        }
+        &-border{
+            background: none;
+            border: 2px solid transparent;
+                &.btn-white{
+                    border-color: #fff;
+                    color: #fff;
+                }
+        }
+}
+
+// Table > tbody > tr > td + th width:100%
+.pageLogin_btnFacebookLoginKutu{
+    table,
+    table > tbody,
+    table > tbody > tr,
+    table > tbody > tr > td,
+    table > tbody > tr > th{
+        display: block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,80 @@
+.popup_faturaDetay {
+    a.btnMinPpCl {
+        right: 25px !important;
+        top: 30px !important;
+    }
+    iframe {
+        padding-bottom: 20px !important;
+    }
+}
+
+.popupDefault.popupFatDetay {
+    padding: 30px;
+    margin-bottom: 100px;
+    overflow: initial;
+    .popupTitleFatDetay {
+        span {
+            color: $colorDefault;
+            font-weight: bold;
+            font-size: 17px;
+        }
+    }
+    
+    > * { margin-top: 20px; }
+    table {
+        border: 1px solid $colorDefault;
+        padding: 5px;
+        table-layout: fixed;
+    }
+    .tableFatDetay {
+        table {
+            tr {
+                display: block;
+                text-align: left;
+                display: flex;
+                flex-wrap: wrap;
+                > {
+                    * {
+                        padding: 5px 0px;
+                    }
+
+                    th { width: 30%; }
+
+                    td { width: 70%; }
+                }
+            }
+        }
+    }
+    .gridFatDetayListe {
+        width: 100%;
+        border-collapse: inherit !important;
+        tr {
+            display: block;
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            > {
+                * {
+                    padding: 5px 0px;
+                }
+
+                th { width: 20% !important; }
+
+                td {
+                    width: 20%;
+                    text-align: left;
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        tr {
+            > * { }
+        }
+    }
+
+    .popupDefault.popupFatDetay .gridFatDetayListe tr > th { width: 100%; }
+}

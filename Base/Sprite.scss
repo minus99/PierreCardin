@@ -1,0 +1,345 @@
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$icomoon-font-path: "fonts" !default;
+
+$icon-home: "\e92f";
+$icon-try: "\e900";
+$icon-turkish-lira: "\e900";
+$icon-white-up: "\e92e";
+$icon-ico-urunler: "\e92a";
+$icon-iade-ico: "\e92d";
+$icon-combined-shape: "\e908";
+$icon-favori: "\e935";
+$icon-odeme-1: "\e90c";
+$icon-shipping-1: "\e90e";
+$icon-ico-musteri-hiz: "\e92b";
+$icon-ico-hesabim: "\e92c";
+$icon-ico-anasayfa: "\e930";
+$icon-bag-2: "\e931";
+$icon-gorunum-4-lu: "\e932";
+$icon-gorunum-3-lu: "\e933";
+$icon-close-big: "\e934";
+$icon-collapse: "\e907";
+$icon-hamburger-menu: "\e929";
+$icon-account: "\e901";
+$icon-bag-1: "\e902";
+$icon-beden: "\e903";
+$icon-bonus-7-taksit: "\e904";
+$icon-cart: "\e905";
+$icon-close: "\e906";
+$icon-down: "\e909";
+$icon-expand: "\e90a";
+$icon-favori-aktif: "\e90b";
+$icon-gorunum-3-lu-aktif: "\e90d";
+$icon-gorunum-4-lu-aktif: "\e90f";
+$icon-ico-facebook: "\e910";
+$icon-ico-google: "\e911";
+$icon-ico-insta: "\e912";
+$icon-ico-pinterest: "\e913";
+$icon-ico-search: "\e914";
+$icon-ico-telefon: "\e915";
+$icon-ico-twitter: "\e916";
+$icon-kargo-bedava: "\e917";
+$icon-kargo-ucretsiz: "\e918";
+$icon-left: "\e919";
+$icon-magazalar: "\e91a";
+$icon-odeme: "\e91b";
+$icon-odeme-2: "\e91c";
+$icon-rectangle-4: "\e91d";
+$icon-rectangle-5: "\e91e";
+$icon-right: "\e91f";
+$icon-search-big: "\e920";
+$icon-shipping-2: "\e921";
+$icon-siralama: "\e922";
+$icon-star: "\e923";
+$icon-tick: "\e924";
+$icon-tick-big: "\e925";
+$icon-triangle-down: "\e926";
+$icon-triangle-right: "\e927";
+$icon-ucretsiz-iade: "\e928";
+
+.icon-home {
+  &:before{
+    content: $icon-home;
+  }
+}
+.icon-try {
+  &:before {
+    content: $icon-try;
+  }
+}
+.icon-turkish-lira {
+  &:before {
+    content: $icon-turkish-lira;
+  }
+}
+.icon-white-up {
+  &:before {
+    content: $icon-white-up;
+  }
+}
+.icon-ico-urunler {
+  &:before {
+    content: $icon-ico-anasayfa;
+  }
+}
+.icon-iade-ico {
+  &:before {
+    content: $icon-iade-ico;
+  }
+}
+.icon-combined-shape {
+  &:before {
+    content: $icon-combined-shape;
+  }
+}
+.icon-favori {
+  &:before {
+    content: $icon-favori;
+  }
+}
+.icon-odeme-1 {
+  &:before {
+    content: $icon-odeme-1;
+  }
+}
+.icon-shipping-1 {
+  &:before {
+    content: $icon-shipping-1;
+  }
+}
+.icon-ico-musteri-hiz {
+  &:before {
+    content: $icon-ico-musteri-hiz;
+  }
+}
+.icon-ico-hesabim {
+  &:before {
+    content: $icon-ico-hesabim;
+  }
+}
+.icon-ico-anasayfa {
+  &:before {
+    content: $icon-ico-anasayfa;
+  }
+}
+.icon-bag-2 {
+  &:before {
+    content: $icon-bag-2;
+  }
+}
+.icon-gorunum-4-lu {
+  &:before {
+    content: $icon-gorunum-4-lu;
+  }
+}
+.icon-gorunum-3-lu {
+  &:before {
+    content: $icon-gorunum-3-lu;
+  }
+}
+.icon-close-big {
+  &:before {
+    content: $icon-close-big;
+  }
+}
+.icon-collapse {
+  &:before {
+    content: $icon-collapse;
+  }
+}
+.icon-hamburger-menu {
+  &:before {
+    content: $icon-hamburger-menu;
+  }
+}
+.icon-account {
+  &:before {
+    content: $icon-account;
+  }
+}
+.icon-bag-1 {
+  &:before {
+    content: $icon-bag-1;
+  }
+}
+.icon-beden {
+  &:before {
+    content: $icon-beden;
+  }
+}
+.icon-bonus-7-taksit {
+  &:before {
+    content: $icon-bonus-7-taksit;
+  }
+}
+.icon-cart {
+  &:before {
+    content: $icon-cart;
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close;
+  }
+}
+.icon-down {
+  &:before {
+    content: $icon-down;
+  }
+}
+.icon-expand {
+  &:before {
+    content: $icon-expand;
+  }
+}
+.icon-favori-aktif {
+  &:before {
+    content: $icon-favori-aktif;
+  }
+}
+.icon-gorunum-3-lu-aktif {
+  &:before {
+    content: $icon-gorunum-3-lu-aktif;
+  }
+}
+.icon-gorunum-4-lu-aktif {
+  &:before {
+    content: $icon-gorunum-4-lu-aktif;
+  }
+}
+.icon-ico-facebook {
+  &:before {
+    content: $icon-ico-facebook;
+  }
+}
+.icon-ico-google {
+  &:before {
+    content: $icon-ico-google;
+  }
+}
+.icon-ico-insta {
+  &:before {
+    content: $icon-ico-insta;
+  }
+}
+.icon-ico-pinterest {
+  &:before {
+    content: $icon-ico-pinterest;
+  }
+}
+.icon-ico-search {
+  &:before {
+    content: $icon-ico-search;
+  }
+}
+.icon-ico-telefon {
+  &:before {
+    content: $icon-ico-telefon;
+  }
+}
+.icon-ico-twitter {
+  &:before {
+    content: $icon-ico-twitter;
+  }
+}
+.icon-kargo-bedava {
+  &:before {
+    content: $icon-kargo-bedava;
+  }
+}
+.icon-kargo-ucretsiz {
+  &:before {
+    content: $icon-kargo-ucretsiz;
+  }
+}
+.icon-left {
+  &:before {
+    content: $icon-left;
+  }
+}
+.icon-magazalar {
+  &:before {
+    content: $icon-magazalar;
+  }
+}
+.icon-odeme {
+  &:before {
+    content: $icon-odeme;
+  }
+}
+.icon-odeme-2 {
+  &:before {
+    content: $icon-odeme-2;
+  }
+}
+.icon-rectangle-4 {
+  &:before {
+    content: $icon-rectangle-4;
+  }
+}
+.icon-rectangle-5 {
+  &:before {
+    content: $icon-rectangle-5;
+  }
+}
+.icon-right {
+  &:before {
+    content: $icon-right;
+  }
+}
+.icon-search-big {
+  &:before {
+    content: $icon-search-big;
+  }
+}
+.icon-shipping-2 {
+  &:before {
+    content: $icon-shipping-2;
+  }
+}
+.icon-siralama {
+  &:before {
+    content: $icon-siralama;
+  }
+}
+.icon-star {
+  &:before {
+    content: $icon-star;
+  }
+}
+.icon-tick {
+  &:before {
+    content: $icon-tick;
+  }
+}
+.icon-tick-big {
+  &:before {
+    content: $icon-tick-big;
+  }
+}
+.icon-triangle-down {
+  &:before {
+    content: $icon-triangle-down;
+  }
+}
+.icon-triangle-right {
+  &:before {
+    content: $icon-triangle-right;
+  }
+}
+.icon-ucretsiz-iade {
+  &:before {
+    content: $icon-ucretsiz-iade;
+  }
+}

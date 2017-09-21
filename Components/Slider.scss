@@ -1,0 +1,476 @@
+/* MAIN SLIDER */
+.main-slider {
+    max-width: 1600px;
+    width: 100%;
+    &.swiper-container{
+        margin: 20px auto 0 auto;
+            .swiper-inner {
+                max-height: 620px;
+                overflow: hidden;
+                    .swiper-wrapper {
+                        position: relative;
+                        width: 100%;    
+                        .swiper-slide {
+                            display: inline-block; 
+                            @media screen and (min-width:961px){
+                                width: 100% !important;
+                            } 
+                            .inner {
+                                position: relative;
+                                figure {
+                                    >a{
+                                        display: inline-block;
+                                    }
+                                    margin: 0;
+                                    .image {
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-position: center center;
+                                        height: 620px;
+                                        min-height: 250px;
+                                    }
+                                }
+                                figcaption {
+                                    position: absolute;
+                                    bottom: 85px;
+                                    width: 100%;
+                                    padding: 0 65px;
+                                    text-align: center;
+                                    span#h2 {
+                                        color: #fff;
+                                        font-size: 55px;
+                                        font-family: $fontSite;
+                                        margin: 0 0 20px 0;
+                                        &.red {
+                                            color: $colorRed;
+                                        }
+                                        &.blue {
+                                            color: $colorBlue;
+                                        }
+                                        &.black {
+                                            color: #000;
+                                        }
+                                    }
+                                    p {
+                                        color: #fff;
+                                        font-size: 16px;
+                                        margin: 0;
+                                        &.red {
+                                            color: $colorRed;
+                                        }
+                                        &.blue {
+                                            color: $colorBlue;
+                                        }
+                                        &.black {
+                                            color: #000;
+                                        }
+                                    }
+                                    .buttons {
+                                        margin-top: 40px;
+                                        .button-default {
+                                            width: 48%;
+                                            max-width: 230px;
+                                            padding: 17px 5px 16px 5px;
+                                        }
+                                        & .button-default + .button-default {
+                                            margin-left: 4%;
+                                        }
+                                    }
+                                    &.module {
+                                        width: 530px;
+                                        height: 550px;
+                                        padding: 60px 50px 0;
+                                        @include setTransform(translateY(-50%));
+                                        right: 5%;
+                                        top: 50%;
+                                        bottom: inherit;
+                                        background-color: #fff;
+                                            span#h2 {
+                                                color: #000;
+                                            }
+                                            p {
+                                                color: $colorDefault;;
+                                            }
+                                    }
+                                }
+                            }  
+                        } 
+                    }
+            }
+    }
+    .swiper-pagination {
+        right: inherit !important;
+        left: 25px;
+        > .swiper-pagination-bullet {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 20px 0;
+            border: 1px solid #fff;
+            background-color: transparent;
+                &-active {
+                    background-color: #fff;
+                }
+        }
+    }
+    .swiper-button-prev, .swiper-button-next{
+        position:absolute;
+        z-index: 10;
+        cursor:pointer;
+        width:15px;
+        height: 25px;
+        background-size:100% 100%;
+        top:calc(50% - 12.5px); 
+        i{
+            color:#fff;
+            font-size:20px;
+            font-weight: 700;
+        }
+    }
+    .swiper-button-prev{
+        left:20px;
+    }
+    .swiper-button-next{
+        right:20px;
+    }
+}
+/*Sistem Widget;*/
+    .system-widget.swiper-container{
+        max-width: 1200px;
+        width: 100%;
+        .swiper-title{
+            text-align: center;
+            color: #000;
+            font-size: 32px;
+            font-family: $fontSite;
+            @media screen and (max-width: $mobileDevice){ 
+                font-size:20px;
+                letter-spacing: -1px;
+            }
+        }
+        .swiper-button-prev, .swiper-button-next{
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            top: calc(50% - 11px);
+            i{
+                &:before{
+                font-size:22px;
+                color: #000;
+                font-family: $fontIcon;
+                }
+            }
+            @media screen and (max-width: $mobileDevice){ 
+                display: none;
+            }
+        }
+        .swiper-button-next{
+            right: -25px;
+            i{
+                &:before{
+                    content:$icon-right;
+                }
+            }
+        }
+        .swiper-button-prev{
+            left: -25px;
+            i{
+                &:before{
+                    content:$icon-left;
+                }
+            }
+        }
+        .swiper-button-disabled {
+            opacity: 1;
+            i {
+                &:before {
+                    color: #e4e4e4;
+                }
+            }
+        }
+        .swiper-pagination{
+                .swiper-pagination-bullet{
+                    margin:0 10px;
+                    background: #e4e4e4;
+                    width: 10px;
+                    height: 10px;
+                    display: inline-block;
+                    &.swiper-pagination-bullet-active{
+                        background: #b70234;
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+            ul.emosInfinite{
+                .ems-prd{
+                    .ems-prd-inner{
+                        .ems-prd-image{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+    }
+
+@media screen and (max-width: $mobileDevice){ 
+
+    /* MAIN SLIDER 960px */
+    .main-slider {
+        padding-bottom: 30px;
+            &.swiper-container{
+                margin: 0 0 20px 0;
+                    .swiper-inner {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                height: inherit !important;
+                                .inner {
+                                    figure {
+                                        .image {
+                                            height: inherit;
+                                        }
+                                    }
+                                    figcaption {
+                                        position: static;
+                                        transform: none;
+                                        margin-top:50px;
+                                        padding: 0 5%;
+                                        margin-bottom:20px;
+                                        span#h2 {
+                                            color: #000;
+                                            font-size: 30px;
+                                        }
+                                        p {
+                                            display: none;
+                                        }
+                                        .buttons {
+                                            .button-default {
+                                                span {
+                                                    width: 130px;
+                                                    font-size: 12px;
+                                                }
+                                                &.white {
+                                                    background-color: #000;
+                                                    span {
+                                                        color: #fff;
+                                                    }
+                                                }
+                                                & .button-default + .button-default {
+                                                    margin: 10px 0 0 40px;
+                                                }
+                                            }
+                                        }
+                                        &.module {
+                                            width: initial;
+                                            height: initial;
+                                            position: static;
+                                            background-color: inherit;
+                                            padding: 0 5%;
+                                            transform: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+            .swiper-pagination {
+                right: inherit !important;
+                left: 25px;
+                    > .swiper-pagination-bullet {
+                        border-color: #000;
+                        &-active{
+                            background-color: #000;
+                        }
+                    }
+            }
+        }
+
+}
+
+@media screen and (max-width: 550px){
+
+    .main-slider {
+        .swiper-inner {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .inner {
+                        figure {
+                            .image {
+                                height: inherit;
+                            }
+                        }
+                        figcaption {
+                            .buttons {
+                                .button-default {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+} 
+/*.category-redirect{
+    margin-top:20px;
+    ul{
+        li{
+            a{
+                text-transform: uppercase;
+            }
+        }
+    }
+    >ul{
+        display: inline-block;
+        width:100%;
+        text-align: center;
+        >li{
+            max-width: 230px;
+            margin: auto;
+            display: inline-block;
+            width: 100%;
+            font-size:16px;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            position: relative;
+            @media screen and (max-width:960px){
+                font-size:12px;
+            }
+            &+ li{
+                margin-left:3%;
+                width: 48%;
+            }
+            a{
+                display: block;
+                text-align: center;
+                padding:17px 5px 16px 5px;
+                background-color: #b70234;
+                span{
+                    color: #fff;
+                }
+                &.btnDefault{
+                    span{
+                        padding:10px 30px; 
+                        background-color: #b70234;
+                        box-shadow: 0 0 0 2px #b70234;
+                        white-space: nowrap;
+                        &:after{
+                            content: '';
+                            border-top:#fff solid 5px;
+                            border-left: transparent solid 5px;
+                            border-right: transparent solid 5px;
+                            position:absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform:translateY(-50%);
+                        }
+                    }
+                }
+            }
+            > ul.sub{
+                display: inline-block;
+                li{
+                    a{
+                        background: #b70234;
+                        color: #fff;
+                        padding: 10px;
+                    }
+                }
+                @media screen and (max-width:960px){
+                    position: inherit;
+                }
+            }
+            &:hover{
+                a{
+                    background-color:#000; 
+                    &.btnDefault{
+                        span{
+                            border:1px solid transparent;
+                            background-color: #fff;
+                            color:#b70234;
+                            box-shadow: none;
+                            &:after{
+                                border-top:#b70234 solid 5px;
+                            }
+                        }
+                    }
+                }
+                > ul.sub{
+                    display: inline-block;
+                    >li{
+                        &:first-child{
+                            >a{
+                                border-bottom:1px solid #e4e4e4;
+                            }
+                        }
+                        a{
+                            background-color: #f8f8f8;
+                            color: #002a6f;
+                        }
+                        &:hover{
+                            >a{
+                                background-color: #b70234;
+                                color:#fff;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.sub-menu-active {
+        > ul{
+            >li{
+                a{
+                    span{
+                        &:after{
+                            content: '';
+                            background: url(/images/frontend/openedBtn.png) no-repeat;
+                            width: 13px;
+                            height: 10px;
+                            position: absolute;
+                            right: 15px;
+                            top:14px;
+                        }
+                    }
+                }
+                &:hover{
+                    a{
+                        span{
+                            &:after{
+                                content: '';
+                                background: url(/images/frontend/openedBtnHover.png) no-repeat;
+                                width: 13px;
+                                height: 10px;
+                                position: absolute;
+                                right: 15px;
+                                top: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:960px){
+        position:static;
+        transform: none;
+        display: block;
+        max-width: none;
+        text-align: center;
+    }
+}
+@media screen and (max-width:960px){
+    .main-slider{
+        &.swiper-container{
+            .swiper-inner{
+                max-height: none;
+            }
+        }
+    }
+}*/
+
