@@ -52,7 +52,9 @@ textarea{
 select,
 input[type="text"],
 input[type="tel"],
-input[type="password"]{
+input[type="password"],
+input[type="email"],
+input[type="mail"]{
     width: 100%;
     border: none;
     background: none;
@@ -200,6 +202,7 @@ input[type="checkbox"], input[type="radio"] {
             max-width: 320px;
             display: inline-block;
             vertical-align: top;
+            margin: 0 auto;
                 .col{
                     float: left;
                     width: 48%;
@@ -213,6 +216,7 @@ input[type="checkbox"], input[type="radio"] {
             max-width: 320px;
             margin-bottom: 10px;
             position: relative;
+            margin:0 auto;
             @at-root .pageSiparisOnay_chkOnBilgilendirmeForm .checkbox,
             .checkbox{
                 width: 100%;
@@ -452,5 +456,46 @@ input[type="checkbox"], input[type="radio"] {
                 }
             }
         }
+    }
+}
+.ems-signup-body{
+    .ems-form{
+        .ems-form-inner{
+            .ems-field{
+                .eac-input-wrap{
+                    display: block !important;
+                    overflow: hidden;
+                    span{
+                        &.eac-sugg{
+                            top:10px !important;
+                            font-weight: normal !important;
+                            color: #ccc !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mod-mini-login-body{
+    .eac-input-wrap{
+        display: block !important;
+        .eac-sugg{
+            top:8px !important;
+            color:#ccc;
+        }
+    }
+}
+.ems-login-body{
+    .eac-input-wrap{
+        display: block !important ;
+        .eac-sugg{
+            top:10px !important;
+        }
+    }
+}
+.ems-page-member-info{
+    .eac-input-wrap{
+        display: block !important;
     }
 }

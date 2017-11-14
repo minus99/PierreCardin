@@ -43,6 +43,11 @@
                     margin-right: 0;
                     display: inline-block;
                     float: none;
+                    &.select{
+                        .ems-form-label{
+                            top:5px;
+                        }
+                    }
                 }
             }
             .ems-field {
@@ -92,7 +97,7 @@
                    color: #000;
                    font-size: 32px;
                    font-family: $fontSite;
-                   margin: 0 0 20px 0;
+                   margin: 0 0 20px 20px;
                    display: block;
                    font-weight: 700;
                }
@@ -419,9 +424,16 @@
                                        color: #000;
                                        width: 100%;
                                        &.cepTelNo {
-                                           width: calc(100% - 40px) !important;
+                                           width: calc(100% - 60px) !important;
                                            margin-left: 10px;
                                        }
+                                       &.cepTelAlan{
+                                           width: 50px !important;
+                                       }
+                                        &[id$="CEPTELEFONALAN"] + .ems-form-err-msg {
+                                            display:none;
+                                        }
+
                                    }
                                    select {
                                        outline: none;
@@ -1004,6 +1016,27 @@
                                 span {
                                     font-size: 15px;
                                     color: #9e9e9e;
+                                }
+                            }
+                        }
+                        &.cargo-no{
+                            .value{
+                                span{
+                                    color: #00bfa5;
+                                    text-decoration: underline;
+                                    position: relative;
+                                    a{
+                                        &:after{
+                                            content: '';
+                                            background-image: url(/images/frontend/buyutec.png);
+                                            width: 15px;
+                                            height: 15px;
+                                            background-size:100% 100%;
+                                            display: inline-block;
+                                            margin-left:5px;
+                                        }
+                                    }
+                                    
                                 }
                             }
                         }
@@ -2111,6 +2144,7 @@
                                 }
                                 .ems-field {
                                     max-width: 380px;
+                                    margin:10px 0;
                                     &.select {
                                         .ems-form-label {
                                             top:11px;
@@ -2223,6 +2257,8 @@
                                 .ems-field {
                                     max-width: 320px;
                                     width: 100%;
+                                    display:block;
+                                    margin:20px 0;
                                     .ems-form-label {
                                         color: #000;
                                     }

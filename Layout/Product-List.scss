@@ -199,6 +199,9 @@ select::-ms-expand {
                                                             &.urunKiyaslamaOzellik_ozellikIcerik {
                                                                 padding-left:10px;
                                                                 max-width: 195px;
+                                                                @media screen and (max-width:960px){
+                                                                    max-width: none;
+                                                                }
                                                                 table,
                                                                 table > tbody,
                                                                 table > tbody > tr,
@@ -983,7 +986,7 @@ ul.emosInfinite{
                     position: fixed;
                     overflow-y: scroll;
                     overflow-x: hidden;
-                    height: calc(100% - 122px);
+                    height: calc(100% - 62px);
                     z-index: 99;
                     background: #fff;
                     top:0;
@@ -1330,5 +1333,8 @@ ul.emosInfinite {
 select[id$="drpSRT_SPR_AD"]{
      option[value="RA"], option[value="AZ"], option[value="ZA"]  { 
          display:none; 
+         visibility: hidden;
+         height: 0;
+         
          }
 }
