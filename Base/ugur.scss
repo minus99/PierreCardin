@@ -1329,3 +1329,77 @@ input#ctl00_frmMain_ascTeslimatBilgi_ascAdresEkle_hdnAdrTip[value='1'] {
         }
     }
 }
+
+.ems-form-inner{
+    .ems-field{
+        span[id$=lbfUYA_VERGIDAIRESI]{
+            font-size: 14px;
+            color: #616161;
+            line-height: 30px;
+            font-weight:700;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            pointer-events: none;
+            transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+        }
+        &.is-completed{
+            span[id$=lbfUYA_VERGIDAIRESI]{
+                top:23px;
+                font-size:12px;
+            }
+        }
+    }
+}
+
+/*Üye Adres*/
+.ems-page-new-address{ 
+    .ems-form {
+        .ems-form-inner {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 320px;
+        }
+    } 
+}
+#validateTeslimat{
+    .ems-page-new-address{ 
+        .ems-form{ 
+            .ems-form-inner{
+                margin:0 auto;
+            }
+        }
+    }
+}
+
+.ems-page-new-address{ 
+    .ems-form {
+        .ems-form-inner { 
+            > div {
+            order: 6;
+                &:nth-child(1){
+                    order: 1;
+                }
+                &:nth-child(2){
+                    order: 2;
+                }
+                &:nth-child(7){
+                    order:3;
+                }
+                &:nth-child(8){
+                    order:4;
+                }
+                &:nth-child(6){
+                    order:5;
+                }
+            }
+        }
+    }
+}
+.ems-form-inner {
+    .ems-field {
+    width: 100%;
+    }
+}

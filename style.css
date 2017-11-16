@@ -3032,7 +3032,8 @@ textarea {
   color: #616161 !important;
   font-family: "roboto";
   line-height: 22px;
-  border-radius: 0; }
+  border-radius: 0;
+  border-bottom: 2px solid #979797; }
 
 select,
 input[type="text"],
@@ -3191,7 +3192,7 @@ input[type="checkbox"], input[type="radio"] {
           margin-right: 0; }
     .ems-form-inner .ems-field {
       max-width: 320px;
-      margin-bottom: 10px;
+      margin-bottom: 5px !important;
       position: relative;
       margin: 0 auto; }
       .pageSiparisOnay_chkOnBilgilendirmeForm .checkbox, .checkbox {
@@ -12092,3 +12093,68 @@ input#ctl00_frmMain_ascTeslimatBilgi_ascAdresEkle_hdnAdrTip[value='1'] + #valida
   max-width: 300px;
   width: 100%;
   display: block; }
+
+.ems-form-inner .ems-field span[id$=lbfUYA_VERGIDAIRESI] {
+  font-size: 14px;
+  color: #616161;
+  line-height: 30px;
+  font-weight: 700;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out; }
+
+.ems-form-inner .ems-field.is-completed span[id$=lbfUYA_VERGIDAIRESI] {
+  top: 23px;
+  font-size: 12px; }
+
+/*Üye Adres*/
+.ems-page-new-address .ems-form .ems-form-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 320px; }
+
+#validateTeslimat .ems-page-new-address .ems-form .ems-form-inner {
+  margin: 0 auto; }
+
+.ems-page-new-address .ems-form .ems-form-inner > div {
+  -webkit-box-ordinal-group: 7;
+  -webkit-order: 6;
+  -ms-flex-order: 6;
+  order: 6; }
+  .ems-page-new-address .ems-form .ems-form-inner > div:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; }
+  .ems-page-new-address .ems-form .ems-form-inner > div:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2; }
+  .ems-page-new-address .ems-form .ems-form-inner > div:nth-child(7) {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3; }
+  .ems-page-new-address .ems-form .ems-form-inner > div:nth-child(8) {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4; }
+  .ems-page-new-address .ems-form .ems-form-inner > div:nth-child(6) {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+    -ms-flex-order: 5;
+    order: 5; }
+
+.ems-form-inner .ems-field {
+  width: 100%; }
