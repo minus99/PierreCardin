@@ -1,0 +1,392 @@
+<!-- Başlangıc -->
+<style>
+    .bdnTbl {
+        max-width: 900px;
+        margin: 0 auto 0 auto;
+        display: block;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .bdnTbl .h2,
+    .bdnTbl .bold {
+        font-family: helvetica-bold;
+    }
+
+    .bdnTbl span {
+        font-weight: 600;
+        color: #696969;
+        display: block;
+        font-size: 14px;
+    }
+
+    .bdnTbl .mt-15 {
+        margin-top: 15px !important;
+    }
+
+    .bdnTbl .mb-15 {
+        margin-bottom: 15px !important;
+    }
+
+    .bdnTbl .h2 {
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    .bdnTbl .bdnHeader {
+        display: block;
+    }
+
+    .bdnTbl .bdnHeader ul {
+        display: block;
+    }
+
+    .bdnTbl .bdnHeader ul li {
+        display: inline-block;
+        width: calc((100% / 5) - 5px);
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        border-top: 2px solid #fff;
+    }
+
+    .bdnTbl .bdnHeader ul li span {
+        display: block;
+        text-align: center;
+        padding: 15px;
+        cursor:pointer;
+    }
+
+    .bdnTbl .bdnHeader ul li.selected,
+    .bdnTbl .bdnHeader ul li:hover {
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #ddd;
+        border-top: 2px solid #000;
+        border-right: 1px solid #ddd;
+    }
+
+
+    .bdnTbl .bdnOlc {
+        padding-top: 20px;
+        display: none;
+    }
+
+    .bdnTbl .bdnOlc .h2 {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .bdnTbl .bdnOlc ul li {
+        margin-bottom: 10px;
+    }
+
+    .bdnTbl .bdnOlc ul li>span {
+        margin-bottom: 5px;
+    }
+
+    .bdnTbl .bdnOlc .bdnWrp {
+        width: 73%;
+        display: inline-block;
+    }
+
+    .bdnTbl .bdnOlc .img {
+        width: 26%;
+        display: inline-block;
+    }
+
+    .bdnTbl .bdnOlcTbl {
+        display: block;
+    }
+
+    .bdnTbl .bdnOlcTbl ul li {
+        display: inline-block;
+        width: calc((100% / 8) - 10px);
+        border: .5px solid #ddd;
+        margin-bottom:0;
+    }
+
+    .bdnTbl .bdnOlcTbl ul li span {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .bdnTbl .bdnOlcTbl ul li.baslik {
+        width: calc((100% / 8) + 70px);
+        background: #e9e9e9;
+    }
+
+    .bdnTbl .bdnOlcTbl .bdnSet {
+        background: #e9e9e9;
+    }
+    .bdnOlc {
+        -webkit-animation: fadeEffect 1s;
+        animation: fadeEffect 1s; 
+    }
+
+    @-webkit-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+</style>
+<div class="bdnTbl">
+<div class="bdnHeader">
+<ul>
+<li id="kadin" class="tablinks" onclick="openBdn(this, 'cntKadin')"> <span>KADIN</span> </li>
+<li id="erkek" class="tablinks" onclick="openBdn(this, 'cntErkek')"> <span>ERKEK</span> </li>
+<li id="kiz-cocuk" class="tablinks" onclick="openBdn(this, 'cntKizCocuk')"> <span>KIZ &Ccedil;OCUK</span> </li>
+<li id="erkek-cocuk" class="tablinks" onclick="openBdn(this, 'cntErkekCocuk')"> <span>ERKEK &Ccedil;OCUK</span> </li>
+<li id="aksesuar" class="tablinks" onclick="openBdn(this, 'cntAksesuar')"> <span>AKSESUAR</span> </li>
+</ul>
+</div>
+<div class="bdnOlc" id="cntKadin">
+<div class="bdnWrp"><span class="h2">Kadın Beden &Ouml;l&ccedil;&uuml;m&uuml; Nasıl Alırım?</span> 
+<ul>
+<li> <span class="bold">1.G&ouml;ğ&uuml;s &Ouml;l&ccedil;&uuml;s&uuml;:</span> <span class="text">Mezurayı kol evinin altından,g&ouml;ğs&uuml;n tepe noktasına yerleştirerek,yere parelel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">2. Bel &Ouml;l&ccedil;&uuml;s&uuml;:</span> <span class="text">Ellerinizi belinize koyarak bel noktanızı tespit ediniz.O noktadan yere parelel &ouml;l&ccedil;&uuml;m alınız</span> </li>
+<li> <span class="bold">3. Basen &Ouml;l&ccedil;&uuml;s&uuml;</span> <span class="text">Mezurayı kal&ccedil;anızın en geniş ve dik yerine yerleştirerek yere parelel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">4. Boyun &Ccedil;evresi</span> <span class="text">Mezurayı boyun &ccedil;evresini ortalayacak şekilde, yere paralel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">5. İ&ccedil; Bacak Boyu</span> <span class="text">Mezurayı bacağı kırmadan, en &uuml;st &ccedil;atal boyundan, tabana kadar &ouml;l&ccedil;&uuml; alınız.</span> </li>
+<li> <span class="bold">6. Beden Boyu</span> <span class="text">Boyunuzu ayaklarınız &ccedil;ıplak iken, d&uuml;z bir zemin &uuml;zerinde, sabit bir yere dik dayanarak, başın en tepe                         noktasını belirledikten sonra, tabana kadar &ouml;l&ccedil;&uuml; alınız.</span> </li>
+<li> <span class="bold mt-15 mb-15">GENEL BİLGİLER</span> <span class="text">- &Ouml;l&ccedil;&uuml;s&uuml; alınacak kişinin normal duruşunda olması gerekir.</span> <span class="text">- &Ouml;l&ccedil;&uuml;m i&ccedil; giyim &uuml;zerinden yapılmalıdır.</span> <span class="text">- İki taraflı &ouml;l&ccedil;&uuml;lerde omuz genişliği gibi, sağ taraf &ouml;l&ccedil;&uuml;l&uuml;r.</span> <span class="text">- &Ouml;l&ccedil;&uuml;mde mezura, ne &ccedil;ok gergin ne de &ccedil;ok bol olmalıdır.</span> <span class="text"> - Mezura &ouml;l&ccedil;&uuml;m yapılırken, b&ouml;lgenin &uuml;zerinde rahat&ccedil;a kaymalıdır. </span> <span class="text">- &Ouml;l&ccedil;&uuml; alınırken, relak halde &ouml;l&ccedil;&uuml; alınmalıdır. Nefes tutulmamalı, karın i&ccedil;eri &ccedil;ekilmemeli ve g&ouml;ğ&uuml;s kafesi                         şişirilmemelidir. </span> </li>
+</ul>
+</div>
+<div class="img"><img src="/images/frontend/olcuErkek.jpg" /></div>
+<div class="bdnOlcTbl"><span class="h2 mt-15 mb-15">Beden &Ouml;l&ccedil;&uuml;m Tablosu</span> 
+<ul class="bdnSet">
+<li class="baslik"> <span>Beden Seti</span> </li>
+<li> <span>46/XS</span> </li>
+<li> <span>48/S</span> </li>
+<li> <span>50/M</span> </li>
+<li> <span>52/L</span> </li>
+<li> <span>54/XL</span> </li>
+<li> <span>56/2XL</span> </li>
+<li> <span>58/3XL</span> </li>
+</ul>
+<ul>
+<li class="baslik"> <span>G&ouml;ğ&uuml;s</span> </li>
+<li> <span>92</span> </li>
+<li> <span>96</span> </li>
+<li> <span>100</span> </li>
+<li> <span>104</span> </li>
+<li> <span>109</span> </li>
+<li> <span>115</span> </li>
+<li> <span>119</span> </li>
+</ul>
+<ul>
+<li class="baslik"> <span>Boyun &Ccedil;evresi</span> </li>
+<li> <span>36</span> </li>
+<li> <span>38</span> </li>
+<li> <span>40</span> </li>
+<li> <span>42</span> </li>
+<li> <span>44</span> </li>
+<li> <span>46</span> </li>
+<li> <span>48</span> </li>
+</ul>
+</div>
+</div>
+<div class="bdnOlc" id="cntErkek">
+<div class="bdnWrp"><span class="h2">Erkek Beden &Ouml;l&ccedil;&uuml;m&uuml; Nasıl Alırım?</span> 
+<ul>
+<li> <span class="bold">1.G&ouml;ğ&uuml;s &Ouml;l&ccedil;&uuml;s&uuml;:</span> <span class="text">Mezurayı kol evinin altından,g&ouml;ğs&uuml;n tepe noktasına yerleştirerek,yere parelel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">2. Bel &Ouml;l&ccedil;&uuml;s&uuml;:</span> <span class="text">Ellerinizi belinize koyarak bel noktanızı tespit ediniz.O noktadan yere parelel &ouml;l&ccedil;&uuml;m alınız</span> </li>
+<li> <span class="bold">3. Basen &Ouml;l&ccedil;&uuml;s&uuml;</span> <span class="text">Mezurayı kal&ccedil;anızın en geniş ve dik yerine yerleştirerek yere parelel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">4. Boyun &Ccedil;evresi</span> <span class="text">Mezurayı boyun &ccedil;evresini ortalayacak şekilde, yere paralel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">5. İ&ccedil; Bacak Boyu</span> <span class="text">Mezurayı bacağı kırmadan, en &uuml;st &ccedil;atal boyundan, tabana kadar &ouml;l&ccedil;&uuml; alınız.</span> </li>
+<li> <span class="bold">6. Beden Boyu</span> <span class="text">Boyunuzu ayaklarınız &ccedil;ıplak iken, d&uuml;z bir zemin &uuml;zerinde, sabit bir yere dik dayanarak, başın en tepe                         noktasını belirledikten sonra, tabana kadar &ouml;l&ccedil;&uuml; alınız.</span> </li>
+<li> <span class="bold mt-15 mb-15">GENEL BİLGİLER</span> <span class="text">- &Ouml;l&ccedil;&uuml;s&uuml; alınacak kişinin normal duruşunda olması gerekir.</span> <span class="text">- &Ouml;l&ccedil;&uuml;m i&ccedil; giyim &uuml;zerinden yapılmalıdır.</span> <span class="text">- İki taraflı &ouml;l&ccedil;&uuml;lerde omuz genişliği gibi, sağ taraf &ouml;l&ccedil;&uuml;l&uuml;r.</span> <span class="text">- &Ouml;l&ccedil;&uuml;mde mezura, ne &ccedil;ok gergin ne de &ccedil;ok bol olmalıdır.</span> <span class="text"> - Mezura &ouml;l&ccedil;&uuml;m yapılırken, b&ouml;lgenin &uuml;zerinde rahat&ccedil;a kaymalıdır. </span> <span class="text">- &Ouml;l&ccedil;&uuml; alınırken, relak halde &ouml;l&ccedil;&uuml; alınmalıdır. Nefes tutulmamalı, karın i&ccedil;eri &ccedil;ekilmemeli ve g&ouml;ğ&uuml;s kafesi                         şişirilmemelidir. </span> </li>
+</ul>
+</div>
+<div class="img"><img src="/images/frontend/olcuErkek.jpg" /></div>
+<div class="bdnOlcTbl"><span class="h2 mt-15 mb-15">Beden &Ouml;l&ccedil;&uuml;m Tablosu</span> 
+<ul class="bdnSet">
+<li class="baslik"> <span>Beden Seti</span> </li>
+<li> <span>46/XS</span> </li>
+<li> <span>48/S</span> </li>
+<li> <span>50/M</span> </li>
+<li> <span>52/L</span> </li>
+<li> <span>54/XL</span> </li>
+<li> <span>56/2XL</span> </li>
+<li> <span>58/3XL</span> </li>
+</ul>
+<ul>
+<li class="baslik"> <span>G&ouml;ğ&uuml;s</span> </li>
+<li> <span>92</span> </li>
+<li> <span>96</span> </li>
+<li> <span>100</span> </li>
+<li> <span>104</span> </li>
+<li> <span>109</span> </li>
+<li> <span>115</span> </li>
+<li> <span>119</span> </li>
+</ul>
+<ul>
+<li class="baslik"> <span>Boyun &Ccedil;evresi</span> </li>
+<li> <span>36</span> </li>
+<li> <span>38</span> </li>
+<li> <span>40</span> </li>
+<li> <span>42</span> </li>
+<li> <span>44</span> </li>
+<li> <span>46</span> </li>
+<li> <span>48</span> </li>
+</ul>
+</div>
+</div>
+<div class="bdnOlc" id="cntKizCocuk">
+<div class="bdnWrp"><span class="h2">Kız Çocuk Beden &Ouml;l&ccedil;&uuml;m&uuml; Nasıl Alırım?</span> 
+<ul>
+<li> <span class="bold">1.G&ouml;ğ&uuml;s &Ouml;l&ccedil;&uuml;s&uuml;:</span> <span class="text">Mezurayı kol evinin altından,g&ouml;ğs&uuml;n tepe noktasına yerleştirerek,yere parelel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">2. Bel &Ouml;l&ccedil;&uuml;s&uuml;:</span> <span class="text">Ellerinizi belinize koyarak bel noktanızı tespit ediniz.O noktadan yere parelel &ouml;l&ccedil;&uuml;m alınız</span> </li>
+<li> <span class="bold">3. Basen &Ouml;l&ccedil;&uuml;s&uuml;</span> <span class="text">Mezurayı kal&ccedil;anızın en geniş ve dik yerine yerleştirerek yere parelel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">4. Boyun &Ccedil;evresi</span> <span class="text">Mezurayı boyun &ccedil;evresini ortalayacak şekilde, yere paralel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">5. İ&ccedil; Bacak Boyu</span> <span class="text">Mezurayı bacağı kırmadan, en &uuml;st &ccedil;atal boyundan, tabana kadar &ouml;l&ccedil;&uuml; alınız.</span> </li>
+<li> <span class="bold">6. Beden Boyu</span> <span class="text">Boyunuzu ayaklarınız &ccedil;ıplak iken, d&uuml;z bir zemin &uuml;zerinde, sabit bir yere dik dayanarak, başın en tepe                         noktasını belirledikten sonra, tabana kadar &ouml;l&ccedil;&uuml; alınız.</span> </li>
+<li> <span class="bold mt-15 mb-15">GENEL BİLGİLER</span> <span class="text">- &Ouml;l&ccedil;&uuml;s&uuml; alınacak kişinin normal duruşunda olması gerekir.</span> <span class="text">- &Ouml;l&ccedil;&uuml;m i&ccedil; giyim &uuml;zerinden yapılmalıdır.</span> <span class="text">- İki taraflı &ouml;l&ccedil;&uuml;lerde omuz genişliği gibi, sağ taraf &ouml;l&ccedil;&uuml;l&uuml;r.</span> <span class="text">- &Ouml;l&ccedil;&uuml;mde mezura, ne &ccedil;ok gergin ne de &ccedil;ok bol olmalıdır.</span> <span class="text"> - Mezura &ouml;l&ccedil;&uuml;m yapılırken, b&ouml;lgenin &uuml;zerinde rahat&ccedil;a kaymalıdır. </span> <span class="text">- &Ouml;l&ccedil;&uuml; alınırken, relak halde &ouml;l&ccedil;&uuml; alınmalıdır. Nefes tutulmamalı, karın i&ccedil;eri &ccedil;ekilmemeli ve g&ouml;ğ&uuml;s kafesi                         şişirilmemelidir. </span> </li>
+</ul>
+</div>
+<div class="img"><img src="/images/frontend/olcuErkek.jpg" /></div>
+<div class="bdnOlcTbl"><span class="h2 mt-15 mb-15">Beden &Ouml;l&ccedil;&uuml;m Tablosu</span> 
+<ul class="bdnSet">
+<li class="baslik"> <span>Beden Seti</span> </li>
+<li> <span>46/XS</span> </li>
+<li> <span>48/S</span> </li>
+<li> <span>50/M</span> </li>
+<li> <span>52/L</span> </li>
+<li> <span>54/XL</span> </li>
+<li> <span>56/2XL</span> </li>
+<li> <span>58/3XL</span> </li>
+</ul>
+<ul>
+<li class="baslik"> <span>G&ouml;ğ&uuml;s</span> </li>
+<li> <span>92</span> </li>
+<li> <span>96</span> </li>
+<li> <span>100</span> </li>
+<li> <span>104</span> </li>
+<li> <span>109</span> </li>
+<li> <span>115</span> </li>
+<li> <span>119</span> </li>
+</ul>
+<ul>
+<li class="baslik"> <span>Boyun &Ccedil;evresi</span> </li>
+<li> <span>36</span> </li>
+<li> <span>38</span> </li>
+<li> <span>40</span> </li>
+<li> <span>42</span> </li>
+<li> <span>44</span> </li>
+<li> <span>46</span> </li>
+<li> <span>48</span> </li>
+</ul>
+</div>
+</div>
+<div class="bdnOlc" id="cntErkekCocuk">
+<div class="bdnWrp"><span class="h2">Erkek Çocuk Beden &Ouml;l&ccedil;&uuml;m&uuml; Nasıl Alırım?</span> 
+<ul>
+<li> <span class="bold">1.G&ouml;ğ&uuml;s &Ouml;l&ccedil;&uuml;s&uuml;:</span> <span class="text">Mezurayı kol evinin altından,g&ouml;ğs&uuml;n tepe noktasına yerleştirerek,yere parelel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">2. Bel &Ouml;l&ccedil;&uuml;s&uuml;:</span> <span class="text">Ellerinizi belinize koyarak bel noktanızı tespit ediniz.O noktadan yere parelel &ouml;l&ccedil;&uuml;m alınız</span> </li>
+<li> <span class="bold">3. Basen &Ouml;l&ccedil;&uuml;s&uuml;</span> <span class="text">Mezurayı kal&ccedil;anızın en geniş ve dik yerine yerleştirerek yere parelel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">4. Boyun &Ccedil;evresi</span> <span class="text">Mezurayı boyun &ccedil;evresini ortalayacak şekilde, yere paralel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">5. İ&ccedil; Bacak Boyu</span> <span class="text">Mezurayı bacağı kırmadan, en &uuml;st &ccedil;atal boyundan, tabana kadar &ouml;l&ccedil;&uuml; alınız.</span> </li>
+<li> <span class="bold">6. Beden Boyu</span> <span class="text">Boyunuzu ayaklarınız &ccedil;ıplak iken, d&uuml;z bir zemin &uuml;zerinde, sabit bir yere dik dayanarak, başın en tepe                         noktasını belirledikten sonra, tabana kadar &ouml;l&ccedil;&uuml; alınız.</span> </li>
+<li> <span class="bold mt-15 mb-15">GENEL BİLGİLER</span> <span class="text">- &Ouml;l&ccedil;&uuml;s&uuml; alınacak kişinin normal duruşunda olması gerekir.</span> <span class="text">- &Ouml;l&ccedil;&uuml;m i&ccedil; giyim &uuml;zerinden yapılmalıdır.</span> <span class="text">- İki taraflı &ouml;l&ccedil;&uuml;lerde omuz genişliği gibi, sağ taraf &ouml;l&ccedil;&uuml;l&uuml;r.</span> <span class="text">- &Ouml;l&ccedil;&uuml;mde mezura, ne &ccedil;ok gergin ne de &ccedil;ok bol olmalıdır.</span> <span class="text"> - Mezura &ouml;l&ccedil;&uuml;m yapılırken, b&ouml;lgenin &uuml;zerinde rahat&ccedil;a kaymalıdır. </span> <span class="text">- &Ouml;l&ccedil;&uuml; alınırken, relak halde &ouml;l&ccedil;&uuml; alınmalıdır. Nefes tutulmamalı, karın i&ccedil;eri &ccedil;ekilmemeli ve g&ouml;ğ&uuml;s kafesi                         şişirilmemelidir. </span> </li>
+</ul>
+</div>
+<div class="img"><img src="/images/frontend/olcuErkek.jpg" /></div>
+<div class="bdnOlcTbl"><span class="h2 mt-15 mb-15">Beden &Ouml;l&ccedil;&uuml;m Tablosu</span> 
+<ul class="bdnSet">
+<li class="baslik"> <span>Beden Seti</span> </li>
+<li> <span>46/XS</span> </li>
+<li> <span>48/S</span> </li>
+<li> <span>50/M</span> </li>
+<li> <span>52/L</span> </li>
+<li> <span>54/XL</span> </li>
+<li> <span>56/2XL</span> </li>
+<li> <span>58/3XL</span> </li>
+</ul>
+<ul>
+<li class="baslik"> <span>G&ouml;ğ&uuml;s</span> </li>
+<li> <span>92</span> </li>
+<li> <span>96</span> </li>
+<li> <span>100</span> </li>
+<li> <span>104</span> </li>
+<li> <span>109</span> </li>
+<li> <span>115</span> </li>
+<li> <span>119</span> </li>
+</ul>
+<ul>
+<li class="baslik"> <span>Boyun &Ccedil;evresi</span> </li>
+<li> <span>36</span> </li>
+<li> <span>38</span> </li>
+<li> <span>40</span> </li>
+<li> <span>42</span> </li>
+<li> <span>44</span> </li>
+<li> <span>46</span> </li>
+<li> <span>48</span> </li>
+</ul>
+</div>
+</div>
+<div class="bdnOlc" id="cntAksesuar">
+<div class="bdnWrp"><span class="h2">Aksesuar Beden &Ouml;l&ccedil;&uuml;m&uuml; Nasıl Alırım?</span> 
+<ul>
+<li> <span class="bold">1.G&ouml;ğ&uuml;s &Ouml;l&ccedil;&uuml;s&uuml;:</span> <span class="text">Mezurayı kol evinin altından,g&ouml;ğs&uuml;n tepe noktasına yerleştirerek,yere parelel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">2. Bel &Ouml;l&ccedil;&uuml;s&uuml;:</span> <span class="text">Ellerinizi belinize koyarak bel noktanızı tespit ediniz.O noktadan yere parelel &ouml;l&ccedil;&uuml;m alınız</span> </li>
+<li> <span class="bold">3. Basen &Ouml;l&ccedil;&uuml;s&uuml;</span> <span class="text">Mezurayı kal&ccedil;anızın en geniş ve dik yerine yerleştirerek yere parelel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">4. Boyun &Ccedil;evresi</span> <span class="text">Mezurayı boyun &ccedil;evresini ortalayacak şekilde, yere paralel &ouml;l&ccedil;&uuml;m alınız.</span> </li>
+<li> <span class="bold">5. İ&ccedil; Bacak Boyu</span> <span class="text">Mezurayı bacağı kırmadan, en &uuml;st &ccedil;atal boyundan, tabana kadar &ouml;l&ccedil;&uuml; alınız.</span> </li>
+<li> <span class="bold">6. Beden Boyu</span> <span class="text">Boyunuzu ayaklarınız &ccedil;ıplak iken, d&uuml;z bir zemin &uuml;zerinde, sabit bir yere dik dayanarak, başın en tepe                         noktasını belirledikten sonra, tabana kadar &ouml;l&ccedil;&uuml; alınız.</span> </li>
+<li> <span class="bold mt-15 mb-15">GENEL BİLGİLER</span> <span class="text">- &Ouml;l&ccedil;&uuml;s&uuml; alınacak kişinin normal duruşunda olması gerekir.</span> <span class="text">- &Ouml;l&ccedil;&uuml;m i&ccedil; giyim &uuml;zerinden yapılmalıdır.</span> <span class="text">- İki taraflı &ouml;l&ccedil;&uuml;lerde omuz genişliği gibi, sağ taraf &ouml;l&ccedil;&uuml;l&uuml;r.</span> <span class="text">- &Ouml;l&ccedil;&uuml;mde mezura, ne &ccedil;ok gergin ne de &ccedil;ok bol olmalıdır.</span> <span class="text"> - Mezura &ouml;l&ccedil;&uuml;m yapılırken, b&ouml;lgenin &uuml;zerinde rahat&ccedil;a kaymalıdır. </span> <span class="text">- &Ouml;l&ccedil;&uuml; alınırken, relak halde &ouml;l&ccedil;&uuml; alınmalıdır. Nefes tutulmamalı, karın i&ccedil;eri &ccedil;ekilmemeli ve g&ouml;ğ&uuml;s kafesi                         şişirilmemelidir. </span> </li>
+</ul>
+</div>
+<div class="img"><img src="/images/frontend/olcuErkek.jpg" /></div>
+<div class="bdnOlcTbl"><span class="h2 mt-15 mb-15">Beden &Ouml;l&ccedil;&uuml;m Tablosu</span> 
+<ul class="bdnSet">
+<li class="baslik"> <span>Beden Seti</span> </li>
+<li> <span>46/XS</span> </li>
+<li> <span>48/S</span> </li>
+<li> <span>50/M</span> </li>
+<li> <span>52/L</span> </li>
+<li> <span>54/XL</span> </li>
+<li> <span>56/2XL</span> </li>
+<li> <span>58/3XL</span> </li>
+</ul>
+<ul>
+<li class="baslik"> <span>G&ouml;ğ&uuml;s</span> </li>
+<li> <span>92</span> </li>
+<li> <span>96</span> </li>
+<li> <span>100</span> </li>
+<li> <span>104</span> </li>
+<li> <span>109</span> </li>
+<li> <span>115</span> </li>
+<li> <span>119</span> </li>
+</ul>
+<ul>
+<li class="baslik"> <span>Boyun &Ccedil;evresi</span> </li>
+<li> <span>36</span> </li>
+<li> <span>38</span> </li>
+<li> <span>40</span> </li>
+<li> <span>42</span> </li>
+<li> <span>44</span> </li>
+<li> <span>46</span> </li>
+<li> <span>48</span> </li>
+</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">// <![CDATA[
+function openBdn(obj,  bdnName) {
+    $(".bdnOlc").css("display","none");
+    $(".tablinks").removeClass("selected");
+console.log(obj);
+console.log(bdnName);
+    $(obj).addClass("selected");
+    $("#"+bdnName).css("display","block");
+}
+
+var parser = document.createElement('a');
+parser.href = document.location;
+
+$(parser.hash).addClass("selected");
+$(parser.hash).click();
+// ]]></script>

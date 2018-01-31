@@ -720,6 +720,37 @@ body{
         }
     }
 }
+.en-US{
+    .ems-page-order-delivery{
+        .ems-address-wrapper{
+            .return-shopping{
+                &:after{
+                    content: 'CONTINUE SHOPPING';
+                }
+            }
+        }
+    }
+    .urunDetay{
+        .inner-row-2-inner{
+            .ems-prd-size{
+                .urunDetay_urunSecenek{
+                    > .urunDetay_urunSecenek1{
+                        &.item-selected{
+                            .dropdown-trigger{
+                                span{
+                                    &:before{
+                                        content: 'SIZE : ';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .ems-message{
     text-align: center;
     span{
@@ -759,7 +790,17 @@ body{
         }
     }
 }
-
+.en-US{
+    .bottom-step{
+        .next{
+            .return-shopping{
+                &:after{
+                    content: 'CONTINUE SHOPPING';
+                }
+            }
+        }
+    }
+}
 /*
  * yeni uyelik hata
  */
@@ -1338,7 +1379,7 @@ input#ctl00_frmMain_ascTeslimatBilgi_ascAdresEkle_hdnAdrTip[value='1'] {
             line-height: 30px;
             font-weight:700;
             position: absolute;
-            top: 40px;
+            top: 30px;
             left: 0;
             pointer-events: none;
             transition: all 0.2s ease-in-out;
@@ -1347,7 +1388,7 @@ input#ctl00_frmMain_ascTeslimatBilgi_ascAdresEkle_hdnAdrTip[value='1'] {
         }
         &.is-completed{
             span[id$=lbfUYA_VERGIDAIRESI]{
-                top:23px;
+                top:10px;
                 font-size:12px;
             }
         }
@@ -1401,5 +1442,8 @@ input#ctl00_frmMain_ascTeslimatBilgi_ascAdresEkle_hdnAdrTip[value='1'] {
 .ems-form-inner {
     .ems-field {
     width: 100%;
+        &.submit{
+            margin-top:20px;
+        }
     }
 }

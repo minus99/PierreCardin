@@ -131,6 +131,7 @@
             width: calc(100% - 200px);
             padding: 40px 0 40px 40px;
             .pageSifremiUnuttum {
+                
                 .pageHeaderSifremiUnuttum {
                     margin: 0 0 25px 0;
                     span {
@@ -197,10 +198,32 @@
                     }
                 }
             }
+            .pageUyeSifreReset{
+                .pageHeaderUyeSifreReset{
+                    margin-bottom:20px;
+                    >span{
+                        font-family: "csm";
+                        font-size: 32px;
+                        color: #000;
+                        letter-spacing: -1px;
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
             > div{
-                display: block;
+                display: inline-block;
                 vertical-align: top;
-                width:100%;
+                &.ems-page-member-address,
+                &.pageKuponlarimWrp,
+                &.ems-page-member-refund,
+                &.ems-page-member-order,
+                &.ems-page-member-favorites,
+                &.ems-page-member-follow-list,
+                &.ems-page-member-message,
+                &.pageSifremiUnuttum {
+                    display:block;
+                }
             }
             .contact {
                 margin-left: 50px;
@@ -261,6 +284,20 @@
                                             input {
                                                 margin: 0;
                                                 width: 100% !important;
+                                            }
+                                        }
+                                        &.tableMesaj_trlbfUMT_SPR_AD{
+                                            >td{
+                                                position:relative;
+                                                &:after{
+                                                    content: $icon-down;
+                                                    font-family: $fontIcon;
+                                                    width: 15px;
+                                                    height: 15px;
+                                                    position: absolute;
+                                                    top: 5px;
+                                                    right: 0;
+                                                }
                                             }
                                         }
                                     }
@@ -345,6 +382,7 @@
                 .page-top-title {
                     padding: 8px 0;
                     margin-bottom: 15px;
+                    text-align: center;
                     span {
                         font-size: 24px;
                         font-family: $fontSite;
@@ -394,6 +432,7 @@
                 .page-top-title {
                     padding: 8px 0;
                     margin-bottom: 15px;
+                    text-align:center;
                     span {
                         font-size: 24px;
                         font-family: $fontSite;
@@ -475,6 +514,7 @@
                 .page-top-title {
                     padding: 8px 0;
                     margin-bottom: 15px;
+                    text-align:center;
                     span {
                         font-size: 24px;
                         font-family: $fontSite;
@@ -579,6 +619,7 @@
                 .page-top-title {
                     padding: 8px 0;
                     margin-bottom: 15px;
+                    text-align:center;
                     span {
                         font-size: 24px;
                         font-family: $fontSite;
@@ -714,6 +755,7 @@
                 .page-top-title {
                     padding: 8px 0;
                     margin-bottom: 15px;
+                    text-align:center;
                     span {
                         font-size: 24px;
                         color: #000;
@@ -795,6 +837,7 @@
                 .page-top-title {
                     padding: 8px 0;
                     margin-bottom: 15px;
+                    text-align:center;
                     span {
                         font-size: 24px;
                         font-family: $fontSite;
@@ -883,6 +926,7 @@
                 .page-top-title {
                     padding: 8px 0;
                     margin-bottom: 15px;
+                    text-align:center;
                     span {
                         color: #000;
                         font-size: 24px;
@@ -891,9 +935,6 @@
                 }
                 .page-top-desc {
                     margin-bottom: 20px;
-                    .pageDescUyeSifre {
-                        display: none;
-                    }
                 }
                 .ems-form {
                     .ems-form-inner {
@@ -914,6 +955,7 @@
                 .page-top-title {
                     padding: 8px 0;
                     margin-bottom: 15px;
+                    text-align:center;
                     span {
                         font-size: 24px;
                         font-family: $fontSite;
@@ -929,7 +971,7 @@
                             &.ems-grid-header {
                                 display: none;
                                 > div {
-                                    width: 20%;
+                                    width: 16%;
                                     display: inline-block;
                                     vertical-align: top;
                                     &.ems-grid-cargo-no {
@@ -947,7 +989,7 @@
                             }
                             &.ems-grid-row {
                                 > div {
-                                    width: 20%;
+                                    width: 16%;
                                     display: inline-block;
                                     vertical-align: top;
                                     padding: 10px 0;
@@ -964,6 +1006,19 @@
                                             color: $colorRed;
                                             font-weight: 700;
                                             text-transform: uppercase;
+                                        }
+                                    }
+                                    &.kargoNo{
+                                        a{
+                                            &:after{
+                                                content: '';
+                                                background-image: url(/images/frontend/buyutec.png);
+                                                width: 15px;
+                                                height: 15px;
+                                                background-size: 100% 100%;
+                                                display: inline-block;
+                                                margin-left: 5px;
+                                            }
                                         }
                                     }
                                     &.ems-grid-total {
@@ -987,6 +1042,7 @@
                 .page-top-title {
                     padding: 8px 0;
                     margin-bottom: 15px;
+                    text-align:center;
                     span {
                         font-size: 24px;
                         font-family: $fontSite;
@@ -1385,6 +1441,7 @@
             border: 1px solid $colorRed;
             padding: 20px;
             margin-bottom: 20px;
+            width:calc(100% - 325px);
             tbody {
                 display: block;
                 tr {
@@ -2132,11 +2189,8 @@
                                 .row {
                                     max-width: 380px;
                                     .ems-field {
-                                        width: 48%;
-                                        display: inline-block;
-                                    }
-                                    .ems-field + .ems-field {
-                                        margin-left: 4%;
+                                        width: 100%;
+                                        display: block;
                                     }
                                     .col {
                                         margin: 0;
@@ -2178,20 +2232,24 @@
                                                     width: 48%;
                                                     margin-right: 4%;
                                                 }
-                                                span {
+                                                >span {
                                                     position: absolute;
                                                     left: 50%;
                                                     top: 25px;
+                                                    z-index: 10;
                                                 }
                                                 input {
                                                     width: 48%;
+                                                    background:#fff;
+                                                    z-index:2;
+                                                    position:relative;
                                                 }
                                             }
                                         }
                                         &.is-active {
                                             .ems-form-obj {
                                                 div[id$="divCaptcha"] {
-                                                    span {
+                                                    >span {
                                                         top: 5px !important;
                                                     }
                                                 }
@@ -2392,9 +2450,10 @@
                 display: block;
                 width: calc(100% - 365px);
                 padding: 0 20px;
+                position:relative;
                 .ems-pay-point {
                     display: block;
-                    padding-bottom:20px;
+                    padding:30px 0;
                     .pageOdemeBilgi_chkKrediKartiBonusPara{
                         .checkbox {
                             input:checked+span:after{
@@ -2420,7 +2479,10 @@
                     display: inline-block;
                     vertical-align: top;
                     border-right: 1px solid #e4e4e4;
-                    padding: 30px 0 0 0;
+                    padding: 50px 0 0 0;
+                    tbody{
+                        display:block;
+                    }
                     tr {
                         display: inline-block;
                         margin-bottom: 35px;
@@ -2485,8 +2547,10 @@
                             }
                             &.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit {
                                 position: absolute;
-                                left: 37%;
-                                top: 75px;
+                                left: 50%;
+                                top: 350px;
+                                transform: translateX(-50%);
+                                text-align: center;
                             }
                         }
                         &:nth-child(2) {
@@ -3058,10 +3122,10 @@
                         }
                         > ul {
                             > li {
+                                margin-bottom:20px;
                                 > a {
                                     font-size: 18px;
                                     color: #000;
-                                    line-height: 50px;
                                     display: block;
                                     position: relative;
                                 }
@@ -3381,6 +3445,7 @@
                 }
                 > ul {
                     > li {
+                        margin-bottom:30px;
                         &.act {
                             a {
                                 font-weight: 700;
@@ -3388,8 +3453,8 @@
                             }
                         }
                         > a {
-                            line-height: 50px;
                             text-transform:uppercase;
+                            line-height: 1.8;
                             &:hover {
                                 font-weight: 700;
                                 color: $colorRed;

@@ -645,8 +645,14 @@ ul.emosInfinite{
                         font-weight: 700;
                     }
              }
+             .productType{
+                 display: block;
+                 font-weight: 700;
+                 margin-top:3px;
+                 color: #00bfa5;
+             }
              .urunListe_yeniUrun{
-                 display: block !important;
+                 display: none;
                  span{
                      font-size:13px;
                      color: #00bfa5;
@@ -1080,6 +1086,9 @@ ul.emosInfinite{
                         padding:14px 0;
                         a.ems-filter-btn{
                             float:left;
+                            i{
+                                margin-right: 5px;
+                            }
                         }
                         a.ems-sort-btn{
                                 float:right;

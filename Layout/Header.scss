@@ -780,9 +780,13 @@
                         > div {
                             padding: 10px 0;
                             &.krg-blg{
+                                display:block !important;
                                 a{
                                     font-weight: 700;
                                 }
+                            }
+                            &.indirim-kod{
+                                display: block !important;
                             }
                             a {
                                 display: inline-block;
@@ -1262,7 +1266,7 @@
                     position: relative;
                     &.mSearchBtn {
                         position: absolute;
-                        left: 6px;
+                        right: 6px;
                         top: 7px;
                         z-index: 2;
                         overflow: hidden;
@@ -1334,7 +1338,7 @@
                     }
                     &.mBurger {
                         position: absolute;
-                        right: 6px;
+                        left: 6px;
                         top: 7px;
                             a{
                                 display: block;
