@@ -654,7 +654,32 @@
                             }
                         }
                     }
-
+                    .button-group-wrp{
+                        >a{
+                            width: 24% !important;
+                            vertical-align: top;
+                            font-size:13px;
+                            position:relative;
+                            display: inline-block;
+                            font-weight: 700;
+                            text-align: center;
+                        }
+                    }
+                    .yikama-talimat{
+                        i{
+                            &:before{
+                                content:'';
+                                width: 20px;
+                                height: 20px;
+                                background: url("/images/frontend/yikama-talimatlari/yikama-talimati.png");
+                                display: block;
+                                position: absolute;
+                                top: -25px;
+                                left: calc(50% - 10px);
+                                background-size: 100%;
+                            }
+                        }
+                    }
                     .stckCaseBtn{
                         i:before{
                             content: $icon-magazalar;
@@ -724,11 +749,11 @@
                     }
                     .lnkTaksitSecenek{
                         display: inline-block;
-                        width: 33%;
+                        width: 24%;
                         text-align: center;
                         font-weight: 700;
                         position: relative;
-                        font-size: 12px;
+                        font-size: 13px;
                         &:before{
                             content: $icon-odeme;
                             font-family: $fontIcon;
@@ -750,15 +775,19 @@
                          .urunDetay_btnStokHaberci{
                              margin-top: 40px;
                              margin-bottom: 50px;
+                             @media screen and (max-width:960px){
+                                position: fixed;
+                                bottom:0;
+                                left:0;
+                                right: 0;
+                                margin:0;
+                                z-index: 9;
+                            }
                              .btnStokHaberci{
                                  background: #424242;
-                                 pointer-events: none;
-                                 cursor: default;
-                                 @media screen and (max-width:960px){
-                                     position: fixed;
-                                     bottom:0;
-                                     left:0;
-                                     z-index: 9;
+                                 transition:all ease .4s;
+                                 &:hover{
+                                     background:#666;
                                  }
                              }
                              table,

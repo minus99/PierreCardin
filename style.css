@@ -3836,6 +3836,9 @@ input[type="checkbox"], input[type="radio"] {
 .ems-logoff .krg-blg {
   display: none; }
 
+.ems-logoff .iadeler {
+  display: none; }
+
 .site-header-inner {
   background: #fff; }
   @media screen and (min-width: 961px) {
@@ -4375,6 +4378,8 @@ input[type="checkbox"], input[type="radio"] {
         display: block !important; }
         #validateLogin .mod-mini-login .mod-mini-login-inner .mod-mini-login-body .login > div.krg-blg a {
           font-weight: 700; }
+      #validateLogin .mod-mini-login .mod-mini-login-inner .mod-mini-login-body .login > div.iadeler {
+        display: block !important; }
       #validateLogin .mod-mini-login .mod-mini-login-inner .mod-mini-login-body .login > div.indirim-kod {
         display: block !important; }
       #validateLogin .mod-mini-login .mod-mini-login-inner .mod-mini-login-body .login > div a {
@@ -4764,6 +4769,8 @@ input[type="checkbox"], input[type="radio"] {
               height: 13px;
               text-align: center;
               line-height: 13px; }
+            .site-header-inner .h-mobile .mbHeader > div.mbCart a > i, .site-header-inner .h-mobile .mbHeader > div.mbCart a > b {
+              display: initial !important; }
         .site-header-inner .h-mobile .mbHeader > div.mBurger {
           position: absolute;
           left: 6px;
@@ -5345,10 +5352,6 @@ input[type="checkbox"], input[type="radio"] {
       right: 10px; }
   .kutuBulten .kutuBodyBulten .kutuBulten_btnBultenGonder {
     right: 8px; } }
-
-.mod-lang {
-  text-align: center;
-  margin-bottom: 30px; }
 
 /* HOME BANNERS */
 .home-banner {
@@ -7194,16 +7197,16 @@ ul.emosInfinite .ems-prd.product-list-banner {
       ul.emosInfinite .ems-prd.product-list-banner.return .holder .content {
         background: #ad002d; } }
 
-.kutuOzellikFiltre .kutuBodyOzellikFiltre > table > tbody > tr > td > div .urunKiyaslamaOzellik_tumunuTemizle {
+.kutuOzellikFiltre .kutuBodyOzellikFiltre .urunKiyaslamaOzellik_tumunuTemizle {
   display: block !important; }
-  .kutuOzellikFiltre .kutuBodyOzellikFiltre > table > tbody > tr > td > div .urunKiyaslamaOzellik_tumunuTemizle span {
+  .kutuOzellikFiltre .kutuBodyOzellikFiltre .urunKiyaslamaOzellik_tumunuTemizle span {
     border: 1px solid #c0c0c0;
     padding: 10px;
     width: 100%;
     display: block;
     text-align: center; }
     @media screen and (max-width: 960px) {
-      .kutuOzellikFiltre .kutuBodyOzellikFiltre > table > tbody > tr > td > div .urunKiyaslamaOzellik_tumunuTemizle span {
+      .kutuOzellikFiltre .kutuBodyOzellikFiltre .urunKiyaslamaOzellik_tumunuTemizle span {
         border: none;
         padding: 0; } }
 
@@ -7679,6 +7682,24 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
             border-radius: 3px; }
         .urunDetay .inner-row-2 .inner-row-2-inner .ems-prd-icons .ems-prd-company > div .urunDetayPromosyonListe .promosyonBilgi img {
           display: none; }
+    .urunDetay .inner-row-2 .inner-row-2-inner .button-group-wrp > a {
+      width: 24% !important;
+      vertical-align: top;
+      font-size: 13px;
+      position: relative;
+      display: inline-block;
+      font-weight: 700;
+      text-align: center; }
+    .urunDetay .inner-row-2 .inner-row-2-inner .yikama-talimat i:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: url("/images/frontend/yikama-talimatlari/yikama-talimati.png");
+      display: block;
+      position: absolute;
+      top: -25px;
+      left: calc(50% - 10px);
+      background-size: 100%; }
     .urunDetay .inner-row-2 .inner-row-2-inner .stckCaseBtn {
       width: 33%;
       display: inline-block;
@@ -7737,11 +7758,11 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
         display: inline-block; }
     .urunDetay .inner-row-2 .inner-row-2-inner .lnkTaksitSecenek {
       display: inline-block;
-      width: 33%;
+      width: 24%;
       text-align: center;
       font-weight: 700;
       position: relative;
-      font-size: 12px; }
+      font-size: 13px; }
       .urunDetay .inner-row-2 .inner-row-2-inner .lnkTaksitSecenek:before {
         content: "";
         font-family: "icomoon";
@@ -7757,16 +7778,21 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
     .urunDetay .inner-row-2 .inner-row-2-inner .ems-prd-add-to-cart .urunDetay_btnStokHaberci {
       margin-top: 40px;
       margin-bottom: 50px; }
+      @media screen and (max-width: 960px) {
+        .urunDetay .inner-row-2 .inner-row-2-inner .ems-prd-add-to-cart .urunDetay_btnStokHaberci {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: 0;
+          z-index: 9; } }
       .urunDetay .inner-row-2 .inner-row-2-inner .ems-prd-add-to-cart .urunDetay_btnStokHaberci .btnStokHaberci {
         background: #424242;
-        pointer-events: none;
-        cursor: default; }
-        @media screen and (max-width: 960px) {
-          .urunDetay .inner-row-2 .inner-row-2-inner .ems-prd-add-to-cart .urunDetay_btnStokHaberci .btnStokHaberci {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            z-index: 9; } }
+        -webkit-transition: all ease .4s;
+        -o-transition: all ease .4s;
+        transition: all ease .4s; }
+        .urunDetay .inner-row-2 .inner-row-2-inner .ems-prd-add-to-cart .urunDetay_btnStokHaberci .btnStokHaberci:hover {
+          background: #666; }
       .urunDetay .inner-row-2 .inner-row-2-inner .ems-prd-add-to-cart .urunDetay_btnStokHaberci table,
       .urunDetay .inner-row-2 .inner-row-2-inner .ems-prd-add-to-cart .urunDetay_btnStokHaberci table tbody,
       .urunDetay .inner-row-2 .inner-row-2-inner .ems-prd-add-to-cart .urunDetay_btnStokHaberci table tbody tr,
@@ -9329,10 +9355,12 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
           top: 5px !important; }
         #validateUye .ems-page-member-login .ems-col-left-bar .ems-signup .ems-signup-inner .ems-signup-body .ems-form .ems-form-inner .ems-field.ems-text .ems-form-obj span {
           font-size: 12px;
-          font-weight: normal; }
+          font-weight: normal;
+          line-height: 1.5; }
           #validateUye .ems-page-member-login .ems-col-left-bar .ems-signup .ems-signup-inner .ems-signup-body .ems-form .ems-form-inner .ems-field.ems-text .ems-form-obj span a {
             font-size: 12px;
-            font-weight: normal; }
+            font-weight: normal;
+            line-height: 1.5; }
         #validateUye .ems-page-member-login .ems-col-left-bar .ems-signup .ems-signup-inner .ems-signup-body .ems-form .ems-form-inner .ems-field.submit .ems-form-obj .btnYeniUyeKaydet {
           width: 180px; }
           #validateUye .ems-page-member-login .ems-col-left-bar .ems-signup .ems-signup-inner .ems-signup-body .ems-form .ems-form-inner .ems-field.submit .ems-form-obj .btnYeniUyeKaydet span {
@@ -9364,6 +9392,10 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
           color: #000; }
         #validateUye .ems-page-member-login .ems-col-right-bar .ems-login .ems-login-inner .ems-login-body .ems-form .ems-form-inner .ems-field span {
           color: #ccc; }
+        #validateUye .ems-page-member-login .ems-col-right-bar .ems-login .ems-login-inner .ems-login-body .ems-form .ems-form-inner .ems-field input {
+          background: #fff;
+          z-index: 9;
+          position: relative; }
         #validateUye .ems-page-member-login .ems-col-right-bar .ems-login .ems-login-inner .ems-login-body .ems-form .ems-form-inner .ems-field .btnDefault span {
           color: #fff;
           text-transform: uppercase; }
@@ -9473,6 +9505,18 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
             display: block;
             width: 100%;
             max-width: 290px; }
+            .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-cart-pay-type .tableOdemeBilgiKrediKarti tr td.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit {
+              max-width: none; }
+              .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-cart-pay-type .tableOdemeBilgiKrediKarti tr td.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit a {
+                font-size: 12px;
+                font-weight: 700;
+                display: inline-block;
+                color: #000; }
+                .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-cart-pay-type .tableOdemeBilgiKrediKarti tr td.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit a.bnk-inf-lnk {
+                  padding-left: 7px;
+                  margin-left: 7px;
+                  border-left: 1px solid #000;
+                  display: inline-block !important; }
             .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-cart-pay-type .tableOdemeBilgiKrediKarti tr td .div-cc-carttype {
               right: 0; }
             .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-cart-pay-type .tableOdemeBilgiKrediKarti tr td > div input {
@@ -9497,14 +9541,6 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
               font-weight: 700; }
             .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-cart-pay-type .tableOdemeBilgiKrediKarti tr td.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit a:hover span {
               color: #b70234; }
-            .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-cart-pay-type .tableOdemeBilgiKrediKarti tr td.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit {
-              position: absolute;
-              left: 50%;
-              top: 350px;
-              -webkit-transform: translateX(-50%);
-              -ms-transform: translateX(-50%);
-              transform: translateX(-50%);
-              text-align: center; }
           .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-cart-pay-type .tableOdemeBilgiKrediKarti tr:nth-child(2) {
             display: inline-block;
             position: relative;
@@ -10863,7 +10899,11 @@ div[id$="pnlSiparisBaslik"] {
       border-right: none;
       padding-bottom: 0; }
       .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-cart-pay-type .tableOdemeBilgiKrediKarti tr td.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit {
-        position: static; }
+        position: static;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        text-align: left; }
     .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-cart-pay-type .pageOdemeBilgi_odemeTaksit {
       width: 100%;
       padding-top: 0; }
@@ -11738,6 +11778,18 @@ body {
 
 .en-US .urunDetay .inner-row-2-inner .ems-prd-size .urunDetay_urunSecenek > .urunDetay_urunSecenek1.item-selected .dropdown-trigger span:before {
   content: 'SIZE : '; }
+
+.en-US .mod-mini-cart .mod-mini-cart-inner .mod-mini-cart-body:before {
+  content: "My Bag"; }
+
+.en-US .ems-page-order-delivery .ems-address-wrapper .ems-grid-address .ems-grid-row .col-2 {
+  padding: 30px 20px; }
+  .en-US .ems-page-order-delivery .ems-address-wrapper .ems-grid-address .ems-grid-row .col-2 .ems-adrress-buttons > a span {
+    font-size: 10.5px; }
+
+.en-US .custom-popup .custom-popup-body .info-wrp .info-size span:before {
+  content: 'SIZE';
+  left: 105px; }
 
 .ems-message {
   text-align: center; }

@@ -1314,19 +1314,17 @@ ul.emosInfinite {
 }
 .kutuOzellikFiltre{
     .kutuBodyOzellikFiltre{
-        >table>tbody>tr>td>div{
-            .urunKiyaslamaOzellik_tumunuTemizle{
-                display: block !important;
-                span{
-                    border:1px solid #c0c0c0;
-                    padding: 10px;
-                    width: 100%;
-                    display: block;
-                    text-align: center;
-                    @media screen and (max-width:960px){
-                        border:none;
-                        padding:0; 
-                    }
+        .urunKiyaslamaOzellik_tumunuTemizle{
+            display: block !important;
+            span{
+                border:1px solid #c0c0c0;
+                padding: 10px;
+                width: 100%;
+                display: block;
+                text-align: center;
+                @media screen and (max-width:960px){
+                    border:none;
+                    padding:0; 
                 }
             }
         }

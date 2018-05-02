@@ -52,6 +52,9 @@
     .krg-blg{
         display: none;
     }
+    .iadeler{
+        display:none;
+    }
 }
 .site-header-inner { 
     background: #fff;
@@ -785,6 +788,9 @@
                                     font-weight: 700;
                                 }
                             }
+                            &.iadeler{
+                                display:block !important;
+                            }
                             &.indirim-kod{
                                 display: block !important;
                             }
@@ -1333,6 +1339,9 @@
                                         height: 13px;
                                         text-align: center;
                                         line-height: 13px;
+                                    }
+                                    >i, >b{
+                                        display: initial !important;
                                     }
                             }
                     }

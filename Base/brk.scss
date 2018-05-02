@@ -2261,9 +2261,11 @@
                                             span {
                                                 font-size: 12px;
                                                 font-weight: normal;
+                                                line-height: 1.5;
                                                 a {
                                                     font-size: 12px;
                                                     font-weight: normal;
+                                                    line-height: 1.5;
                                                 }
                                             }
                                         }
@@ -2322,6 +2324,11 @@
                                     }
                                     span{
                                         color: #ccc;
+                                    }
+                                    input{
+                                        background: #fff;
+                                        z-index: 9;
+                                        position: relative; 
                                     }
                                     .btnDefault{
                                         span{
@@ -2500,6 +2507,21 @@
                             display: block;
                             width: 100%;
                             max-width: 290px;
+                            &.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit{
+                                max-width:none;
+                                a{
+                                    font-size:12px;
+                                    font-weight: 700;
+                                    display:inline-block;
+                                    color:#000;
+                                    &.bnk-inf-lnk{
+                                        padding-left:7px;
+                                        margin-left:7px;
+                                        border-left:1px solid #000;
+                                        display: inline-block !important;
+                                    }
+                                }
+                            }
                             .div-cc-carttype {
                                 right: 0;
                             }
@@ -2544,13 +2566,6 @@
                                         color: #b70234;
                                     }
                                 }
-                            }
-                            &.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit {
-                                position: absolute;
-                                left: 50%;
-                                top: 350px;
-                                transform: translateX(-50%);
-                                text-align: center;
                             }
                         }
                         &:nth-child(2) {
@@ -4681,6 +4696,8 @@ div[id$="pnlSiparisBaslik"] {
                             td {
                                 &.tableOdemeBilgiKrediKarti_thlbfbtnOdemeTaksit {
                                     position: static;
+                                    transform:none;
+                                    text-align:left;
                                 }
                             }
                         }

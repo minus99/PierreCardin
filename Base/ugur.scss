@@ -749,6 +749,47 @@ body{
             }
         }
     }
+    .mod-mini-cart{
+        .mod-mini-cart-inner{
+            .mod-mini-cart-body{
+                &:before{
+                    content:"My Bag"
+                }
+            }
+        }
+    }
+    .ems-page-order-delivery{
+        .ems-address-wrapper{
+            .ems-grid-address{
+                .ems-grid-row{
+                    .col-2{
+                        padding:30px 20px;
+                        .ems-adrress-buttons{
+                            >a{
+                                span{
+                                    font-size:10.5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .custom-popup{
+        .custom-popup-body{
+            .info-wrp{
+                .info-size{
+                    span{
+                        &:before{
+                            content:'SIZE';
+                            left:105px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .ems-message{
