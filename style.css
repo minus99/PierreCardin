@@ -2906,7 +2906,6 @@ i {
   .ems-page-member .main-container .content-bar .ems-page-member-address .ems-address-form .ems-grid-address .ems-grid-row .col-1 .ems-address-buttons a.btnAdresListeGuncelle,
   .ems-page-member .main-container .content-bar .ems-page-member-address .ems-address-form .ems-grid-address .ems-grid-row .col-1 .ems-address-buttons a.btnAdresListeSil,
   .ems-page-cart .ems-page-order-cart .cart-section-left .ems-cart-btn.prev a.btnAlisverisDevam,
-  .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .ems-cart-coupon .ems-cart-coupon-body table a.btnHediyeCekiKullan,
   .ems-page-order-delivery .ems-address-wrapper .ems-grid-address .ems-grid-row .col-1 .ems-address-buttons a.btnAdresListeGuncelle,
   .ems-page-order-delivery .ems-address-wrapper .ems-grid-address .ems-grid-row .col-1 .ems-address-buttons a.btnAdresListeSil,
   .ems-page-order-delivery .ems-address-wrapper .ems-grid-address .ems-grid-row .col-2 .ems-adrress-buttons a.btnTesAdrSec,
@@ -2926,7 +2925,6 @@ i {
     .ems-page-member .main-container .content-bar .ems-page-member-address .ems-address-form .ems-grid-address .ems-grid-row .col-1 .ems-address-buttons a.btnAdresListeGuncelle:hover,
     .ems-page-member .main-container .content-bar .ems-page-member-address .ems-address-form .ems-grid-address .ems-grid-row .col-1 .ems-address-buttons a.btnAdresListeSil:hover,
     .ems-page-cart .ems-page-order-cart .cart-section-left .ems-cart-btn.prev a.btnAlisverisDevam:hover,
-    .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .ems-cart-coupon .ems-cart-coupon-body table a.btnHediyeCekiKullan:hover,
     .ems-page-order-delivery .ems-address-wrapper .ems-grid-address .ems-grid-row .col-1 .ems-address-buttons a.btnAdresListeGuncelle:hover,
     .ems-page-order-delivery .ems-address-wrapper .ems-grid-address .ems-grid-row .col-1 .ems-address-buttons a.btnAdresListeSil:hover,
     .ems-page-order-delivery .ems-address-wrapper .ems-grid-address .ems-grid-row .col-2 .ems-adrress-buttons a.btnTesAdrSec:hover,
@@ -4319,7 +4317,8 @@ input[type="checkbox"], input[type="radio"] {
       background-color: none;
       outline: none;
       width: 100%;
-      height: 30px; }
+      height: 30px;
+      margin: 23px 0 0 0; }
     #validateLogin .mod-mini-login .mod-mini-login-inner .mod-mini-login-body .logoff .ems-form .ems-form-inner .ems-field .ems-form-obj .ems-form-err-msg {
       font-size: 11px;
       color: #b70234;
@@ -8897,6 +8896,14 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
               font-size: 12px;
               font-weight: 700;
               letter-spacing: 1px; }
+              .ems-page-cart .ems-page-order-cart .cart-section-left .ems-grid-cart .ems-grid-row .ems-grid-name .ems-grid-gift-box a span:before {
+                content: '';
+                width: 20px;
+                display: inline-block;
+                height: 20px;
+                margin-right: 10px;
+                background-image: url(/UPLOAD/sepetgift.png);
+                vertical-align: -3px; }
         .ems-page-cart .ems-page-order-cart .cart-section-left .ems-grid-cart .ems-grid-row .ems-grid-piece {
           width: 25%; }
           .ems-page-cart .ems-page-order-cart .cart-section-left .ems-grid-cart .ems-grid-row .ems-grid-piece .ems-grid-piece-add-remove input {
@@ -8955,31 +8962,33 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
       .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary {
         border: 1px solid #e4e4e4;
         padding: 25px; }
+        .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary.v1 {
+          margin-bottom: 20px; }
+        .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary.v3 {
+          margin-top: 20px;
+          padding: 0;
+          border: none; }
         .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step > span {
           display: block;
-          text-align: center;
           font-weight: 700;
           font-size: 18px;
           color: #000;
-          margin-bottom: 25px; }
-        .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step table {
-          padding-bottom: 25px;
-          border-bottom: 1px solid #e4e4e4; }
-          .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step table tr > * > span {
-            font-size: 12px;
-            color: #616161 !important;
-            font-weight: normal;
-            margin: 2px 0;
-            display: block; }
-          .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step table tr th {
-            text-align: left; }
-          .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step table tr td {
-            text-align: right; }
-          .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step table .pnlDipToplam_sipToplam > * > span {
-            font-size: 16px;
-            font-weight: 700;
-            color: #000;
-            display: block; }
+          margin-bottom: 20px; }
+        .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step table tr > * > span {
+          font-size: 12px;
+          color: #616161 !important;
+          font-weight: normal;
+          margin: 2px 0;
+          display: block; }
+        .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step table tr th {
+          text-align: left; }
+        .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step table tr td {
+          text-align: right; }
+        .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step table .pnlDipToplam_sipToplam > * > span {
+          font-size: 16px;
+          font-weight: 700;
+          color: #000;
+          display: block; }
         .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .ems-cart-coupon > span {
           display: block;
           text-align: center;
@@ -8989,23 +8998,19 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
           cursor: pointer; }
         .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .ems-cart-coupon .ems-cart-coupon-body {
           position: relative;
-          display: none; }
+          display: block; }
           .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .ems-cart-coupon .ems-cart-coupon-body > input {
-            width: 100% !important;
+            width: 67% !important;
             border: 1px solid #e4e4e4;
-            padding-left: 5px;
             margin: 0;
-            padding: 5px 70px 5px 5px; }
+            padding: 4px 5px 3px 5px; }
           .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .ems-cart-coupon .ems-cart-coupon-body table {
             position: absolute;
             top: 0;
             right: 0; }
             .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .ems-cart-coupon .ems-cart-coupon-body table .btnHediyeCekiKullan {
-              font-size: 14px; }
-              .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .ems-cart-coupon .ems-cart-coupon-body table .btnHediyeCekiKullan span {
-                color: #b70234 !important;
-                line-height: 42px;
-                padding-right: 5px; }
+              padding-top: 8px;
+              padding-bottom: 8px; }
           .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .ems-cart-coupon .ems-cart-coupon-body > span {
             padding: 5px 0;
             color: #b70234 !important;
@@ -9056,12 +9061,13 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
         .ems-page-order-delivery .ems-page-order-cart .cart-section-right .ems-cart-summary {
           padding: 30px;
           border: 1px solid #e4e4e4; }
+          .ems-page-order-delivery .ems-page-order-cart .cart-section-right .ems-cart-summary.v1, .ems-page-order-delivery .ems-page-order-cart .cart-section-right .ems-cart-summary.v3 {
+            display: none !important; }
         .ems-page-order-delivery .ems-page-order-cart .cart-section-right .top-step > span {
           color: #000;
           font-weight: 700;
           font-size: 18px;
           display: block;
-          text-align: center;
           margin-bottom: 15px; }
         .ems-page-order-delivery .ems-page-order-cart .cart-section-right .top-step table tr th {
           text-align: left;
@@ -9684,9 +9690,10 @@ select[id$="drpSRT_SPR_AD"] option[value="RA"], select[id$="drpSRT_SPR_AD"] opti
           padding: 30px;
           border: 1px solid #e4e4e4;
           max-width: 345px; }
+          .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-page-order-cart .cart-section-right .ems-cart-summary.v1, .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-page-order-cart .cart-section-right .ems-cart-summary.v3 {
+            display: none !important; }
           .ems-page-order-payment .ems-cart-pay-inner .ems-cart-body .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step > span {
             display: block;
-            text-align: center;
             color: #000;
             font-weight: 700;
             font-size: 18px;
@@ -10797,31 +10804,27 @@ div[id$="pnlSiparisBaslik"] {
     width: 100%;
     padding: 0;
     margin: 0; }
-    .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary {
+    .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary.v2 {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-      .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary > div {
+      .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary.v2 > div {
         width: 100%; }
-      .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step {
+      .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary.v2 .top-step {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
-        order: 2;
-        background-color: #f8f8f8;
-        padding: 30px; }
-        .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .top-step > span {
-          display: none; }
-      .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .ems-cart-coupon {
+        order: 2; }
+      .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary.v2 .ems-cart-coupon {
         -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
         order: 1; }
-      .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .bottom-step {
+      .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary.v2 .bottom-step {
         -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
         order: 3; }
-        .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary .bottom-step .next {
+        .ems-page-cart .ems-page-order-cart .cart-section-right .ems-cart-summary.v2 .bottom-step .next {
           margin: 0; }
   .ems-page-cart .ems-page-order-delivery .ems-address-wrapper {
     width: 100%;
